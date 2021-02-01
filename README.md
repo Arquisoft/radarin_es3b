@@ -44,3 +44,4 @@ Participantes:
 -María Suárez Hevia, UO270437
 -Lucía Gutiérrez Búa, UO250755
 -Luis Lomba Martínez, UO258352
+-Diego Tomás Nosti, UO270497
