@@ -42,3 +42,4 @@ Participantes:
 -Enrique Vera Cueto, UO246711
 -Antonio Suárez Crespo, UO270543
 -María Suárez Hevia, UO270437
+-Lucía Gutiérrez Búa, UO250755
