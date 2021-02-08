@@ -1,4 +1,4 @@
-=== Introduction and Goals
+== Introduction and Goals
 
 [[section-introduction-and-goals]]
 Radarin es una aplicación que tiene como objetivo facilitar los encuentros entre personas que se encuentren en un mismo area.
