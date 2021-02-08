@@ -28,6 +28,14 @@ Short textual description, probably in tabular use-case format.
 If requirements documents exist this overview should refer to these documents.
 
 Keep these excerpts as short as possible. Balance readability of this document with potential redundancy w.r.t to requirements documents.
+
+* Se podrá conocer la ubicación de los usuarios en cada momento
+* Consultar los contactos de cada usuario para poder relacionarlos
+* Ofrecer la opcion de añadir comentarios y contenido multimedia en las localizaciones
+* El usuario podrá visualizar los mapas
+* Los usuarios podrán marcar ciertas localizaciones
+* Los usuarios podrán ponerse en contacto a través de un chat de la aplicación
+
 ****
 
 === Quality Goals
