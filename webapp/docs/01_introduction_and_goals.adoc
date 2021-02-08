@@ -73,7 +73,4 @@ Table with role names, person names, and their expectations with respect to the 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _Comunidad de SOLID_ | _Equipo de SOLID_ | __
-| _Equipo_ | _Equipo de Desarrollo_ | _<Expectation-2>_
-| _Usuarios_ | _Potenciales usuarios de la aplicación_ | _<Expectation-2>_
 |===
