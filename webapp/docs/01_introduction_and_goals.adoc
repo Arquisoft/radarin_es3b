@@ -1,4 +1,7 @@
 [[section-introduction-and-goals]]
+Radarin es una aplicación que tiene como objetivo facilitar los encuentros entre personas que se encuentren en un mismo area.
+La aplicación tiene una serie de requerimientos de acceso sobre datos como la localización del usuario (la cual puede activar o no voluntariamente), 
+la cual permitira a los usuarios conocer la ubicación de sus contactos cuando estos se encuentren cerca.
 == Introduction and Goals
 
 [role="arc42help"]
