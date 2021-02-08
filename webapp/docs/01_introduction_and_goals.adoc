@@ -46,6 +46,15 @@ If you as an architect do not know how the quality of your work will be judged �
 
 .Form
 A table with quality goals and concrete scenarios, ordered by priorities
+
+[options="header",cols="1,2,2"]
+|===
+|Quality Goals|Concrete Scenaries
+| _Usabilidad_ | La aplicación debe poder ser usada sin problemas por todos los posibles usuarios.
+| _Privacidad y seguridad_ | Se guardarán solamente los datos necesarios de cada usuario, el resto de cogerán cuando sean necesarios del dispositivo del usuario. A demás, este podrá activar y desactivar la ubicación cuando lo desee y la aplicación no podrá ver este dato.
+| _Testabilidad_ | El funcionamiento de la aplicación podrá ser probado fácilmente.
+|
+
 ****
 
 === Stakeholders
