@@ -1,6 +1,28 @@
 [[section-architecture-constraints]]
 == Architecture Constraints
 
+=== Thechnical Constraints
+[options="header",cols="1,2"]
+|===
+|Restricción|Explicación
+| SOLID | _<Contact-1>_
+| Docker | _<Contact-2>_
+| Heroku | _<Contact-2>_
+|===
+
+=== Organizational Constraints
+[options="header",cols="1,2"]
+|===
+|Restricción|Explicación
+| _<Role-2>_ | _<Contact-2>_
+|===
+
+=== Political Constraints
+[options="header",cols="1,2"]
+|===
+|Restricción|Explicación
+| _<Role-2>_ | _<Contact-2>_
+|===
 
 [role="arc42help"]
 ****
