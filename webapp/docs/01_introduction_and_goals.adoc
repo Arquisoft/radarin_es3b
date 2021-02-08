@@ -1,17 +1,9 @@
+=== Introduction and Goals
+
 [[section-introduction-and-goals]]
 Radarin es una aplicación que tiene como objetivo facilitar los encuentros entre personas que se encuentren en un mismo area.
 La aplicación tiene una serie de requerimientos de acceso sobre datos como la localización del usuario (la cual puede activar o no voluntariamente), 
 la cual permitira a los usuarios conocer la ubicación de sus contactos cuando estos se encuentren cerca.
-== Introduction and Goals
-
-[role="arc42help"]
-****
-Describes the relevant requirements and the driving forces that software architects and development team must consider. These include
-
-* underlying business goals, essential features and functional requirements for the system
-* quality goals for the architecture
-* relevant stakeholders and their expectations
-****
 
 === Requirements Overview
 
@@ -81,6 +73,7 @@ Table with role names, person names, and their expectations with respect to the 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+| _Comunidad de SOLID_ | _Equipo de SOLID_ | __
+| _Equipo_ | _Equipo de Desarrollo_ | _<Expectation-2>_
+| _Usuarios_ | _Potenciales usuarios de la aplicación_ | _<Expectation-2>_
 |===
