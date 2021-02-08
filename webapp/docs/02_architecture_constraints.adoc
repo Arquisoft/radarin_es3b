@@ -1,7 +1,7 @@
 [[section-architecture-constraints]]
 == Architecture Constraints
 
-=== Thechnical Constraints
+=== Technical Constraints
 [options="header",cols="1,2"]
 |===
 |Restricción|Explicación
@@ -14,7 +14,12 @@
 [options="header",cols="1,2"]
 |===
 |Restricción|Explicación
-| _<Role-2>_ | _<Contact-2>_
+| Tiempo | El proyecto se ajustará a la duración del segundo semestre
+| Presupuesto | Dada la naturaleza del proyecto, que se ha de desarrollar en un contexto universitario, los desarrolladores no disponen de presupuesto alguno
+| Experiencia | Ningún estudiante cuenta con experiencia previa en desarrollo de aplicaciones móviles
+| Dedicación | La dedicación por parte del equipo será parcial, ya que todos han de desarrollar en paralelo otros proyectos para otras asignaturas
+| Equipo | El equipo está formado por 7 desarrolladores
+| Control de versiones | Se utilizará un repositorio en la plataforma GitHub para el desarrollo colaborativo de esta aplicación
 |===
 
 === Political Constraints
