@@ -5,9 +5,9 @@
 [options="header",cols="1,2"]
 |===
 |Restricción|Explicación
-| SOLID | _<Contact-1>_
-| Docker | _<Contact-2>_
-| Heroku | _<Contact-2>_
+| SOLID | Se utilizará SOLID para proteger la privacidad de los datos de los usuarios
+| Docker | Se utilizará Docker para el uso de máquinas virtuales para desplegar la aplicación
+| Heroku | Se utilizará Heroku para tener desplegada la aplicación en la nube
 |===
 
 === Organizational Constraints
