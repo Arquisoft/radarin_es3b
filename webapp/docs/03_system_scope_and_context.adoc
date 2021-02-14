@@ -62,8 +62,7 @@ Los miembros de la comunicación serán:
 [role="arc42help"]
 ****
 .Contents
-Technical interfaces (channels and transmission media) linking your system to its environment. In addition a mapping of domain specific input/output to the channels, i.e. an explanation with I/O uses which channel.
-
+Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
 .Motivation
 Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.
 
