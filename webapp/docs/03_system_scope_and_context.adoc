@@ -60,6 +60,7 @@ Los miembros de la comunicación serán:
 
 === Technical Context
 
+Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
 
 [role="arc42help"]
 ****
