@@ -59,10 +59,10 @@ Los miembros de la comunicación serán:
 
 === Technical Context
 
+
 [role="arc42help"]
 ****
 .Contents
-Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
 .Motivation
 Many stakeholders make architectural decision based on the technical interfaces between the system and its context. Especially infrastructure or hardware designers decide these technical interfaces.
 
@@ -71,6 +71,8 @@ E.g. UML deployment diagram describing channels to neighboring systems,
 together with a mapping table showing the relationships between channels and input/output.
 
 ****
+
+Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
 
 **<Diagram or Table>**
 
