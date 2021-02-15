@@ -26,7 +26,8 @@
 [options="header",cols="1,2"]
 |===
 |Restricción|Explicación
-| _<Role-2>_ | _<Contact-2>_
+| RGPD | El Reglamento General de Protección de Datos asegura la protección de los datos personales y a la libre circulación de estos datos
+| Condiciones de uso | Establece qué es la aplicación y cómo debe utilizarse, qué constituye un uso inadecuado y cuáles serán las consecuencias de un uso inadecuado
 |===
 
 [role="arc42help"]
