@@ -28,4 +28,5 @@ Potentially more columns in case you need translations.
 | Term         | Definition
 | SOLID        | https://solidproject.org/about
 | POD          | Personal Online Data
+| Docker       | Plataforma para desplegar software de manera rápida con independencia del entorno gracias al uso de contenedores
 |===
