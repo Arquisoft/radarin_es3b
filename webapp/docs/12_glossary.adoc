@@ -30,5 +30,6 @@ Potentially more columns in case you need translations.
 | POD          | Personal Online Data
 | Docker       | Plataforma para desplegar software de manera rápida con independencia del entorno gracias al uso de contenedores
 | Heroku       | PaaS (Platform as a Service) para desplegar aplicaciones en la nube. Proporciona la infraestructura necesaria para el despliegue, lo cual permite que el equipo se centre principalmente en el desarrollo de la aplicación.
-| MongoDB       | Sistema de base de datos NoSQL. Almacena documentos de tipo JSON en el que cada entrada puede tener un esquema de datos diferente. 
+| MongoDB       | Sistema de base de datos NoSQL. Almacena documentos de tipo JSON en el que cada entrada puede tener un esquema de datos diferente.
+| NodeJS       | Entorno de ejecución ligero basado en JavaScript, multiplataforma y de código abierto, caracterizado por su modelo de non-bloking I/O.  
 |===
