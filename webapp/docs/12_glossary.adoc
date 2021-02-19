@@ -25,13 +25,13 @@ Potentially more columns in case you need translations.
 
 [options="header"]
 |===
-| Term         | Definition
-| SOLID        | Social Linked Data. https://solidproject.org/about
-| POD          | Personal Online Data
-| Docker       | Plataforma para desplegar software de manera rápida con independencia del entorno gracias al uso de contenedores
-| Heroku       | PaaS (Platform as a Service) para desplegar aplicaciones en la nube. Proporciona la infraestructura necesaria para el despliegue, lo cual permite que el equipo se centre principalmente en el desarrollo de la aplicación.
-| MongoDB       | Sistema de base de datos NoSQL. Almacena documentos de tipo JSON en el que cada entrada puede tener un esquema de datos diferente.
-| NodeJS       | Entorno de ejecución ligero basado en JavaScript, multiplataforma y de código abierto, caracterizado por su modelo de non-bloking I/O.  
-| Prometheus    | Sistema de monitorización de software. Realiza mediciones de los servidores en un intervalo de tiempo configurable y los almacena en una estructura de datos de series temporales.
-| Grafana    | Aplicación web para visualizar datos métricos en forma de gráficos. Gracias a los dashboards permite visualizar múltiples gráficos a la vez. Prometheus es una de las fuentes de datos compatibles con Grafana. También permite definir alertas para recibir notificaciones en caso de issues. 
+| Term         | Definition | Definición
+| SOLID        | Social Linked Data. https://solidproject.org/about | Social Linked Data. https://solidproject.org/about
+| POD          | Personal Online Data | Personal Online Data
+| Docker       | Technology based in containers to develop, test and deploy applications easily | Plataforma para desplegar software de manera rápida con independencia del entorno gracias al uso de contenedores
+| Heroku       | PaaS Platform as a service to deploy applications in the cloud. | PaaS (Platform as a Service) para desplegar aplicaciones en la nube. Proporciona la infraestructura necesaria para el despliegue, lo cual permite que el equipo se centre principalmente en el desarrollo de la aplicación.
+| MongoDB      | Database system that stores data in a flexible way, including JSON-like documents | Sistema de base de datos NoSQL. Almacena documentos de tipo JSON en el que cada entrada puede tener un esquema de datos diferente.
+| NodeJS       | Open-source, cross-platform execution environment based on JavaScript. | Entorno de ejecución ligero basado en JavaScript, multiplataforma y de código abierto, caracterizado por su modelo de non-bloking I/O.  
+| Prometheus   | Software monitoring system.  | Sistema de monitorización de software. Realiza mediciones de los servidores en un intervalo de tiempo configurable y los almacena en una estructura de datos de series temporales.
+| Grafana      | Data visualization web app.  | Aplicación web para visualizar datos métricos en forma de gráficos. Gracias a los dashboards permite visualizar múltiples gráficos a la vez. Prometheus es una de las fuentes de datos compatibles con Grafana. También permite definir alertas para recibir notificaciones en caso de issues. 
 |===
