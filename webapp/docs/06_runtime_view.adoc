@@ -41,14 +41,20 @@ It is possible to use a sequence diagram:
 
 [plantuml,"Sequence diagram",png]
 ----
-actor Alice
-actor Bob
-database Pod as "Bob's Pod"
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-Alice  --> Pod: Store route
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+actor User #red
+participant App
+database UserPOD #red
+database MongoDB #blue
+User -[#green]> App: Buscar Amigos (req)
+App -> UserPOD: Lista de amigos (req)
+App <-- UserPOD: Lista de amigos (res)
+App -[#blue]> MongoDB: Localización de amigos (req)
+App <[#blue]-- MongoDB: Localización de amigos (res)
+App -[#blue]>  User: Localización usuario (req)
+App <[#blue]--  User: Localización usuario (res)
+App -> App: Calcular distancia de amigos
+App --[#green]> User: Amigos cercanos
+App -[#blue]> MongoDB: Añadir localización
 ----
 === <Runtime Scenario 2>
 
