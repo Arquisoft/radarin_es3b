@@ -19,6 +19,7 @@ image:Quality Tree.png["Quality Tree"]
 
 [role="arc42help"]
 ****
+[options="header",cols="1,2"]
 |===
 |Quality Goals| How to achieve it
 | _Usability_ | The aplication must be able to be used without problem by the largest number of users possible.
