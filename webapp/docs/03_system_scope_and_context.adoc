@@ -20,9 +20,8 @@ Various options:
 * Lists of communication partners and their interfaces.
 ****
 
-La idea del proyecto es crear una aplicacion usando SOLID que permita localizar a la gente que tengas agregada y la aplicacion activada en un mapa en tiempo real.
-Solid permite guardar la información de cada usuario en unos compartimentos llamdos pods, siendo cada usuario quien permite que otros usuarios acceden a su pod. De
-esta manera solo los usuarios que tenga agregados podrán ver su localización
+La idea del proyecto es crear una aplicacion usando SOLID que permita obtener la localizacion a la gente que tengas agregada y la aplicacion activada  en tiempo real.
+Toda la información salvo la esencial para la aplicación como la localizacion de los usuarios se guardará en pods.
 
 
 === Business Context
@@ -43,19 +42,19 @@ Alternatively (or additionally) you can use a table.
 The title of the table is the name of your system, the three columns contain the name of the communication partner, the inputs, and the outputs.
 ****
 
-**<Diagram or Table>**
 
-**<optionally: Explanation of external domain interfaces>**
 
 Los miembros de la comunicación serán:
 
-	1. El usuario que emite la información de su ubicación a la gente que tiene agregada.
+	1. El usuario que comparte la información sobre su ubicacion con la aplicación
+	
+	2. La aplicación que reenvia la información de la localización de un usuario a los amigos que tenga agregados.
 
-	2. El usuario que tiene agregada a esa persona y recibe la información.
+	3. El usuario que recibe la información de la localización de un amigo y puede ver donde está.
 	
-	3. La aplicación que envia dicha información entre usuarios.
+	4. Los pods en los cuales la aplicación comprueba a quien tiene un agregado un usuario.
 	
-	4. Los pods que guardan la información
+	
 
 
 === Technical Context
@@ -76,8 +75,4 @@ together with a mapping table showing the relationships between channels and inp
 
 Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
 
-**<Diagram or Table>**
 
-**<optionally: Explanation of technical interfaces>**
-
-**<Mapping Input/Output to Channels>**
