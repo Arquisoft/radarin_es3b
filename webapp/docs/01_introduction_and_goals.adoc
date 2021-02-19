@@ -9,6 +9,7 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 === Requirements Overview
 
 
+
 * Se podrá conocer la ubicación de los usuarios en cada momento
 * Consultar los contactos de cada usuario para poder relacionarlos
 * Ofrecer la opcion de añadir comentarios y contenido multimedia en las localizaciones
@@ -18,6 +19,7 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 
 
 === Quality Goals
+
 
 [options="header",cols="1,2"]
 |===
@@ -30,6 +32,7 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 
 
 === Stakeholders
+
 
 
 [options="header",cols="1,2,2"]
