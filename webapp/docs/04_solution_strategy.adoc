@@ -22,3 +22,20 @@ Motivate what you have decided and why you decided that way,
 based upon your problem statement, the quality goals and key constraints.
 Refer to details in the following sections.
 ****
+
+
+Para el desarrollo de se usará JavaScript con la librería React debido a que 
+tiene varios componentes que permiten trabajar mas facilmente con Solid y 
+hace mas sencillo y ordenado trabjar con JavaScript. Tambien porque es relativamente
+fácil de aprender y existe mucha documentación acerca de el, lo que lo hace muy adecuado
+para un equipo que no tiene experiencia previa con este tipo de aplicaciones.
+
+Para la aplicación movil se usará React Native porque nadie en el equipo tiene experiencia
+con aplicaciones moviles y la experiencia con React permitirá un aprendizaje mas rapido.
+
+Para tener mas controlados los cambios del equipo se usará una rama común de desarrollo
+"develop" para integrar todos los cambios y aportaciones, teniendo en la rama principal
+solo versiones estables del proyecto.
+
+Para la persistencia de los datos se usará MongoDB para guardar la lozalización de los usuarios 
+y su nombre de usuario, el resto se guardará en pods.
