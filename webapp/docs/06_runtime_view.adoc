@@ -41,6 +41,7 @@ It is possible to use a sequence diagram:
 
 [plantuml,"Sequence diagram",png]
 ----
+@startuml
 actor User #red
 participant App
 database UserPOD #red
@@ -55,6 +56,7 @@ App <[#blue]--  User: Localización usuario (res)
 App -> App: Calcular distancia de amigos
 App --[#green]> User: Amigos cercanos
 App -[#blue]> MongoDB: Añadir localización
+@enduml
 ----
 === <Runtime Scenario 2>
 
