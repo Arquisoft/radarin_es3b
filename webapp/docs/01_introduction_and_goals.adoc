@@ -8,7 +8,6 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 
 === Requirements Overview
 
-[role="arc42help"]
 
 
 * Se podrá conocer la ubicación de los usuarios en cada momento
@@ -21,7 +20,6 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 
 === Quality Goals
 
-[role="arc42help"]
 
 [options="header",cols="1,2"]
 |===
@@ -35,7 +33,6 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 
 === Stakeholders
 
-[role="arc42help"]
 
 
 [options="header",cols="1,2,2"]
