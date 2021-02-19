@@ -11,7 +11,7 @@ This section contains all quality requirements and a quality tree with scenarios
 
 === Quality Tree
 image:Quality Tree.png["Quality Tree"]
-[role="arc42help"]
+
 
 
 
