@@ -4,13 +4,11 @@
 [options="header",cols="2,2,2"]
 |===
 |Risks|Consequences|Solutions
-| New technologies | Usar tecnologías que no conocemos de antes puede hacer que no las epleemos
-de manera adecuada o no aprovechemos todas sus posibilidades. | Informarnos adecuadamente sobre todas
-ellas antes de comenzar a trabajar.
-| New team | Un equipo formado por gente que no se conoce de antes puede dar lugar a una mala organizacion
-e incluso a desacuerdos o disputas entre los miembros del equipo | Tratar de facilitar el trabajo 
-en equipo a los demás adaptandonos entre todos
-| Time management | Una mala organización del tiempo puede implicar que se acumule el trabajo o 
-no llegemos a tiempo a las entregas | Organizandonos y repartiendo el trabajo de manera que se realice un
-trabajo diario y ordenado.
+| New technologies | Use new technologies can cause them not to be used properly
+or not taken advantage of them at all. | Inform us about all of them before starting work.
+| New team | Poor organization and communication or disagreements between members | Try to
+understand each other and make work easier for others by adapting together.
+| Time management | A lot of backlogged work or not being on time for deliveries | Organize
+and distribute the work. keep a daily and orderly work.
 |===
+
