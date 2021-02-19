@@ -28,7 +28,7 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 | _Usabilidad_ | La aplicación debe poder ser usada sin problemas por todos los posibles usuarios.
 | _Privacidad y seguridad_ | Se guardarán solamente los datos necesarios de cada usuario, el resto de cogerán cuando sean necesarios del dispositivo del usuario. A demás, este podrá activar y desactivar la ubicación cuando lo desee y la aplicación no podrá ver este dato.
 | _Testabilidad_ | El funcionamiento de la aplicación podrá ser probado fácilmente.
-|
+|===
 
 
 

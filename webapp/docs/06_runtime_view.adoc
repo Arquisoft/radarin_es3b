@@ -30,14 +30,13 @@ There are many notations for describing scenarios, e.g.
 
 ****
 
-=== <Runtime Scenario 1>
+=== <Friends Location Scenario>
 
 
 * _<insert runtime diagram or textual description of the scenario>_
 * _<insert description of the notable aspects of the interactions between the
 building block instances depicted in this diagram.>_
 
-It is possible to use a sequence diagram:
 
 [plantuml,"Sequence diagram",png]
 ----
@@ -58,7 +57,20 @@ App --[#green]> User: Amigos cercanos
 App -[#blue]> MongoDB: Añadir localización
 @enduml
 ----
-=== <Runtime Scenario 2>
+=== <User Registration Scenario>
+
+[plantuml,"Sequence diagram",png]
+----
+@startuml
+actor User #red
+participant App
+database MongoDB #blue
+User -[#green]> App: Registrar usuario
+App -[#blue]> MongoDB: Register new user (req)
+App <[#blue]-- MongoDB: Registration response
+User <[#green]- App: Notificación de registro 
+@enduml
+----
 
 === ...
 
