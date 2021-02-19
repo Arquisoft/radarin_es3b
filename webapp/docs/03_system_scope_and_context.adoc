@@ -49,13 +49,13 @@ The title of the table is the name of your system, the three columns contain the
 
 Los miembros de la comunicación serán:
 
-	-El usuario que emite la información de su ubicación a la gente que tiene agregada.
+	1. El usuario que emite la información de su ubicación a la gente que tiene agregada.
 
-	-El usuario que tiene agregada a esa persona y recibe la información.
+	2. El usuario que tiene agregada a esa persona y recibe la información.
 	
-	-La aplicación que envia dicha información entre usuarios.
+	3. La aplicación que envia dicha información entre usuarios.
 	
-	-Los pods que guardan la información
+	4. Los pods que guardan la información
 
 
 === Technical Context
