@@ -42,9 +42,7 @@ Alternatively (or additionally) you can use a table.
 The title of the table is the name of your system, the three columns contain the name of the communication partner, the inputs, and the outputs.
 ****
 
-**<Diagram or Table>**
 
-**<optionally: Explanation of external domain interfaces>**
 
 Los miembros de la comunicación serán:
 
@@ -77,8 +75,4 @@ together with a mapping table showing the relationships between channels and inp
 
 Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
 
-**<Diagram or Table>**
 
-**<optionally: Explanation of technical interfaces>**
-
-**<Mapping Input/Output to Channels>**
