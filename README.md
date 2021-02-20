@@ -3,7 +3,9 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/84f84d77dc9643b9ad9b24e1731fe1ca)](https://www.codacy.com/gh/Arquisoft/radarin_es3b/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Arquisoft/radarin_es3b&amp;utm_campaign=Badge_Grade)
 
 # Radarin project structure
-Link to the deployed sample application: [radarinES3B](https://radarines3bwebapp.herokuapp.com/). Note that sometimes **it can take a while to load** because Heroku in the free plan, takes the containers to sleep when they are not used for some time and taking them up takes time.
+Link to the deployed sample application: [radarinES3B](https://radarines3bwebapp.herokuapp.com/).  
+Link to the application documentation: [radarinES3B docs](https://radarines3bwebapp.herokuapp.com/docs/).  
+Note that sometimes **it can take a while to load** because Heroku in the free plan, takes the containers to sleep when they are not used for some time and taking them up takes time.
 
 ## Quick start guide
 If you want to execute the project you will need [git](https://git-scm.com/downloads), [Node.js and npm](https://www.npmjs.com/get-npm) and [Docker](https://docs.docker.com/get-docker/). Make sure the three of them are installed in your system. Download the project with `git clone https://github.com/Arquisoft/radarin_es3b.git`. The fastest way to launch everything is with docker:
