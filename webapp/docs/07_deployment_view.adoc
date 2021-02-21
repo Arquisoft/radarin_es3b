@@ -5,7 +5,7 @@
 
 === Infrastructure Level 1
 
-image:7-Infrastucture-v1.png
+image:7-Infrastructure-v3.png["Infrastructure diagram."]
 
 Motivation::
 
@@ -13,8 +13,8 @@ The application will be deployed on the cloud application plataform Heroku, that
 
 Quality and/or Performance Features::
 
-_<explanation in text form>_
+_TODO_
 
 Mapping of Building Blocks to Infrastructure::
 
-_<description of the mapping>_
+_TODO_
