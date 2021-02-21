@@ -11,14 +11,15 @@ This section contains all quality requirements and a quality tree with scenarios
 
 === Quality Tree
 image:Quality Tree.png["Quality Tree"]
-[role="arc42help"]
-****
 
-****
+
+
+
 === Quality Scenarios
 
-[role="arc42help"]
-****
+
+
+[options="header",cols="1,2"]
 |===
 |Quality Goals| How to achieve it
 | _Usability_ | The aplication must be able to be used without problem by the largest number of users possible.
@@ -27,4 +28,4 @@ image:Quality Tree.png["Quality Tree"]
 | _Portability_ | Our software will be portable, mainly will be used in Windows and Android.
 | _Efficiency_ | Users deserve that our application works perfectly all time, providing the information that they need and showing their friends quickly.
 |===
-****
+

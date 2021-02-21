@@ -1,14 +1,14 @@
+[[section-introduction-and-goals]]
 == Introduction and Goals
 
-[[section-introduction-and-goals]]
+
 Radarin es una aplicación que tiene como objetivo facilitar los encuentros entre personas que se encuentren en un mismo area.
 La aplicación tiene una serie de requerimientos de acceso sobre datos como la localización del usuario (la cual puede activar o no voluntariamente), 
 la cual permitira a los usuarios conocer la ubicación de sus contactos cuando estos se encuentren cerca.
 
 === Requirements Overview
 
-[role="arc42help"]
-****
+
 
 * Se podrá conocer la ubicación de los usuarios en cada momento
 * Consultar los contactos de cada usuario para poder relacionarlos
@@ -17,26 +17,23 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 * Los usuarios podrán marcar ciertas localizaciones
 * Los usuarios podrán ponerse en contacto a través de un chat de la aplicación
 
-****
 
 === Quality Goals
 
-[role="arc42help"]
-****
+
 [options="header",cols="1,2"]
 |===
 |Quality Goals|Concrete Scenaries
 | _Usabilidad_ | La aplicación debe poder ser usada sin problemas por todos los posibles usuarios.
 | _Privacidad y seguridad_ | Se guardarán solamente los datos necesarios de cada usuario, el resto de cogerán cuando sean necesarios del dispositivo del usuario. A demás, este podrá activar y desactivar la ubicación cuando lo desee y la aplicación no podrá ver este dato.
 | _Testabilidad_ | El funcionamiento de la aplicación podrá ser probado fácilmente.
-|
+|===
 
-****
+
 
 === Stakeholders
 
-[role="arc42help"]
-****
+
 
 [options="header",cols="1,2,2"]
 |===
@@ -45,4 +42,4 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 | _Equipo_ | _Equipo de Desarrollo_ | _Esperan desarrollar la aplicación correctamente, compenetrarse bien y trabajar en equipo para lograr el objetivo._
 | _Usuarios_ | _Potenciales usuarios de la aplicación_ | _Esperan que la aplicación funcione correctamente y que cumpla con su compromiso de mantener su privacidad._
 |===
-****
+

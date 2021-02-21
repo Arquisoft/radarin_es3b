@@ -18,7 +18,7 @@
 | Budget | Due to the nature of the project, which has to be developed in a university context, the developers do not have any budget.
 | Experience | None of us have experience developing applications with the chosen technology.
 | Dedication | The dedication of the team will be partial, due to all of us have to develop other projects in parallel for other courses.
-| Team | The team is made up of 7 developers.
+| Team | The team is made up for 7 developers.
 | Version control | A repository will be used on the GitHub platform for the collaborative development of this application.
 |===
 

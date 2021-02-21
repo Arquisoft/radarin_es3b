@@ -1,6 +1,49 @@
 [[section-design-decisions]]
 == Design Decisions
 
+=== Constraints
+
+Use SOLID, a technology that allows descentralizating the project
+
+
+=== Problems
+
+We had to choose a provider to host our pods.
+
+We had to decide to on a programming language that would allow us to support the features our application required.
+
+We had to choose a database to store some information that we preferred not to save on pods.
+
+We had to choose a library to work with pods.
+
+We had to choose a library to develop the IGU.
+
+Most of us had never developed a cellphone application so we needed to learn a new technology.
+
+We had to choose a format to present our documentation.
+
+
+=== Consequences
+
+Since no member of the team had experience with SOLID, we had to read a lot of documentation about it, how it works and what technologies were compatible with it.Taking that into account and the fact that it was the first cellphone application we were going to developed, after reading that React Native and Nodejs facilitated working with SOLID, we decided to take the advice of our teacher and resolved it was best to use them as the libraries to work with pods and IGU. That also meant that the programming language we were going to use was JavaScript.
+
+
+=== Decisions
+
+We decided to use JavaScript as the programming language since it supports SOLID and it has libraries that will helps us develop the application.
+
+We decided to use Nodejs to work with pods since it has a lot of documentation and seemed easiest way.
+
+We decided to use React Native to develop the IGU since it supports SOLID.
+
+We decided to use solid community as the pod provider because it was the most recommended provider amongst the existent ones.
+
+We decided to make our documentation in English since we believe that Software Engineers should be able to speak at least basic English and it allowed us to practice.
+
+We decided to make our documentation using arc42 format since two members already had experience with it and the rest thought that it was a good way to learn a useful technology.
+
+We decided to use MongoDB as the database to store information we could not save on pods because React is prepared to easily work with it.
+
 
 [role="arc42help"]
 ****
