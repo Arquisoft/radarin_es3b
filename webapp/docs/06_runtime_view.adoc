@@ -30,7 +30,7 @@ There are many notations for describing scenarios, e.g.
 
 ****
 
-=== <Friends Location Scenario>
+=== Friends Location Scenario
 
 
 * _<insert runtime diagram or textual description of the scenario>_
@@ -57,7 +57,7 @@ App --[#green]> User: Amigos cercanos
 App -[#blue]> MongoDB: Añadir localización
 @enduml
 ----
-=== <User Registration Scenario>
+=== User Registration Scenario
 
 [plantuml,"Sequence diagram",png]
 ----
@@ -71,7 +71,20 @@ App <[#blue]-- MongoDB: Registration response
 User <[#green]- App: Notificación de registro 
 @enduml
 ----
+=== Add New Friend Scenario
 
-=== ...
+[plantuml,"Sequence diagram",png]
+----
+@startuml
+actor User #red
+participant App
+database UserPOD #red
+User -[#green]> App: Añadir Amigo
+App --[#green]> User: Pedir datos
+User -[#green]> App:Enviar datos
+App -> UserPOD: add (amigo)
+App <-- UserPOD: Lista de amigos
+App --[#green]> User: Mostrar amigos
+@enduml
+----
 
-=== <Runtime Scenario n>
