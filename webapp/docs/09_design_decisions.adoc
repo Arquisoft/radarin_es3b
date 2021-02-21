@@ -1,12 +1,12 @@
 [[section-design-decisions]]
 == Design Decisions
 
-===Constraints
+=== Constraints
 
 Use SOLID, a technology that allows descentralizating the project
 
 
-===Problems
+=== Problems
 
 We had to choose a provider to host our pods.
 
@@ -23,12 +23,12 @@ Most of us had never developed a cellphone application so we needed to learn a n
 We had to choose a format to present our documentation.
 
 
-===Consequences
+=== Consequences
 
 Since no member of the team had experience with SOLID, we had to read a lot of documentation about it, how it works and what technologies were compatible with it.Taking that into account and the fact that it was the first cellphone application we were going to developed, after reading that React Native and Nodejs facilitated working with SOLID, we decided to take the advice of our teacher and resolved it was best to use them as the libraries to work with pods and IGU. That also meant that the programming language we were going to use was JavaScript.
 
 
-===Decisions
+=== Decisions
 
 We decided to use JavaScript as the programming language since it supports SOLID and it has libraries that will helps us develop the application.
 
