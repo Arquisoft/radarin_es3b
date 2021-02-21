@@ -60,8 +60,6 @@ The communication members will be:
 
 === Technical Context
 
-Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
-
 [role="arc42help"]
 ****
 .Contents
@@ -74,6 +72,5 @@ together with a mapping table showing the relationships between channels and inp
 
 ****
 
-Para el desarrollo de esta aplicación, utilizaremos diferentes tecnologías como SOLID. La idea es desarrollar una aplicación utilizando esta tecnología para que la comunicación sea segura. A medida que vayamos desarrollando la aplicación, se incluirán otras tecnologías que utilicemos.
-
-
+To develop this application, we are going to use SOLID to allow us to use private information of the users, without us needing to store it, which helps achieve our goal of user-friendly application that respects privacy.
+Other technologies that we are going to use are React Native and Nodejs. These two libraries for JavaScript, will help us develop the communication with SOLID pods and the IGU.

@@ -4,44 +4,32 @@
 === Technical Constraints
 [options="header",cols="1,2"]
 |===
-|Restricción|Explicación
-| SOLID | Se utilizará SOLID para proteger la privacidad de los datos de los usuarios
-| Docker | Se utilizará Docker para el uso de máquinas virtuales para desplegar la aplicación
-| Heroku | Se utilizará Heroku para tener desplegada la aplicación en la nube
+|Restriction|Explanation
+| SOLID | We will use SOLID to ensure the data security.
+| Docker | We will use Docker to use virtual machines to deploy the application.
+| Heroku | We will use Heroku to deploy the application in cloud.
 |===
 
 === Organizational Constraints
 [options="header",cols="1,2"]
 |===
-|Constraint / Restricción| Explanation / Explicación
-| Time / Tiempo | Project should be done by the end of the semester / El proyecto se ajustará a la duración del segundo semestre  
-| Budget / Presupuesto  | Project developed in an University context where no budget is available for the team / Dada la naturaleza del proyecto, que se ha de desarrollar en un contexto universitario, los desarrolladores no disponen de presupuesto alguno
-| Experience / Experiencia | None student has any previous experience building mobile applications / Ningún estudiante cuenta con experiencia previa en desarrollo de aplicaciones móviles
-| Working time / Dedicación | Partial-time, every member has many projects opened at the same time from several subjects / La dedicación por parte del equipo será parcial, ya que todos han de desarrollar en paralelo otros proyectos para otras asignaturas
-| Team / Equipo | 7 developers work together in this project / El equipo está formado por 7 desarrolladores
-| Version control / Control de versiones | A GitHub repository is being used due to its features for collaborative projects / Se utilizará un repositorio en la plataforma GitHub para el desarrollo colaborativo de esta aplicación
+|Restriction|Explanation 
+| Time | The project will be adjusted to the duration of the second semester
+| Budget | Due to the nature of the project, which has to be developed in a university context, the developers do not have any budget.
+| Experience | None of us have experience developing applications with the chosen technology.
+| Dedication | The dedication of the team will be partial, due to all of us have to develop other projects in parallel for other courses.
+| Team | The team is made up for 7 developers.
+| Version control | A repository will be used on the GitHub platform for the collaborative development of this application.
 |===
 
 === Political Constraints
 [options="header",cols="1,2"]
 |===
-|Restricción|Explicación
-| RGPD | El Reglamento General de Protección de Datos asegura la protección de los datos personales y a la libre circulación de estos datos
-| Condiciones de uso | Establece qué es la aplicación y cómo debe utilizarse, qué constituye un uso inadecuado y cuáles serán las consecuencias de un uso inadecuado
+|Restriction|Explanation
+| RGPD | The Spanish Reglamento General de Protección de Datos ensures the protection of personal data and the free circulation of these one.
+| Use conditions | It establishes what the application is and how it should be used, what constitutes improper use and what will be the consequences of this one.
 |===
 
 [role="arc42help"]
 ****
-.Contents
-Any requirement that constrains software architects in their freedom of design and implementation decisions or decision about the development process. These constraints sometimes go beyond individual systems and are valid for whole organizations and companies.
-
-.Motivation
-Architects should know exactly where they are free in their design decisions and where they must adhere to constraints.
-Constraints must always be dealt with; they may be negotiable, though.
-
-.Form
-Simple tables of constraints with explanations.
-If needed you can subdivide them into
-technical constraints, organizational and political constraints and
-conventions (e.g. programming or versioning guidelines, documentation or naming conventions)
 ****
