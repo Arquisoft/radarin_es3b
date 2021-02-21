@@ -40,7 +40,7 @@ Once the user is logged in, he will be able to ask the application for his frien
 The app will show the list of friends with their latest known location.
 
 
-[plantuml,"Sequence diagram",png]
+[plantuml,"location diagram",png]
 ----
 @startuml
 actor User #red
@@ -67,7 +67,7 @@ The registration process will create a Solid ID for the user to be identified in
 
 This feature will be based in Solid requirements for registering users
 
-[plantuml,"Sequence diagram",png]
+[plantuml,"registration diagram",png]
 ----
 @startuml
 actor User #red
@@ -89,7 +89,7 @@ The application will then try to add this friend to the user's POD (in case that
 
 The user will receive feedback once the process is done (either success or failure) by showing the friend's list.
 
-[plantuml,"Sequence diagram",png]
+[plantuml,"friend diagram",png]
 ----
 @startuml
 actor User #red
