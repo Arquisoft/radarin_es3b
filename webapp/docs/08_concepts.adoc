@@ -1,6 +1,26 @@
 [[section-concepts]]
 == Cross-cutting Concepts
+image::08-Crosscutting-Concepts-Structure-EN.png[]
+=== User Experience concepts (UX)
+==== User interface:
+We don't use the Bootstrap library we thought it would be better to give it our own style. In this way, we decided to make a js file for each component named ComponentName.style.js. 
+We didn´t decided the interface yet.
 
+=== Domain concepts
+We have the route that has points and multimedia files. We also have the location and the information about the author (date, name, url , path).
+Next, we can see this domain model
+
+=== Design patterns
+We didn´t decide the design yet. 
+
+=== Architectural pattern
+We will separate the application on layers. Business have the logic and the persistence where we will store the information of each user.
+
+=== Development concepts
+We have to develop this application using SOLID React Native.
+
+=== Security concepts
+Our app use SOLID architecture, where each user is identified with a WebId. To share routes we give permissions to that route, so the friend can see the route. If we copy the route to his pod it would has less security and privacy, because the application would have more permissions than necessary.
 
 [role="arc42help"]
 ****
@@ -48,20 +68,3 @@ on this list.
 
 image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
 ****
-
-
-=== Domain model
-
-image:UmlDiagram.png["Example UML Diagram"]
-
-
-
-=== _<Concept 2>_
-
-_<explanation>_
-
-...
-
-=== _<Concept n>_
-
-_<explanation>_
