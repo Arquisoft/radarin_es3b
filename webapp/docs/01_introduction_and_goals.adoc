@@ -1,21 +1,18 @@
 [[section-introduction-and-goals]]
 == Introduction and Goals
 
+Radarin is an application that aims to facilitate meetings between people who are in the same area.
+The application has a series of data access requeriments like the localization of the user (which may activate and deactivate voluntarily),
+which will allow the users to know the ubication of their contacts when they are around.
 
-Radarin es una aplicación que tiene como objetivo facilitar los encuentros entre personas que se encuentren en un mismo area.
-La aplicación tiene una serie de requerimientos de acceso sobre datos como la localización del usuario (la cual puede activar o no voluntariamente), 
-la cual permitira a los usuarios conocer la ubicación de sus contactos cuando estos se encuentren cerca.
 
 === Requirements Overview
 
-
-
-* Se podrá conocer la ubicación de los usuarios en cada momento
-* Consultar los contactos de cada usuario para poder relacionarlos
-* Ofrecer la opcion de añadir comentarios y contenido multimedia en las localizaciones
-* El usuario podrá visualizar los mapas
-* Los usuarios podrán marcar ciertas localizaciones
-* Los usuarios podrán ponerse en contacto a través de un chat de la aplicación
+* Know the user ubication in every momento.
+* Consult the contacts of every user to be able to relate them.
+* Offer the user the option of add comments and multimedia content in the locations.
+* Users will be able to mark certain locations.
+* Users will be able to get in touch through the app.
 
 
 === Quality Goals
@@ -24,9 +21,10 @@ la cual permitira a los usuarios conocer la ubicación de sus contactos cuando e
 [options="header",cols="1,2"]
 |===
 |Quality Goals|Concrete Scenaries
-| _Usabilidad_ | La aplicación debe poder ser usada sin problemas por todos los posibles usuarios.
-| _Privacidad y seguridad_ | Se guardarán solamente los datos necesarios de cada usuario, el resto de cogerán cuando sean necesarios del dispositivo del usuario. A demás, este podrá activar y desactivar la ubicación cuando lo desee y la aplicación no podrá ver este dato.
-| _Testabilidad_ | El funcionamiento de la aplicación podrá ser probado fácilmente.
+| _Usability_ | The application must be able to be used by all possible users without problems.
+| _Privacy and security_ | Only the necessary data of each user will be saved, the rest will be taken when needed from the user's device.
+			Besides, he could activate and deactivate the ubication when he wish and the application won't be able to see this data.
+| _Testability_ | The application running can be easily tested.
 |===
 
 
