@@ -1,67 +1,23 @@
 [[section-concepts]]
 == Cross-cutting Concepts
+image::08-Crosscutting-Concepts-Structure-EN.png[]
+=== User Experience concepts (UX)
+==== User interface:
+We will try to make the interface as easy to use as we can, to simplify the app to the users.
 
+=== Domain concepts
+The users, they need a pod id to save his information and use it.
+We have the location and the information about the user thanks to his POD and MongoDB. We will work with friend request to share locations between users.
+The Pod contains user information and his frinds, and MongoDB save the user location.
 
-[role="arc42help"]
-****
-.Content
-This section describes overall, principal regulations and solution ideas that are
-relevant in multiple parts (= cross-cutting) of your system.
-Such concepts are often related to multiple building blocks.
-They can include many different topics, such as
+=== Design patterns
+We didn´t decide the design yet. 
 
-* domain models
-* architecture patterns or design patterns
-* rules for using specific technology
-* principal, often technical decisions of overall decisions
-* implementation rules
+=== Architectural pattern
+We thought to use MVC pattern.
 
-.Motivation
-Concepts form the basis for _conceptual integrity_ (consistency, homogeneity)
-of the architecture. Thus, they are an important contribution to achieve inner qualities of your system.
+=== Development concepts
+We will develop this application using SOLID. React Native will help us to use the phone app.
 
-Some of these concepts cannot be assigned to individual building blocks
-(e.g. security or safety). This is the place in the template that we provided for a
-cohesive specification of such concepts.
-
-.Form
-The form can be varied:
-
-* concept papers with any kind of structure
-* cross-cutting model excerpts or scenarios using notations of the architecture views
-* sample implementations, especially for technical concepts
-* reference to typical usage of standard frameworks (e.g. using Hibernate for object/relational mapping)
-
-.Structure
-A potential (but not mandatory) structure for this section could be:
-
-* Domain concepts
-* User Experience concepts (UX)
-* Safety and security concepts
-* Architecture and design patterns
-* "Under-the-hood"
-* development concepts
-* operational concepts
-
-Note: it might be difficult to assign individual concepts to one specific topic
-on this list.
-
-image:08-Crosscutting-Concepts-Structure-EN.png["Possible topics for crosscutting concepts"]
-****
-
-
-=== Domain model
-
-image:UmlDiagram.png["Example UML Diagram"]
-
-
-
-=== _<Concept 2>_
-
-_<explanation>_
-
-...
-
-=== _<Concept n>_
-
-_<explanation>_
+=== Security concepts
+Our app use SOLID architecture, where each user is defined with a WebId. To share routes we give permissions to that route, so the friend can see the route. If we copy the route to his pod it would has less security and privacy, because the application would have more permissions than necessary.
