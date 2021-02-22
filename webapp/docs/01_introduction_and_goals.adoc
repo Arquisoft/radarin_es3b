@@ -36,8 +36,8 @@ which will allow the users to know the ubication of their contacts when they are
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _Comunidad de SOLID_ | _Equipo de SOLID_ | _Esperan que se siga las especificaciones SOLID_
-| _Equipo_ | _Equipo de Desarrollo_ | _Esperan desarrollar la aplicación correctamente, compenetrarse bien y trabajar en equipo para lograr el objetivo._
-| _Usuarios_ | _Potenciales usuarios de la aplicación_ | _Esperan que la aplicación funcione correctamente y que cumpla con su compromiso de mantener su privacidad._
+| _SOLID Community_ | SOLID Team | Expect SOLID specifications to be followed
+| _Team_ | Develop team | Hope to develop the application correctly and work as a team to achieve the goal.
+| _Users_ | Potential users of the application | Expect the app to work properly and to deliver on its commitment to maintain their privacity.
 |===
 
