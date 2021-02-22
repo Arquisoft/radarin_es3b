@@ -30,28 +30,77 @@ There are many notations for describing scenarios, e.g.
 
 ****
 
-=== <Runtime Scenario 1>
+=== Friends Location Scenario
 
 
-* _<insert runtime diagram or textual description of the scenario>_
-* _<insert description of the notable aspects of the interactions between the
-building block instances depicted in this diagram.>_
+The most relevant scenario of the application is the feature that allows to locate friends.
 
-It is possible to use a sequence diagram:
+Once the user is logged in, he will be able to ask the application for his friends location. 
 
-[plantuml,"Sequence diagram",png]
+The app will show the list of friends with their latest known location.
+
+
+[plantuml,"location diagram",png]
 ----
-actor Alice
-actor Bob
-database Pod as "Bob's Pod"
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-Alice  --> Pod: Store route
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+@startuml
+actor User #red
+participant App
+database UserPOD #red
+database MongoDB #blue
+User -[#green]> App: Buscar Amigos (req)
+App -> UserPOD: Lista de amigos (req)
+App <-- UserPOD: Lista de amigos (res)
+App -[#blue]> MongoDB: Localización de amigos (req)
+App <[#blue]-- MongoDB: Localización de amigos (res)
+App -[#blue]>  User: Localización usuario (req)
+App <[#blue]--  User: Localización usuario (res)
+App -> App: Calcular distancia de amigos
+App --[#green]> User: Amigos cercanos
+App -[#blue]> MongoDB: Añadir localización
+@enduml
 ----
-=== <Runtime Scenario 2>
+=== User Registration Scenario
 
-=== ...
+A user must be registered in order to use the application  
 
-=== <Runtime Scenario n>
+The registration process will create a Solid ID for the user to be identified in future interactions with the application  
+
+This feature will be based in Solid requirements for registering users
+
+[plantuml,"registration diagram",png]
+----
+@startuml
+actor User #red
+participant App
+database MongoDB #blue
+User -[#green]> App: Registrar usuario
+App -[#blue]> MongoDB: Register new user (req)
+App <[#blue]-- MongoDB: Registration response
+User <[#green]- App: Notificación de registro 
+@enduml
+----
+=== Add New Friend Scenario
+
+The application will allow the user to add friends to his friend list
+
+When the user requests the application to add a new friend, the application will ask the user for his friend's ID.
+
+The application will then try to add this friend to the user's POD (in case that friend is not already in the user's friend list)
+
+The user will receive feedback once the process is done (either success or failure) by showing the friend's list.
+
+[plantuml,"friend diagram",png]
+----
+@startuml
+actor User #red
+participant App
+database UserPOD #red
+User -[#green]> App: Añadir Amigo
+App --[#green]> User: Pedir datos
+User -[#green]> App:Enviar datos
+App -> UserPOD: add (amigo)
+App <-- UserPOD: Lista de amigos
+App --[#green]> User: Mostrar amigos
+@enduml
+----
+
