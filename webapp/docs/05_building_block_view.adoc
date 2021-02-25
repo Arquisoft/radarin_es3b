@@ -3,8 +3,42 @@
 
 == Building Block View
 
-TODO
-
+[plantuml, "block level 1", png]
+----
+@startuml
+Node "Level 1" {
+actor User
+rectangle WebApp
+database MongoDB
+rectangle App
+database Pods
+}
+WebApp <-up->  User
+User <-right-> App
+WebApp <-down-> MongoDB
+WebApp <-down-> Pods
+WebApp <-right-> App
+@enduml
+----
+[plantuml, "block level 2", png]
+----
+@startuml
+Node "Level 2: WebApp" as WebApp2 {
+rectangle "E2E testing"
+rectangle "docs"
+rectangle "React App" as react
+rectangle "api"
+}
+Node "Level 2: App" as App2 {
+rectangle View
+rectangle Model
+rectangle Controller
+}
+react <--> api
+Controller <--> View
+Controller <--> Model
+@enduml
+----
 [role="arc42help"]
 ****
 .Content

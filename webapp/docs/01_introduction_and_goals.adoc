@@ -36,6 +36,7 @@ which will allow the users to know the ubication of their contacts when they are
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
+| Client |  | Expects the system to fulfill de requirements. Expects reports from the development team about the progress in the project
 | _SOLID Community_ | SOLID Team | Expect SOLID specifications to be followed
 | _Team_ | Develop team | Hope to develop the application correctly and work as a team to achieve the goal.
 | _Users_ | Potential users of the application | Expect the app to work properly and to deliver on its commitment to maintain their privacity.
