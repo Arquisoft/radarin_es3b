@@ -4,7 +4,7 @@
 === Technical Constraints
 [options="header",cols="1,2"]
 |===
-|Restriction|Explanation
+|Constraint|Explanation
 | SOLID | We will use SOLID to ensure the data security.
 | Docker | We will use Docker to use virtual machines to deploy the application.
 |===
@@ -12,20 +12,20 @@
 === Organizational Constraints
 [options="header",cols="1,2"]
 |===
-|Restriction|Explanation 
-| Time | The project will be adjusted to the duration of the second semester
-| Budget | Due to the nature of the project, which has to be developed in a university context, the developers do not have any budget.
-| Experience | None of us have experience developing applications with the chosen technology.
-| Dedication | The dedication of the team will be partial, due to all of us have to develop other projects in parallel for other courses.
-| Team | The team is made up for 7 developers.
-| Version control | A repository will be used on the GitHub platform for the collaborative development of this application.
-| Heroku | We will use Heroku to deploy the application in cloud. This is more of an economical constraint.
+|Constraint|Explanation 
+| Time | Project should be done by the end of the semester
+| Budget | Project developed in an University context where no budget is available for the team
+| Experience | None student has any previous experience building mobile applications
+| Working time | Partial-time, every member has many projects opened at the same time from several subjects
+| Team | 7 developers work together in this project 
+| Version control | A GitHub repository is being used due to its features for collaborative projects
+| Heroku | We will use Heroku to deploy the application in the cloud. This is more of an economical constraint.
 |===
 
 === Political Constraints
 [options="header",cols="1,2"]
 |===
-|Restriction|Explanation
+|Constraint|Explanation
 | RGPD | The Spanish Reglamento General de Protección de Datos ensures the protection of personal data and the free circulation of these one.
 | Use conditions | It establishes what the application is and how it should be used, what constitutes improper use and what will be the consequences of this one.
 |===
