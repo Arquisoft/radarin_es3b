@@ -47,16 +47,16 @@ actor User #red
 participant App
 database UserPOD #red
 database MongoDB #blue
-User -[#green]> App: Buscar Amigos (req)
-App -> UserPOD: Lista de amigos (req)
-App <-- UserPOD: Lista de amigos (res)
-App -[#blue]> MongoDB: Localización de amigos (req)
-App <[#blue]-- MongoDB: Localización de amigos (res)
-App -[#blue]>  User: Localización usuario (req)
-App <[#blue]--  User: Localización usuario (res)
-App -> App: Calcular distancia de amigos
-App --[#green]> User: Amigos cercanos
-App -[#blue]> MongoDB: Añadir localización
+User -[#green]> App: Find Friends (req)
+App -> UserPOD: Friends list (req)
+App <-- UserPOD: Friends list (res)
+App -[#blue]> MongoDB: Friends location (req)
+App <[#blue]-- MongoDB: Friends location (res)
+App -[#blue]>  User: User location (req)
+App <[#blue]--  User: User location (res)
+App -> App: Calculate distance
+App --[#green]> User: Notify close friends
+App -[#blue]> MongoDB: Save user location
 @enduml
 ----
 === User Registration Scenario
@@ -73,10 +73,10 @@ This feature will be based in Solid requirements for registering users
 actor User #red
 participant App
 database MongoDB #blue
-User -[#green]> App: Registrar usuario
+User -[#green]> App: Register user
 App -[#blue]> MongoDB: Register new user (req)
 App <[#blue]-- MongoDB: Registration response
-User <[#green]- App: Notificación de registro 
+User <[#green]- App: Register notification 
 @enduml
 ----
 === Add New Friend Scenario
@@ -95,12 +95,12 @@ The user will receive feedback once the process is done (either success or failu
 actor User #red
 participant App
 database UserPOD #red
-User -[#green]> App: Añadir Amigo
-App --[#green]> User: Pedir datos
-User -[#green]> App:Enviar datos
-App -> UserPOD: add (amigo)
-App <-- UserPOD: Lista de amigos
-App --[#green]> User: Mostrar amigos
+User -[#green]> App: Add friend
+App --[#green]> User: Friend data (req)
+User -[#green]> App: Friend data (res)
+App -> UserPOD: add (friend)
+App <-- UserPOD: Friends list
+App --[#green]> User: Show friends
 @enduml
 ----
 
