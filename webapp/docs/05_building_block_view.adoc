@@ -3,8 +3,23 @@
 
 == Building Block View
 
-TODO
-
+[plantuml, "block level 1", png]
+----
+Node "Level 1" {
+actor User
+rectangle WebApp
+database MongoDB
+rectangle App
+database Pods
+}
+ 
+WebApp <-up->  User
+User <-right-> App
+WebApp <-down-> MongoDB
+WebApp <-down-> Pods
+WebApp <-right-> App
+@enduml
+----
 [role="arc42help"]
 ****
 .Content
