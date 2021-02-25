@@ -47,15 +47,15 @@ The title of the table is the name of your system, the three columns contain the
 
 The communication members will be:
 
-   1.The user who share the information about his localization.
+   1 The user who share the information about his localization.
 
-   2.The application who resend the information to his friends
+   2 The application who resend the information to his friends
 
-   3.The user who receives the localization of a friend to see where he is
+   3 The user who receives the localization of a friend to see where he is
 
-   4.The pods in which the application look for who the user has added
+   4 The pods in which the application look for who the user has added
 	
-   5. The database where the application save and look for the users localitation
+   5 The database where the application save and look for the users localitation
 
 image:03-BusinessContext.png["Business Diagram"]
 	
