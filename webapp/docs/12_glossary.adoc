@@ -34,4 +34,8 @@ Potentially more columns in case you need translations.
 | NodeJS       | Open-source, cross-platform execution environment based on JavaScript. | Entorno de ejecución ligero basado en JavaScript, multiplataforma y de código abierto, caracterizado por su modelo de non-bloking I/O.  
 | Prometheus   | Software monitoring system.  | Sistema de monitorización de software. Realiza mediciones de los servidores en un intervalo de tiempo configurable y los almacena en una estructura de datos de series temporales.
 | Grafana      | Data visualization web app.  | Aplicación web para visualizar datos métricos en forma de gráficos. Gracias a los dashboards permite visualizar múltiples gráficos a la vez. Prometheus es una de las fuentes de datos compatibles con Grafana. También permite definir alertas para recibir notificaciones en caso de issues. 
+| App      | Term to address the mobile application part of Radarin  | Término para referirnos a la parte de la aplicación móvil de nuestro proyecto. 
+| WebApp      | Term to address the web application part of Radarin  | Término para referirnos a la parte de la aplicación web de nuestro proyecto. 
+| System      | Term to refer to the whole application to be developed  | Término para referirnos al conjunto total de la aplicación a desarrollar en este proyecto. 
+| Friend      | We'll use this term to refer exclusively to a Solid friend  | Término que utilizaremos para referirnos a un usuario Amigo en Solid.
 |===
