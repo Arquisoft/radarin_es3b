@@ -4,11 +4,17 @@
 [options="header",cols="2,2,2"]
 |===
 |Risks|Consequences|Solutions
-| New technologies | Use new technologies can cause them not to be used properly
-or not taken advantage of them at all. | Inform us about all of them before starting work.
-| New team | Poor organization and communication or disagreements between members | Try to
+|New technologies for us |Use new technologies can cause them not to be used properly
+or not taken advantage of them at all. |Inform us about all of them before starting work.
+|New team |Poor organization and communication or disagreements between members |Try to
 understand each other and make work easier for others by adapting together.
-| Time management | A lot of backlogged work or not being on time for deliveries | Organize
+|Time management |A lot of backlogged work or not being on time for deliveries |Organize
 and distribute the work. keep a daily and orderly work.
 |===
 
+|===
+|Technical Debts|Explanation
+| New technologies like solid| Use new technologies, of which there is not much information 
+or projects developed to take as an example
+|Need to use Pods|Having to store certain data from an external database can lead to 
+increased execution time of tasks
