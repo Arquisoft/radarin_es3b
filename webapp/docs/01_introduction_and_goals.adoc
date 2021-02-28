@@ -8,11 +8,19 @@ which will allow the users to know the ubication of their contacts when they are
 
 === Requirements Overview
 
-* Know the user ubication in every momento.
+* Know the user ubication in every moment.
 * Consult the contacts of every user to be able to relate them.
+
+
+
+Optional requirements in a future:
+
 * Offer the user the option of add comments and multimedia content in the locations.
 * Users will be able to mark certain locations.
 * Users will be able to get in touch through the app.
+
+
+
 
 
 === Quality Goals
