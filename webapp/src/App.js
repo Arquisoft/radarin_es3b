@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
-import Localization from "./components/Localization";
+import ComponentWithGeolocation from "./hooks/LocalizationHook";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './table.css';
 
@@ -34,7 +34,7 @@ class App extends React.Component{
             target="_blank"
             rel="noopener noreferrer">Source code</a>
         </div>
-	 <Localization/>
+	 <ComponentWithGeolocation/>
       </div>
     )
   }
