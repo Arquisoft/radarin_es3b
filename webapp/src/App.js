@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
+import Localization from "./components/Localization";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './table.css';
 
