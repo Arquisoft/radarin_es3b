@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './table.css';
 
 class App extends React.Component{
   constructor(){
