@@ -26,6 +26,7 @@ class App extends React.Component{
         <div className="App-content">
           <EmailForm refreshUsers={this.refreshUsers.bind(this)}/>
           <UserList users={this.state.users}/>
+		  <Localization/>
           <a className="App-link"
             href="https://github.com/pglez82/radarin_0"
             target="_blank"

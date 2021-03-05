@@ -1,0 +1,26 @@
+table.localization{
+	 
+	 margin: 0 auto;
+	 margin-bottom: 2em;
+	  border-collapse: collapse;
+	  background-color:#BDBDBD;
+	  font: 400 1.05em Tahoma, sans-serif;
+	  color: #000000;		
+	 
+	  
+	  
+  }
+  
+  thead.localization{
+	  font: 1em Tahoma, sans-serif;
+	  font-weight:bold;
+	  color: #000000;
+	  background-color:#E3E4E5;
+	  
+  }
+  
+  div.localization{
+	  
+		text-align: center;
+}
+
