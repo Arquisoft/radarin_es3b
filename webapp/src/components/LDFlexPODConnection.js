@@ -1,10 +1,10 @@
-const { default: data } = require('@solid/query-ldflex');
+const { default: data } = require("@solid/query-ldflex");
 
 //Store a reference to the user POD
-const user = data['https://rcen.solidcommunity.net/profile/card#me']; //webID of the user
+const user = data["https://rcen.solidcommunity.net/profile/card#me"]; //webID of the user
 
 //For DEBUG purposes, prints data extracted from a users POD
-showProfile(user);
+//showProfile(user);
 
 
 /**
@@ -40,10 +40,12 @@ async function getFriends(person) {
 async function showProfile(person) {
   
   const name = await getName(person);
-  console.log(`\nNAME: ${name}`);
+  //console.log(`\nNAME: ${name}`);
 
-  console.log('\nFRIENDS');
+  //console.log('\nFRIENDS');
   const friends = await getFriends(person);
-  for (const webID of friends)
-    console.log(`  - ${webID} is a friend`);
+  for (const webID of friends){
+    //console.log(`  - ${webID} is a friend`);
+  }
+    
 }
