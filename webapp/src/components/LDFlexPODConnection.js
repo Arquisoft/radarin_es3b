@@ -24,7 +24,7 @@ async function getName(person) {
 async function getFriends(person) {
 
   var friends = [];
-  console.log('\nFRIENDS');
+  //console.log("\nFRIENDS");
   for await (const friendWebID of person.friends){
     friends.push(friendWebID);
   }
