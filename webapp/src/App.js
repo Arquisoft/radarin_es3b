@@ -35,9 +35,11 @@ class App extends React.Component{
             target="_blank"
             rel="noopener noreferrer">Source code</a>
         </div>
+		
 	 <ButtonToRender component=<Localization/> buttonName="Mostrar localización" 
 		deleteName="Ocultar localización" />
-      </div>
+		
+	 </div>
     )
   }
 }
