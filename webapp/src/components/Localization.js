@@ -1,10 +1,11 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
+import Map from "./Map";
 
 class Localization extends React.Component{
 
     
-
+		
    
         render() {
 
@@ -14,32 +15,12 @@ class Localization extends React.Component{
                 <div>Geolocation is not enabled</div>
             ) : this.props.coords ? (
 
-               
-
-                <div class='localization'>
-                <table class='localization'>
-                    <thead class='localization'>
-	                <tr>
-		                <th>Campo</th>
-		                <th>Medida</th>
-		
-	                </tr>
-	            </thead>
-
-
-                    <tbody>
-                        <tr>
-                            <td>latitud</td>
-                            <td>{this.props.coords.latitude.toFixed(2)}</td>
-                        </tr>
-                        <tr>
-                            <td>longitud</td>
-                            <td>{this.props.coords.longitude.toFixed(2)}</td>
-                        </tr>
-                       
-                    </tbody>
-                </table>
-                </div>
+				
+				
+				<Map lat={this.props.coords.latitude.toFixed(2)} lon={this.props.coords.longitude.toFixed(2)}/>      
+                      
+ 
+                
             ) : (
                 <div>Getting the location data&hellip; </div>
             );

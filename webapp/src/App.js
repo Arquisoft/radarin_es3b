@@ -5,6 +5,7 @@ import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
 import Localization from "./components/Localization";
+import ButtonToRender from "./components/ButtonToRender";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './table.css';
 
@@ -34,7 +35,8 @@ class App extends React.Component{
             target="_blank"
             rel="noopener noreferrer">Source code</a>
         </div>
-	 <Localization/>
+	 <ButtonToRender component=<Localization/> buttonName="Mostrar localización" 
+		deleteName="Ocultar localización" />
       </div>
     )
   }
