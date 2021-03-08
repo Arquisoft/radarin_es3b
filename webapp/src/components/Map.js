@@ -30,7 +30,7 @@ class Map extends Component {
         {...this.state.viewport}
         width="50vw"
         height="50vh"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={viewport => this.setState({viewport})}
         mapboxApiAccessToken={MAPBOX_TOKEN}
       >
