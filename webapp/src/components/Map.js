@@ -28,8 +28,8 @@ class Map extends Component {
     return (
       <MapGL
         {...this.state.viewport}
-        width="100vw"
-        height="100vh"
+        width="50vw"
+        height="50vh"
         mapStyle="mapbox://styles/mapbox/dark-v9"
         onViewportChange={viewport => this.setState({viewport})}
         mapboxApiAccessToken={MAPBOX_TOKEN}
