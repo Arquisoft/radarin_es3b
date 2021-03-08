@@ -12,6 +12,8 @@ understand each other and make work easier for others by adapting together.
 and distribute the work. keep a daily and orderly work.
 |===
 
+
+[options="header"]
 |===
 |Technical Debts|Explanation
 | New technologies like solid| Use new technologies, of which there is not much information 
