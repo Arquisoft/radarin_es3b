@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import Welcome from './components/Welcome';
 import EmailForm from "./components/EmailForm";
 import UserList from "./components/UserList";
+import FriendsList from "./components/FriendsList";
 import Localization from "./components/Localization";
 import ButtonToRender from "./components/ButtonToRender";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,6 +20,7 @@ class App extends React.Component{
     this.setState({users:users})
   }
 
+
   render(){
     return(
       <div className="App">
@@ -29,6 +31,7 @@ class App extends React.Component{
         <div className="App-content">
           <EmailForm refreshUsers={this.refreshUsers.bind(this)}/>
           <UserList users={this.state.users}/>
+          <FriendsList/>
 		 
           <a className="App-link"
             href="https://github.com/pglez82/radarin_0"
@@ -36,7 +39,7 @@ class App extends React.Component{
             rel="noopener noreferrer">Source code</a>
         </div>
 		
-	 <ButtonToRender component=<Localization/> buttonName="Mostrar localización" 
+	 <ButtonToRender component={<Localization/>} buttonName="Mostrar localización" 
 		deleteName="Ocultar localización" />
 		
 	 </div>

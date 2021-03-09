@@ -18,14 +18,14 @@ async function getName(person) {
 }
 
 /**
- * Given a user, returns his friends webIDs
+ * Given a user's webID, returns a list of his friends webIDs
  * @param {*} person 
  */
 async function getFriends(person) {
 
   var friends = [];
-  //console.log("\nFRIENDS");
-  for await (const friendWebID of person.friends){
+  person = data[person];
+  for await (const friendWebID of person.friends){ //Alternativas: person.friends.firstName
     friends.push(friendWebID);
   }
   return friends;
@@ -49,3 +49,5 @@ async function showProfile(person) {
   }
     
 }
+
+module.exports = getFriends;
