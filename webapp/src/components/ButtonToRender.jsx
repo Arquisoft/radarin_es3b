@@ -1,4 +1,5 @@
 import React from "react";
+import Button from '@material-ui/core/Button';
 
 
 
@@ -30,8 +31,8 @@ class ButtonToRender extends React.Component {
     return (
       <div>
 	 
-        <button onClick={this._onButtonClick}>{this.props.buttonName}</button>
-		 <button onClick={this._offButtonClick}>{this.props.deleteName}</button>
+            <Button variant="contained" color="primary" onClick={this._onButtonClick}>{this.props.buttonName}</Button>
+		    <Button variant="contained" color="secondary" onClick={this._offButtonClick}>{this.props.deleteName}</Button>
         {this.state.showComponent ?
            this.props.component:
            null

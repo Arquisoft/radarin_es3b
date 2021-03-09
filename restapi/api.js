@@ -1,5 +1,6 @@
 const express = require("express")
 const User = require("./models/users")
+const UserLocalization = require("./models/usersLocalization")
 const router = express.Router()
 
 // Get all users
@@ -23,6 +24,42 @@ router.post("/users/add", async (req, res) => {
         })
         await user.save()
         res.send(user)
+    }
+})
+
+router.get("/userLocalization/get/:user", async (req, res) => {
+	var user = req.params.user
+    let userLocalization= await UserLocalization.findOne({ user: user })
+	if(userLocalization){
+		res.send(userLocalization)
+	}
+	
+	else{
+		res.send("error")
+	}
+})
+
+
+
+router.post("/userLocalization/add", async (req, res) => {
+    let user = req.body.user;
+    let latitude = req.body.latitude;
+	let longitude = req.body.longitude;
+	
+    //Check if the device is already in the db
+    let userLocalization= await UserLocalization.findOne({ user: user })
+    if (userLocalization)
+        UserLocalization.findOneAndUpdate({user: user}, req.body, function (err, response) {
+		res.send(response);
+});
+    else{
+        userLocalization = new UserLocalization({
+            user: user,
+            latitude: latitude,
+			longitude: longitude,
+        })
+        await userLocalization.save()
+        res.send(userLocalization)
     }
 })
 
