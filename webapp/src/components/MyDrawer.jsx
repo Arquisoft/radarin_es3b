@@ -2,7 +2,7 @@
 import React from 'react'
 import {makeStyles, Drawer, Divider,}from '@material-ui/core'
 import Lista from './Lista'
-import { PortraitSharp } from '@material-ui/icons'
+
 
 const styles = makeStyles(theme =>({
     drawer: {

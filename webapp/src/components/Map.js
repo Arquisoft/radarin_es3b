@@ -49,7 +49,7 @@ class Map extends Component {
         mapboxApiAccessToken={MAPBOX_TOKEN}
       >
 	 
-	   {this.state.response!="error" ?
+	   {this.state.response!=="error" ?
            <MapMarker nombre={this.state.response.user} longitude={parseFloat(this.state.response.longitude)} latitude={parseFloat(this.state.response.latitude)} />:
            null
         }
