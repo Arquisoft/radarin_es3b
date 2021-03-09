@@ -7,9 +7,9 @@ defineFeature(feature, test => {
     await global.page.goto('http://localhost:3000')
   })
   
-   test( => {});
+   
 
-  //test('', ({given,when,then}) => {
+  test('', ({given,when,then}) => {
     
    // let email;
    // let username;
@@ -27,7 +27,7 @@ defineFeature(feature, test => {
      // })
      // await expect(page).toClick('button', { text: 'Submit' })
      // await expect(page).toMatch('Welcome to ASW')
-    //});
+    });
 
    // then('A welcome message should be shown in the screen', async () => {
    // });
