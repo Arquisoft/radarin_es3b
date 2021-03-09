@@ -57,7 +57,7 @@ class PruebaLoc extends React.Component{
               <Form.Control name="longitud" type="double" placeholder="Introduzca longitud" onChange={this.changeLon.bind(this)} value={this.state.lon} />
             </Form.Group>
 			</div>
-            <Button variant="contained" color="secondary" >
+            <Button variant="contained" color="secondary" type="submit" >
               Update localizacion de prueba
             </Button>
             
