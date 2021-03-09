@@ -1,6 +1,7 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
 import Map from "./Map";
+import PruebaLoc from "../pruebas/PruebaLoc"
 
 class Localization extends React.Component{
 
@@ -16,9 +17,10 @@ class Localization extends React.Component{
             ) : this.props.coords ? (
 
 				
-				
-				<Map lat={this.props.coords.latitude.toFixed(2)} lon={this.props.coords.longitude.toFixed(2)}/>      
-                      
+				<div>
+				<div id="mapa"><Map lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
+                <PruebaLoc/>
+				</div>
  
                 
             ) : (

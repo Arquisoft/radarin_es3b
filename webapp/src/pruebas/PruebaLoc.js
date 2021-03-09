@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import Button from '@material-ui/core/Button';
 import {addUserLocalization} from '../api/api'
 
 class PruebaLoc extends React.Component{
@@ -43,19 +43,23 @@ class PruebaLoc extends React.Component{
   render(){
     return(
           <Form name="localizacion" onSubmit={this.handleSubmit.bind(this)}>
-            <Form.Group>
-              <Form.Label>Latitud</Form.Label>
-              <Form.Control name="longitud" type="string" placeholder="Introduzca latitud de prueba" onChange={this.changeLat.bind(this)} value={this.state.lat}/>
+			<div class="formMap" >
+            <Form.Group >
+				
+              <Form.Label>Latitud de prueba: </Form.Label>
+              <Form.Control name="longitud" type="string" placeholder="Introduzca latitud " onChange={this.changeLat.bind(this)} value={this.state.lat}/>
               
             </Form.Group>
-        
-            <Form.Group>
-              <Form.Label>Name</Form.Label>
-              <Form.Control name="longitud" type="double" placeholder="Introduzca longitud de prueba" onChange={this.changeLon.bind(this)} value={this.state.lon} />
+			</div>
+			<div class="formMap" >
+            <Form.Group class="formMap">
+              <Form.Label>Longitud de prueba: </Form.Label>
+              <Form.Control name="longitud" type="double" placeholder="Introduzca longitud" onChange={this.changeLon.bind(this)} value={this.state.lon} />
             </Form.Group>
-            <button >
+			</div>
+            <Button variant="contained" color="secondary" >
               Update localizacion de prueba
-            </button>
+            </Button>
             
           </Form>
     )

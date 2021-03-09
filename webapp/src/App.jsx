@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import Contenedor from './components/Contenedor';
 import ButtonToRender from './components/ButtonToRender';
 import Localization from './components/Localization'
+import './mapa.css';
 
 class App extends React.Component{
  

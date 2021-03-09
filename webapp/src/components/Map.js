@@ -20,7 +20,7 @@ class Map extends Component {
     this.state = {
 		response:"error",
 	
-      viewport: {
+		viewport: {
 		
         latitude: parseFloat(this.props.lat),
         longitude: parseFloat(this.props.lon),
@@ -42,8 +42,8 @@ class Map extends Component {
     return (
       <MapGL
         {...this.state.viewport}
-        width="100vw"
-        height="100vh"
+        width="50vw"
+        height="50vh"
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={viewport => this.setState({viewport})}
         mapboxApiAccessToken={MAPBOX_TOKEN}
