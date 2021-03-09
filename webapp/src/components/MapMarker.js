@@ -10,6 +10,7 @@ function MapMarker(props) {
   
   const {longitude, latitude} = props;
 
+  const nombre=props.nombre;
   const [x, y] = context.viewport.project([longitude, latitude]);
 
   const markerStyle = {
@@ -22,7 +23,7 @@ function MapMarker(props) {
 
   return (
     <div style={markerStyle} >
-      ({longitude}, {latitude})
+		({nombre})
     </div>
   );
 }

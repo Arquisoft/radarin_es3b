@@ -7,6 +7,7 @@ import UserList from "./components/UserList";
 import FriendsList from "./components/FriendsList";
 import Localization from "./components/Localization";
 import ButtonToRender from "./components/ButtonToRender";
+import PruebaLoc from "./pruebas/PruebaLoc";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './table.css';
 
@@ -37,11 +38,13 @@ class App extends React.Component{
             href="https://github.com/pglez82/radarin_0"
             target="_blank"
             rel="noopener noreferrer">Source code</a>
-        </div>
-		
+			
+			<PruebaLoc/>
+      
+	
 	 <ButtonToRender component={<Localization/>} buttonName="Mostrar localización" 
 		deleteName="Ocultar localización" />
-		
+		  </div>
 	 </div>
     )
   }
