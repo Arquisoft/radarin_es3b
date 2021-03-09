@@ -6,8 +6,10 @@ defineFeature(feature, test => {
   beforeEach(async () => {
     await global.page.goto('http://localhost:3000')
   })
+  
+   test( => {});
 
-  test('The user is not registered in the site', ({given,when,then}) => {
+  //test('', ({given,when,then}) => {
     
    // let email;
    // let username;
@@ -29,9 +31,9 @@ defineFeature(feature, test => {
 
    // then('A welcome message should be shown in the screen', async () => {
    // });
-  });
+  //});
 
- test('The user is already registered in the site', ({ given, when, then }) => {
+ //test('The user is already registered in the site', ({ given, when, then }) => {
     
    // given('An already registered user', () => {
    // });
@@ -43,5 +45,5 @@ defineFeature(feature, test => {
    // then('An error message should be shown in the screen', async () => {
    // });
     
-  });
+ // });
 });
