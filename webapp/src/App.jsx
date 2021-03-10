@@ -1,11 +1,11 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
-import Contenedor from './components/Contenedor';
-import ButtonToRender from './components/ButtonToRender';
-import Localization from './components/Localization';
-import PruebaLogin from './pruebas/pruebaLogin';
-import './mapa.css';
+import Contenedor from './components/Contenedor'
+import ButtonToRender from './components/ButtonToRender'
+import Localization from './components/Localization'
+import PruebaLogin from './pruebas/pruebaLogin'
+import './mapa.css'
 
 class App extends React.Component{
 
