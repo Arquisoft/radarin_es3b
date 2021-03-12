@@ -8,6 +8,7 @@ import { LoginButton, LoggedIn, LoggedOut, Value, AuthButton } from '@solid/reac
 
 
 import './mapa.css'
+import Login from './components/Login'
 
 class App extends React.Component{
 
@@ -20,13 +21,13 @@ class App extends React.Component{
       <div className="App">
       <Contenedor/>
       <body className ="App-body">
-		<LoggedOut>
-			<p>You are not logged in.</p>
+		  <LoggedOut>
+			  <p>You are not logged in.</p>
 			</LoggedOut>
 			<LoggedIn>
 				<p>welcome back, <Value src="user.name"/></p>
 			</LoggedIn>
-			<AuthButton popup="https://solid.github.io/solid-auth-client/dist/popup.html" login="log in for magic!" logout="log me outta here"/>
+      <Login/>
           <p className ="sample">Radarin es blablabla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non dictum sem. Pellentesque vitae neque a urna facilisis congue eu sed odio. Nunc in elit pretium, sodales elit sit amet, congue lacus. Fusce lectus lacus, mattis eget urna sed, vestibulum posuere magna. Nulla neque quam, vulputate a sollicitudin a, convallis in velit. Nunc non diam metus. Integer eget sagittis augue. Fusce interdum dapibus sem at blandit. Sed a est sodales, varius metus vel, finibus felis. Praesent rhoncus consectetur nunc, at congue erat tempor eu. Morbi posuere mattis sem ac varius. Aenean at nisi pretium, finibus arcu id, dictum dui. Ut eu metus pulvinar, malesuada dui nec, vulputate diam. Donec aliquam odio id lorem blandit pharetra.
               Ut sodales laoreet est quis finibus. Proin luctus, leo vel ultrices porta, nisi ante sagittis metus, id eleifend orci enim nec metus. Donec nec placerat ex. Phasellus blandit erat sed nulla vulputate, nec condimentum lacus dapibus. In aliquet sapien eget sodales vulputate. Fusce quis nisl diam. Fusce commodo neque quis augue iaculis fermentum.</p>
           <p className="buttons">
