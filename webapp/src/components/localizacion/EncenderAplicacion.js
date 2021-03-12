@@ -1,8 +1,8 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
 import Map from "./Map";
-import PruebaLoc from "../pruebas/PruebaLoc"
-import {addUserLocalization} from '../api/api'
+import PruebaLoc from "../../pruebas/PruebaLoc"
+import {addUserLocalization} from '../../api/api'
 
 class EncenderAplicacion extends React.Component{
 

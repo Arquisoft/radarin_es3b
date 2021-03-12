@@ -3,8 +3,8 @@ import './App.css'
 
 import Contenedor from './components/Contenedor'
 import ButtonToRender from './components/ButtonToRender'
-import EncenderAplicacion from './components/EncenderAplicacion'
-import DesactivarAplicacion from './components/DesactivarAplicacion'
+import EncenderAplicacion from './components/localizacion/EncenderAplicacion'
+import DesactivarAplicacion from './components/localizacion/DesactivarAplicacion'
 
 import { LoginButton, LoggedIn, LoggedOut, Value, AuthButton } from '@solid/react';
 
