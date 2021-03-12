@@ -1,3 +1,4 @@
+import { AuthButton } from "@solid/react";
 import React from "react";
 
 class Login extends React.Component {
