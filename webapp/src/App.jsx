@@ -11,7 +11,7 @@ import { LoginButton, LoggedIn, LoggedOut, Value, AuthButton } from '@solid/reac
 
 import './mapa.css'
 import Login from './components/Login'
-import FriendsList from './components/FriendsList'
+import FriendsList from './components/friends/FriendsList'
 
 class App extends React.Component{
 
