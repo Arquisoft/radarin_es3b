@@ -32,7 +32,7 @@ class Map extends Component {
   }
   
   async componentDidMount() {
-		let response=await getUserLocalization("prueba");
+		let response=await getUserLocalization("prueba"); 
 		console.log(response);
         this.setState({ response: response });
 		
