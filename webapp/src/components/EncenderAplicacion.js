@@ -2,8 +2,9 @@ import React from "react";
 import { geolocated } from "react-geolocated";
 import Map from "./Map";
 import PruebaLoc from "../pruebas/PruebaLoc"
+import {addUserLocalization} from '../api/api'
 
-class Localization extends React.Component{
+class EncenderAplicacion extends React.Component{
 
     
 		
@@ -34,4 +35,4 @@ class Localization extends React.Component{
 
 export default geolocated({
    
-})(Localization);
+})(EncenderAplicacion);
