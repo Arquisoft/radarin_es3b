@@ -11,7 +11,7 @@ class FriendsList extends React.Component {
 
     async componentDidMount() {
         //Sustituir la URL siguiente, por el webID que debería recibirse como props (this.props.userWebID)
-        const data = await getFriends("https://rcen.solidcommunity.net/profile/card#me");
+        const data = await getFriends(this.props.userWebID); //"https://rcen.solidcommunity.net/profile/card#me"
         this.setState({ friends: data });
     }
 
