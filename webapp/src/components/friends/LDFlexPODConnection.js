@@ -48,4 +48,4 @@ async function showProfile(person) {
     
 }
 
-module.exports = getFriends;
+export default getFriends
