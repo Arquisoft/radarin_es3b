@@ -1,12 +1,17 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
-import Map from "./Map";
-import PruebaLoc from "../pruebas/PruebaLoc"
 
-class Localization extends React.Component{
+import PruebaLoc from "../../pruebas/PruebaLoc"
+import GuardarLocalizacion from "./GuardarLocalizacion";
 
-    
+class EncenderAplicacion extends React.Component{
+
+    constructor(props) {
+    super(props);
+	
+	}
 		
+
    
         render() {
 
@@ -18,7 +23,7 @@ class Localization extends React.Component{
 
 				
 				<div>
-				<div id="mapa"><Map lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
+				<div id="mapa"><GuardarLocalizacion lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
                 <PruebaLoc/>
 				</div>
  
@@ -34,4 +39,4 @@ class Localization extends React.Component{
 
 export default geolocated({
    
-})(Localization);
+})(EncenderAplicacion);

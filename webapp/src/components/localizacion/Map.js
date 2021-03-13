@@ -6,7 +6,7 @@ import MapMarker from './MapMarker';
 //import {StaticMap} from 'react-map-gl';
 
 import mapboxgl from 'mapbox-gl';
-import {getUserLocalization} from '../api/api'
+import {getUserLocalization} from '../../api/api'
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoia2lrZWthaWsiLCJhIjoiY2tsenMzYXF0MTVkcDJxbHlvZGhhM2N6MyJ9.hg3CQqQ380aEm4XcjWLXJg'; // Set your mapbox token here
 
 
@@ -32,7 +32,7 @@ class Map extends Component {
   }
   
   async componentDidMount() {
-		let response=await getUserLocalization("prueba");
+		let response=await getUserLocalization("prueba"); 
 		console.log(response);
         this.setState({ response: response });
 		
