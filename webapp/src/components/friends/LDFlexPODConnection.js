@@ -46,6 +46,6 @@ async function getFriends(person) {
     //console.log(`  - ${webID} is a friend`);
   //}
     
-}
+
 
 export default getFriends
