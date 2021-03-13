@@ -19,22 +19,24 @@ async function getName(person) {
  * Given a user's webID, returns a list of his friends webIDs
  * @param {*} person 
  */
-async function getFriends(person) {
+  //Comentado mientras no se usa para que compile en heroku
+//async function getFriends(person) {
 
-  var friends = [];
-  person = data[person];
-  for await (const friendWebID of person.friends){ //Alternativas: person.friends.firstName
-    friends.push(friendWebID);
-  }
-  return friends;
+  //var friends = [];
+ // person = data[person];
+  //for await (const friendWebID of person.friends){ //Alternativas: person.friends.firstName
+   // friends.push(friendWebID);
+ // }
+  //return friends;
     
-}
+//}
 
 /**
  * DEBUG ONLY
  * Function to test the retrieval of data from a user's POD
  * Queries the data and prints the user's name and friends list
  */
+ //Comentado mientras no se usa para que compile en heroku
 //async function showProfile(person) {
   
   //const name = await getName(person);
