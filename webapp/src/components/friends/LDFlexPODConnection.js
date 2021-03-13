@@ -10,15 +10,17 @@ const { default: data } = require("@solid/query-ldflex");
  * 
  * @param {*} person 
  */
-async function getName(person) {
-  const name = await person.name;
-  return name;
-}
+   //Comentado mientras no se usa para que compile en heroku
+//async function getName(person) {
+ // const name = await person.name;
+  //return name;
+//}
 
 /**
  * Given a user's webID, returns a list of his friends webIDs
  * @param {*} person 
  */
+
 async function getFriends(person) {
 
   var friends = [];
@@ -35,6 +37,7 @@ async function getFriends(person) {
  * Function to test the retrieval of data from a user's POD
  * Queries the data and prints the user's name and friends list
  */
+ //Comentado mientras no se usa para que compile en heroku
 //async function showProfile(person) {
   
   //const name = await getName(person);
