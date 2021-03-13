@@ -6,7 +6,7 @@ import ButtonToRender from './components/ButtonToRender'
 import EncenderAplicacion from './components/localizacion/EncenderAplicacion'
 import DesactivarAplicacion from './components/localizacion/DesactivarAplicacion'
 
-import { LoginButton, LoggedIn, LoggedOut, Value, AuthButton } from '@solid/react';
+import {  LoggedIn, LoggedOut, Value } from '@solid/react';
 
 
 import './mapa.css'

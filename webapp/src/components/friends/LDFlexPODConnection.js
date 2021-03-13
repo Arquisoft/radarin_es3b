@@ -1,7 +1,7 @@
 const { default: data } = require("@solid/query-ldflex");
 
 //Store a reference to the user POD
-const user = data["https://rcen.solidcommunity.net/profile/card#me"]; //webID of the user
+
 
 
 
@@ -35,16 +35,16 @@ async function getFriends(person) {
  * Function to test the retrieval of data from a user's POD
  * Queries the data and prints the user's name and friends list
  */
-async function showProfile(person) {
+//async function showProfile(person) {
   
-  const name = await getName(person);
+  //const name = await getName(person);
   //console.log(`\nNAME: ${name}`);
 
   //console.log('\nFRIENDS');
-  const friends = await getFriends(person);
-  for (const webID of friends){
+ // const friends = await getFriends(person);
+  //for (const webID of friends){
     //console.log(`  - ${webID} is a friend`);
-  }
+  //}
     
 }
 
