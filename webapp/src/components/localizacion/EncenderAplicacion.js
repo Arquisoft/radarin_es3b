@@ -5,8 +5,6 @@ import PruebaLoc from "../../pruebas/PruebaLoc"
 import GuardarLocalizacion from "./GuardarLocalizacion";
 
 class EncenderAplicacion extends React.Component{
-
-    
 		
 
    
@@ -20,7 +18,7 @@ class EncenderAplicacion extends React.Component{
 
 				
 				<div>
-				<div id="mapa"><GuardarLocalizacion lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
+				<div id="mapa"><GuardarLocalizacion userWebID={this.props.userWebID} lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
                 <PruebaLoc/>
 				</div>
  

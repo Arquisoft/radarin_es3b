@@ -38,7 +38,7 @@ class App extends React.Component{
       <LoggedIn>
         <FriendsList userWebID="user"/>
         <p className="buttons">
-          <ButtonToRender component={<EncenderAplicacion/>} component2={<DesactivarAplicacion/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
+          <ButtonToRender component={<EncenderAplicacion userWebID="user"/>} component2={<DesactivarAplicacion/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
         </p>
 			</LoggedIn>
       </body>
