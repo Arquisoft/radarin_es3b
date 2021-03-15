@@ -3,13 +3,29 @@
 
 == Deployment View
 
-=== Infrastructure Level 1
+=== Infrastructure Level 1: Cloud Distribution
 
-image:7-Infrastructure-v3.png["Infrastructure diagram."]
+image:7-Infrastructure-v3.1.png["Infrastructure diagram."]
 
 Motivation::
 
-The application will be deployed on the cloud application plataform Heroku, that will communicate with the users, the PODs from SOLID Community and the original artifacts of our application.
+The application will be deployed on the cloud application plataform Heroku, that will communicate with the users, the PODs from SOLID and the original artifacts of our application.
+
+Quality and/or Performance Features::
+
+_TODO_
+
+Mapping of Building Blocks to Infrastructure::
+
+_TODO_
+
+=== Infrastructure Level 1: Local Execution
+
+image:7-Infrastructure-v4-Local.png["Infrastructure diagram."]
+
+Motivation::
+
+For the development of the WebApp the MongoDB database will be deployed on a local Docker virtual machine with the restapi and webapp running with npm. The WebApp will communicate with the PODs from SOLID via HTTP protocol.
 
 Quality and/or Performance Features::
 
