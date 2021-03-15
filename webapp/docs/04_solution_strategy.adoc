@@ -30,11 +30,12 @@ the use of JavaScript. Also because its relatively easy to learn and exists a lo
 documentation about it, what makes it very adequate for people who don't have experience with
 this type of applications.
 
-With the mobile application we are going to use React Native because the team doesn't have
-experience mobiles and the learning of react will allow us advance faster.
+
 
 In order to have more security with application changes the team will have a comun branch 
 to work called "develop" to integrate the work, having the main branch only to stable versions.
 
 We are going to use MongoDB to persist the location of users, the rest of information will be saved
 in pods.
+
+We are going to use Mapbox Api to show users Localization in a map, the module @solid/react to work with solid and get information from pods.

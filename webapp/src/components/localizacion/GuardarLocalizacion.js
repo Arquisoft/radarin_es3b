@@ -7,11 +7,7 @@ import {addUserLocalization} from '../../api/api'
 
 class GuardarLocalizacion extends React.Component {
 
-        constructor(props) {
-                super(props);
-
-                this.state = {};
-        }
+        
 
         async submitLoc() {
                 let response = await addUserLocalization(this.props.userWebID, this.props.lat, this.props.lon)
