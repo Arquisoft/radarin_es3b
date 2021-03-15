@@ -6,9 +6,7 @@ import GuardarLocalizacion from "./GuardarLocalizacion";
 
 class EncenderAplicacion extends React.Component{
 		
-	constructor (props){
-        super(props);
-        }
+	
    
         render() {
 
