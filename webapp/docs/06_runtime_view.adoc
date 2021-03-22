@@ -29,6 +29,28 @@ There are many notations for describing scenarios, e.g.
 * ...
 
 ****
+=== Log In Scenario
+
+
+The first interaction the user has with the application is the log in process.
+
+Once the user clicks the 'LogIn' button, the application will redirect the user to a SOLID login webpage, which will manage the process from here. 
+
+Only when the login it's been a success, the SOLID webpage popup will redirect the user back to the app. The app will detect that the user is properly logged in and it will load the new content to display.
+
+
+[plantuml,"login diagram",png]
+----
+@startuml
+actor User #red
+participant App
+database SOLIDprovider #blue
+User -[#green]> App: Log In user
+App -[#blue]> SOLIDprovider: Log In new user (req)
+App <[#blue]-- SOLIDprovider: Log In response
+App --> App: Load Welcome View
+@enduml
+----
 
 === Friends Location Scenario
 
@@ -65,19 +87,23 @@ A user must be registered in order to use the application
 
 The registration process will create a Solid ID for the user to be identified in future interactions with the application  
 
-This feature will be based in Solid requirements for registering users
+This feature will be provided entirely by SOLID authentication client, connected to our application thanks to the @solid/react library.
 
 [plantuml,"registration diagram",png]
 ----
 @startuml
 actor User #red
 participant App
-database MongoDB #blue
+database SOLIDprovider #blue
 User -[#green]> App: Register user
-App -[#blue]> MongoDB: Register new user (req)
-App <[#blue]-- MongoDB: Registration response
+App -[#blue]> SOLIDprovider: Register new user (req)
+App <[#blue]-- SOLIDprovider: Registration response
 User <[#green]- App: Register notification 
 @enduml
+----
+
+****
+Old scenario, candidate to be removed
 ----
 === Add New Friend Scenario
 
@@ -88,7 +114,7 @@ When the user requests the application to add a new friend, the application will
 The application will then try to add this friend to the user's POD (in case that friend is not already in the user's friend list)
 
 The user will receive feedback once the process is done (either success or failure) by showing the friend's list.
-
+----
 [plantuml,"friend diagram",png]
 ----
 @startuml
@@ -103,4 +129,4 @@ App <-- UserPOD: Friends list
 App --[#green]> User: Show friends
 @enduml
 ----
-
+****

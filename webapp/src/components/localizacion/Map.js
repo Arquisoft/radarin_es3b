@@ -48,10 +48,12 @@ class Map extends Component {
   renderMarkers = () => {
     return this.state.responses.map(item => {
 
+      if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) < 10){
          return (
              <MapMarker nombre={item.user}  longitude={item.longitude} latitude={item.latitude}>
              </MapMarker>
          );
+      }
      });
 }
 
