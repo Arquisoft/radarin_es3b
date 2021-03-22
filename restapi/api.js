@@ -27,6 +27,25 @@ router.post("/users/add", async (req, res) => {
     }
 })
 
+router.get("/userLocalization/delete/:user", async (req, res) => {
+    var user=req.params.user
+
+	
+	let userLocalization= await UserLocalization.findOne({ user: user })
+    if(userLocalization){
+		var response=await UserLocalization.findOneAndDelete({ user: user });
+		res.send(response)
+    }
+	
+	else{
+		
+		res.send({error:"Error: El usuario no existe"})
+	}
+
+	
+
+})
+
 router.get("/userLocalization/get/:user", async (req, res) => {
     var user = req.params.user
     let userLocalization= await UserLocalization.findOne({ user: user })

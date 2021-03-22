@@ -43,7 +43,7 @@ constructor (props){
       <LoggedIn>
         <FriendsList userWebID="user"/>
         <p className="buttons">
-          <ButtonToRender component={<EncenderAplicacion amigos={this.state.amigos} userWebID="user"/>} component2={<DesactivarAplicacion/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
+          <ButtonToRender component={<EncenderAplicacion amigos={this.state.amigos} userWebID="user"/>} component2={<DesactivarAplicacion userWebID="user"/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
         </p>
 			</LoggedIn>
       </body>

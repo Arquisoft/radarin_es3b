@@ -33,3 +33,10 @@ export async function getUserLocalization(user){
     let response = await fetch(apiEndPoint+'/userLocalization/get/'+user)
     return await response.json()
 }
+
+export async function deleteUserLocalization(user){
+    const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
+    
+    let response = await fetch(apiEndPoint+'/userLocalization/delete/'+user)
+    return await response.json()
+}
