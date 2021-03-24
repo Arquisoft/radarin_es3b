@@ -12,6 +12,8 @@ import {  LoggedIn, LoggedOut, Value, List } from '@solid/react';
 import './mapa.css'
 import Login from './components/Login'
 import FriendsList from './components/friends/FriendsList'
+import ReactNotification from 'react-notifications-component'
+import 'react-notifications-component/dist/theme.css'
 
 class App extends React.Component{
 
@@ -25,8 +27,9 @@ constructor (props){
   
  
   render(){
-    return(
+    return( 
       <div className="App">
+      <ReactNotification />
       <Contenedor/>
       <body className ="App-body">
 		  <LoggedOut>
