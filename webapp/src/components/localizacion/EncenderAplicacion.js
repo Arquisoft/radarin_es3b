@@ -1,7 +1,7 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
 
-import PruebaLoc from "../../pruebas/PruebaLoc"
+
 import GuardarLocalizacion from "./GuardarLocalizacion";
 
 class EncenderAplicacion extends React.Component{

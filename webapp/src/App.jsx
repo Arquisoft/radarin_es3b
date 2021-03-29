@@ -7,7 +7,7 @@ import ProcessOn from './hooks/ProcessOn'
 import ProcessOff from './hooks/ProcessOff'
 
 
-import {  LoggedIn, LoggedOut, Value, List,useLDflexValue, useLDflexList } from '@solid/react';
+import {  LoggedIn, LoggedOut, Value, List } from '@solid/react';
 
 
 import './mapa.css'
@@ -16,21 +16,14 @@ import Login from './components/Login'
 import ReactNotification from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 import CleanDatabase from './components/database/CleanDatabase'
-import WebId from './components/solid/SolidId'
-import SolidFriends from './components/solid/SolidFriends'
+
+
 
 
 class App extends React.Component{
 
   
-constructor (props){
-    super(props);
-   
-    
-	
-	
-  }
-  
+
  
   render(){
 	

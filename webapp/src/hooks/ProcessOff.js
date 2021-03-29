@@ -1,7 +1,7 @@
 import React from "react";
 
 import WebId from '../components/solid/SolidId'
-import SolidFriends from '../components/solid/SolidFriends'
+
 import DesactivarAplicacion from '../components/localizacion/DesactivarAplicacion'
 
 
