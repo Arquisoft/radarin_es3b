@@ -40,3 +40,10 @@ export async function deleteUserLocalization(user){
     let response = await fetch(apiEndPoint+'/userLocalization/delete/'+user)
     return await response.json()
 }
+
+export async function cleanDatabase(){
+    const apiEndPoint= process.env.REACT_APP_API_URI || 'http://localhost:5000/api'
+    
+    let response = await fetch(apiEndPoint+'/userLocalization/deleteAll')
+    return await response.json()
+}

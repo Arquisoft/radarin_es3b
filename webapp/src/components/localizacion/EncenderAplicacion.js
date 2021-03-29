@@ -18,6 +18,7 @@ class EncenderAplicacion extends React.Component{
 
 				
 				<div>
+				
 				<div id="mapa"><GuardarLocalizacion amigos={this.props.amigos} userWebID={this.props.userWebID} lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
                 <PruebaLoc/>
 				</div>

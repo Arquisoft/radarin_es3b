@@ -32,11 +32,12 @@ class Map extends Component {
   }
   
   async componentDidMount() {
+	
     for(var element of this.props.amigos){
      
-    
+   
       var response = await getUserLocalization(element)
-      
+     
           if (response.user !== "error"){
         
           this.state.responses.push(response);

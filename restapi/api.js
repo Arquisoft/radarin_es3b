@@ -46,6 +46,18 @@ router.get("/userLocalization/delete/:user", async (req, res) => {
 
 })
 
+router.get("/userLocalization/deleteAll", async (req, res) => {
+   
+	var response=await UserLocalization.deleteMany();
+	res.send(response)
+    
+	
+	
+
+	
+
+})
+
 router.get("/userLocalization/get/:user", async (req, res) => {
     var user = req.params.user
     let userLocalization= await UserLocalization.findOne({ user: user })
