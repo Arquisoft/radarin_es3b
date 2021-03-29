@@ -6,7 +6,7 @@ import MapMarker from './MapMarker';
 //import {StaticMap} from 'react-map-gl';
 
 import mapboxgl from 'mapbox-gl';
-import {getUserLocalization} from '../../api/api'
+
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoia2lrZWthaWsiLCJhIjoiY2tsenMzYXF0MTVkcDJxbHlvZGhhM2N6MyJ9.hg3CQqQ380aEm4XcjWLXJg'; // Set your mapbox token here
 
 
@@ -18,7 +18,7 @@ class Map extends Component {
     super(props);
 	
     this.state = {
-		responses:[],
+		
 		
 		viewport: {
 		
@@ -31,23 +31,10 @@ class Map extends Component {
     };
   }
   
-  async componentDidMount() {
-	
-    for(var element of this.props.amigos){
-     
-   
-      var response = await getUserLocalization(element)
-     
-          if (response.user !== "error"){
-        
-          this.state.responses.push(response);
-      }
-    }
-        console.log(this.state.responses)
-  }
+  
   
   renderMarkers = () => {
-    return this.state.responses.map(item => {
+    return this.props.responses.map(item => {
 
       if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) < 10){
          return (
