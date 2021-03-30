@@ -1,22 +1,22 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import "./App.css";
 
-import Contenedor from './components/Contenedor'
-import ButtonToRender from './components/ButtonToRender'
-import ProcessOn from './hooks/ProcessOn'
-import processOff from './hooks/ProcessOff'
-
-
-import {  LoggedIn, LoggedOut, Value, List } from '@solid/react';
+import Contenedor from "./components/Contenedor";
+import ButtonToRender from "./components/ButtonToRender";
+import ProcessOn from "./hooks/ProcessOn";
+import ProcessOff from "./hooks/ProcessOff";
 
 
-import './mapa.css'
-import Login from './components/Login'
+import {  LoggedIn, LoggedOut, Value, List } from "@solid/react";
 
-import ReactNotification from 'react-notifications-component'
-import 'react-notifications-component/dist/theme.css'
-import CleanDatabase from './components/database/CleanDatabase'
-import IntervalRerender from './components/IntervalRerender'
+
+import "./mapa.css";
+import Login from "./components/Login";
+
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
+import CleanDatabase from "./components/database/CleanDatabase";
+import IntervalRerender from "./components/IntervalRerender";
 
 
 
@@ -51,7 +51,7 @@ class App extends React.Component{
       <LoggedIn>
 		
         <p className="buttons">
-          <ButtonToRender component={<IntervalRerender component={<ProcessOn/>} time={2000} />} component2={<processOff/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
+          <ButtonToRender component={<IntervalRerender component={<ProcessOn/>} time={2000} />} component2={<ProcessOff/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
         </p>
 			</LoggedIn>
       </body>
