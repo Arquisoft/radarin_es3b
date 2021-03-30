@@ -3,9 +3,6 @@ const { default: data } = require("@solid/query-ldflex");
 
 //Store a reference to the user POD
 
-
-
-
 /**
  * Given a user, returns his name
  * 

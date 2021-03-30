@@ -1,7 +1,6 @@
 import React from "react";
 
-import IntervalRenderer from 'react-interval-renderer';
-import ProcessOn from '../hooks/ProcessOn'
+import IntervalRenderer from "react-interval-renderer";
 
 
 
