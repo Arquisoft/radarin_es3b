@@ -1,5 +1,6 @@
 import * as React from "react";
 import { MapContext } from "react-map-gl";
+import FriendMarker from "../../hooks/markers/FriendMarker"
 
 
 
@@ -13,7 +14,9 @@ function MapMarker(props) {
 
   const markerStyle = {
     position: 'absolute',
-    background: '#fff',
+	fontWeight: "bold",
+	
+   
 
     left: x,
     top: y
@@ -21,8 +24,12 @@ function MapMarker(props) {
 
   return (
     <div style={markerStyle} >
-      ({nombre})
+	
+     {nombre}
+	  <FriendMarker/>
     </div>
+	
+	
   );
 }
 
