@@ -34,7 +34,8 @@ class Map extends Component {
 
 
   renderMarkers = () => {
-    return this.props.responses.map((item) => {
+    return (Array.from(this.props.responses.values())).map(item => {
+	
 
       if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) < 10) {
         return (
