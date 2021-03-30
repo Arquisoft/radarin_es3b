@@ -51,7 +51,7 @@ class App extends React.Component{
       <LoggedIn>
 		
         <p className="buttons">
-          <ButtonToRender component={<IntervalRerender component={<ProcessOn/>} time={2000} />} component2={<ProcessOff/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
+          <ButtonToRender component={<IntervalRerender component={<ProcessOn/>} time={5000} />} component2={<ProcessOff/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
         </p>
 			</LoggedIn>
       </body>
