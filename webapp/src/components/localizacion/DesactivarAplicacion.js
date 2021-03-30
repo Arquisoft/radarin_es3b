@@ -1,19 +1,25 @@
 import React from "react";
+import { deleteUserLocalization } from "../../api/api";
+
+class DesactivarAplicacion extends React.Component {
 
 
-class DesactivarAplicacion extends React.Component{
+    async deleteLoc() {
 
-    
-		
-   
-        render() {
+        let response = await deleteUserLocalization(this.props.userWebID);
+        //console.log(response);
 
-            return <div>La aplicacion está apagada</div>
-        }
-      
+    }
+
+
+    render() {
+        { this.deleteLoc() };
+        return <div>La aplicacion está apagada</div>;
+    }
+
 
 
 }
 
-export default DesactivarAplicacion
-   
+export default DesactivarAplicacion;
+

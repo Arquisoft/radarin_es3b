@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from "react-bootstrap/Form";
 import Button from '@material-ui/core/Button';
-import {addUserLocalization} from '../api/api'
+import {addUserLocalization,deleteUserLocalization } from '../api/api'
 
 class PruebaLoc extends React.Component{
 	
@@ -14,6 +14,11 @@ class PruebaLoc extends React.Component{
   changeName(e){
       const name = e.target.value;
       this.setState({name: name})
+  }
+  
+  changeDeleteName(e){
+      const nameDelete = e.target.value;
+      this.setState({nameDelete: nameDelete})
   }
 
   changeLat(e) {
@@ -42,9 +47,23 @@ class PruebaLoc extends React.Component{
     }
     
   }
+  
+  
+  
+  async deleteLoc(e){
+	  e.preventDefault()
+	  if (this.state.nameDelete){
+		 let response = await deleteUserLocalization(this.state.nameDelete)
+		console.log(response)
+	  }
+	  
+  }
+  
+  
 
   render(){
     return(
+		<div>
           <Form name="localizacion" onSubmit={this.handleSubmit.bind(this)}>
 			<div class="formMap" >
             <Form.Group >
@@ -73,6 +92,23 @@ class PruebaLoc extends React.Component{
             </Button>
             
           </Form>
+		  
+		  <Form name="borrarLocalizacion" onSubmit={this.deleteLoc.bind(this)}>
+			<div class="formMap" >
+            <Form.Group >
+				
+              <Form.Label>Nombre: </Form.Label>
+              <Form.Control name="nombre" type="string" placeholder="Introduzca nombre " onChange={this.changeDeleteName.bind(this)} value={this.state.nameDelete}/>
+              
+            </Form.Group>
+			</div>
+           
+            <Button variant="contained" color="secondary" type="submit" >
+              Borrar localizacion de amigo
+            </Button>
+          
+          </Form>
+		 </div>
     )
   }
 }

@@ -15,7 +15,7 @@ class GuardarLocalizacion extends React.Component {
 
         async submitLoc() {
                 let response = await addUserLocalization(this.props.userWebID, this.props.lat, this.props.lon)
-                console.log(response)
+                //console.log(response);
         }
 
         async handleSubmit(e) {

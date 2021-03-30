@@ -1,11 +1,14 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
 
-import PruebaLoc from "../../pruebas/PruebaLoc"
+
 import GuardarLocalizacion from "./GuardarLocalizacion";
 
 class EncenderAplicacion extends React.Component{
+	
+	
 		
+	
 	
    
         render() {
@@ -16,11 +19,12 @@ class EncenderAplicacion extends React.Component{
                 <div>Geolocation is not enabled</div>
             ) : this.props.coords ? (
 
+			
 				
-				<div>
+				
 				<div id="mapa"><GuardarLocalizacion amigos={this.props.amigos} userWebID={this.props.userWebID} lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
-                <PruebaLoc/>
-				</div>
+                
+				
  
                 
             ) : (
@@ -33,5 +37,10 @@ class EncenderAplicacion extends React.Component{
 }
 
 export default geolocated({
+	positionOptions: {
+        enableHighAccuracy: true,
+    },
+	
+	watchPosition : true
    
 })(EncenderAplicacion);
