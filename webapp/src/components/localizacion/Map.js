@@ -41,6 +41,8 @@ class Map extends Component {
           <MapMarker nombre={item.user} longitude={item.longitude} latitude={item.latitude}>
           </MapMarker>
         );
+      } else { // else block añadido para arreglar error de CI: Array.prototype.map() expects a value to be returned at the end of arrow function  array-callback-return
+        return null;
       }
     });
   }

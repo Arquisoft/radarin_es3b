@@ -5,15 +5,15 @@ class DesactivarAplicacion extends React.Component {
 
 
     async deleteLoc() {
-
-        let response = await deleteUserLocalization(this.props.userWebID);
+        await deleteUserLocalization(this.props.userWebID);
+        //let response = await deleteUserLocalization(this.props.userWebID);
         //console.log(response);
 
     }
 
 
     render() {
-        { this.deleteLoc() };
+        this.deleteLoc();
         return <div>La aplicacion está apagada</div>;
     }
 
