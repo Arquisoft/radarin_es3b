@@ -4,7 +4,7 @@ import './App.css'
 import Contenedor from './components/Contenedor'
 import ButtonToRender from './components/ButtonToRender'
 import ProcessOn from './hooks/ProcessOn'
-import ProcessOff from './hooks/ProcessOff'
+import processOff from './hooks/ProcessOff'
 
 
 import {  LoggedIn, LoggedOut, Value, List } from '@solid/react';
@@ -51,7 +51,7 @@ class App extends React.Component{
       <LoggedIn>
 		
         <p className="buttons">
-          <ButtonToRender component={<IntervalRerender component={<ProcessOn/>} time={2000} />} component2={<ProcessOff/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
+          <ButtonToRender component={<IntervalRerender component={<ProcessOn/>} time={2000} />} component2={<processOff/>}  buttonName="Encender Aplicación" deleteName="Apagar Aplicación" />
         </p>
 			</LoggedIn>
       </body>
