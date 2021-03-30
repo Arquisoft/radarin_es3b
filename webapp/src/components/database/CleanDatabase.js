@@ -7,8 +7,9 @@ class CleanDatabase extends React.Component {
 
 
   async deleteAll() {
-
-    let response = await cleanDatabase();
+    
+    await cleanDatabase();
+    //let response = await cleanDatabase();
     //console.log(response);
 
 

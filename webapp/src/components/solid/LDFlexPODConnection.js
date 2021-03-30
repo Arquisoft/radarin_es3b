@@ -3,9 +3,6 @@ const { default: data } = require("@solid/query-ldflex");
 
 //Store a reference to the user POD
 
-
-
-
 /**
  * Given a user, returns his name
  * 
@@ -23,7 +20,7 @@ const { default: data } = require("@solid/query-ldflex");
  */
 
 async function getFriends(person) {
-console.log(person)
+//console.log(person);
   var friends = [];
  
   
@@ -32,7 +29,7 @@ console.log(person)
   
     friends.push(friendWebID);
   }
-  console.log(friends)
+  //console.log(friends);
   return friends;
     
 }
@@ -56,4 +53,4 @@ console.log(person)
     
 
 
-export default getFriends
+export default getFriends;
