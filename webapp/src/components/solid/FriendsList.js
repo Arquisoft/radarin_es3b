@@ -1,7 +1,7 @@
 import React from 'react';
 import ListGroup from "react-bootstrap/ListGroup";
 import getFriends from "./LDFlexPODConnection";
-import WebId from "./SolidId";
+
 
 
 class FriendsList extends React.Component {
@@ -12,7 +12,7 @@ class FriendsList extends React.Component {
 
     async componentDidMount() {
         
-        var names = [];
+       
         
         //Sustituir la URL siguiente, 
         //por el webID que debería recibirse como props (this.props.userWebID)
