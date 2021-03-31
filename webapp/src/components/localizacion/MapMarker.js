@@ -14,18 +14,26 @@ function MapMarker(props) {
 
   const markerStyle = {
     position: 'absolute',
-	fontWeight: "bold",
+	
+	
 	
    
-
-    left: x,
-    top: y
+	
+    left: x-18,
+    top: y-52
+  };
+  
+  const textStyle = {
+   fontWeight: "bold",
+   background:"white"
   };
 
   return (
     <div style={markerStyle} >
-	
+	<div style={textStyle}>
      {nombre}
+	 </div>
+	 
 	  <FriendMarker/>
     </div>
 	

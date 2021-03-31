@@ -13,6 +13,7 @@ class EncenderAplicacion extends React.Component{
    
         render() {
 
+            //console.log(this.props.amigos);
             return !this.props.isGeolocationAvailable ? (
                 <div>Your browser does not support Geolocation</div>
             ) : !this.props.isGeolocationEnabled ? (
