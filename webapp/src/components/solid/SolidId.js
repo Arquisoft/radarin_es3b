@@ -5,8 +5,6 @@ export default function WebId(){
 	id=`${id}`.split(".")[0];
 	id=id.substring(8,id.length);
 	
-	
-	return id;
-	
+	return id;	
 }
 
