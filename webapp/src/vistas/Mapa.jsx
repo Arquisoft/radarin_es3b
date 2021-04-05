@@ -4,6 +4,7 @@ import ButtonToRender from "../components/ButtonToRender";
 import IntervalRerender from "../components/IntervalRerender";
 import ProcessOn from "../hooks/ProcessOn";
 import ProcessOff from "../hooks/ProcessOff";
+import "./mapa.css";
 
 
 function Mapa() {

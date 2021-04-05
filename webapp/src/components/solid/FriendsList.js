@@ -4,7 +4,9 @@ import getFriends from "./LDFlexPODConnection";
 
 
 
-class FriendsList extends React.Component {
+
+class FriendsList extends React.Component { 
+    
     constructor(props) {
         super(props);
         this.state = { friends: ["estado", "inicial"] }
@@ -20,14 +22,17 @@ class FriendsList extends React.Component {
         this.setState({ friends: data });
     }
 
+    
     render() {
+
+        
         return (
+            
             <div className="FriendsList">
-                <h2>Amigos (class + lib)</h2>
                 <ListGroup>
                     {
                         this.state.friends.map(function (user, i) {
-                            return <ListGroup.Item id={i} key={i}>{ i + ' : ' + user}</ListGroup.Item>
+                            return <ListGroup.Item id={i} key={i}>{ (i+1) + ' : ' + user}</ListGroup.Item>
                         })
                     }
                 </ListGroup>

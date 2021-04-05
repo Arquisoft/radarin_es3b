@@ -1,5 +1,5 @@
 import React from 'react'
-import {AppBar, Toolbar, makeStyles, IconButton, Button } from '@material-ui/core'
+import {AppBar, Toolbar, makeStyles, IconButton} from '@material-ui/core'
 
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
       },
 
     title: {
-        flexGrow: 2,
+        flexGrow: 1,
         textTransform: "capitalize",
         textDecoration: "none",
         fontSize: 25,
