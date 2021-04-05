@@ -18,7 +18,8 @@ import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 import CleanDatabase from "./components/database/CleanDatabase";
 import IntervalRerender from "./components/IntervalRerender";
-import FriendsList from "./components/solid/FriendsList";
+
+import FriendListHook from "./hooks/FriendListHook";
 
 
 
@@ -48,7 +49,7 @@ class App extends React.Component{
         <h2>User's friends (hook)</h2>
         <div> <List src="user.friends"/></div>
         <div>
-          <FriendsList/>
+          <FriendListHook/>
         </div>
       </LoggedIn>
       <p className ="sample">Radarin es blablabla Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non dictum sem. Pellentesque vitae neque a urna facilisis congue eu sed odio. Nunc in elit pretium, sodales elit sit amet, congue lacus. Fusce lectus lacus, mattis eget urna sed, vestibulum posuere magna. Nulla neque quam, vulputate a sollicitudin a, convallis in velit. Nunc non diam metus. Integer eget sagittis augue. Fusce interdum dapibus sem at blandit. Sed a est sodales, varius metus vel, finibus felis. Praesent rhoncus consectetur nunc, at congue erat tempor eu. Morbi posuere mattis sem ac varius. Aenean at nisi pretium, finibus arcu id, dictum dui. Ut eu metus pulvinar, malesuada dui nec, vulputate diam. Donec aliquam odio id lorem blandit pharetra.
