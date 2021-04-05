@@ -57,7 +57,7 @@ const Lista = () =>{
                     <AuthButton className={classes.iniButton} 
                         popup="https://solid.github.io/solid-auth-client/dist/popup.html"
                         login="Iniciar Sesión."
-                        style="background: transparent"
+                        style={{background: "transparent"}}
                         >
                             <EmojiPeopleSharpIcon/>
                         </AuthButton>

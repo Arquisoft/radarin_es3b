@@ -115,7 +115,7 @@ const Navbar = (props) => {
                     <ExitToAppIcon/>
                     <AuthButton className={classes.logOutButton} 
                         logout="Desconectarse"
-                        style="background: transparent"
+                        style={{background: "transparent"}}
                         >
                             
                         </AuthButton>
@@ -126,7 +126,7 @@ const Navbar = (props) => {
                     <AuthButton className={classes.iniButton} 
                         popup="https://solid.github.io/solid-auth-client/dist/popup.html"
                         login="Iniciar Sesión"
-                        style="background: transparent"
+                        style={{background: "transparent"}}
                         >
                             
                         </AuthButton>
