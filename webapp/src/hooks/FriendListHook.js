@@ -3,15 +3,16 @@ import FriendsList from "../components/solid/FriendsList";
 
 
 export default function FriendListHook(){
-	var id;
+	var id = useWebId();
 	id=`${id}`;
-	
+	console.log(id);
 
 	
 	 
 	return (
 	
-		<FriendList webId={id} />
+		
+		<FriendsList webId={id} />
 	);
 	
 }
