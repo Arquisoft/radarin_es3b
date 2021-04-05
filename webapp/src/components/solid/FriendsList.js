@@ -17,7 +17,7 @@ class FriendsList extends React.Component {
         //Sustituir la URL siguiente, 
         //por el webID que debería recibirse como props (this.props.userWebID)
         // ¿Cómo pasarlo como parámetro sin llamar a hooks?
-        const data = await getFriends("https://rcen.solidcommunity.net/profile/card#me");//this.props.userWebID);
+        const data = await getFriends(this.props.webId);//this.props.userWebID);
         console.log(data);
         
         this.setState({ friends: data });
