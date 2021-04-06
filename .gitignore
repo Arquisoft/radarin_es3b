@@ -20,7 +20,7 @@ restapi/node_modules
 restapi/data
 
 webapp/src/components/oldExamples
-
+webapp/src/components/pruebas
 clasesModificadas
 
 .eslintcache
