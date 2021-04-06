@@ -16,7 +16,6 @@ function Amigos() {
           <h1>Amigos</h1>
           
 		        <CleanDatabase/>
-            <div> <List src="user.friends"/></div>
             <div>
                 <FriendListHook/>
             </div>
