@@ -1,5 +1,5 @@
-import React from 'react';
-import Contenedor from '../components/Contenedor';
+import React from "react";
+import Contenedor from "../components/Contenedor";
 import ButtonToRender from "../components/ButtonToRender";
 import IntervalRerender from "../components/IntervalRerender";
 import ProcessOn from "../hooks/ProcessOn";

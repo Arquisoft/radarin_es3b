@@ -1,19 +1,15 @@
-import {  useWebId } from "@solid/react";
+import { useWebId } from "@solid/react";
 import FriendsList from "../components/solid/FriendsList";
 
 
-export default function FriendListHook(){
+export default function FriendListHook() {
 	var id = useWebId();
-	id=`${id}`;
-	console.log(id);
+	id = `${id}`;
 
-	
-	 
 	return (
-	
-		
+
 		<FriendsList webId={id} />
 	);
-	
+
 }
 

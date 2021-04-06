@@ -7,27 +7,24 @@ import getFriends from "./LDFlexPODConnection";
 class FriendsList extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { friends: ["estado", "inicial"] }
+        this.state = { friends: [] }
     }
 
-    async componentDidMount() {
-        
-    
-        console.log(this.props.webId);
-        const data = await getFriends("https://luislomba.solidcommunity.net/profile/card#me");//this.props.userWebID);
-        console.log(data);
-        
+    async componentDidUpdate() {
+
+        const data = await getFriends(this.props.webId);
+
         this.setState({ friends: data });
     }
 
     render() {
         return (
             <div className="FriendsList">
-                <h2>Amigos (class + lib)</h2>
+                <h2>Todos los amigos (cerca o no):</h2>
                 <ListGroup>
                     {
                         this.state.friends.map(function (user, i) {
-                            return <ListGroup.Item id={i} key={i}>{ i + ' : ' + user}</ListGroup.Item>
+                            return <ListGroup.Item id={i} key={i}>{'' + user}</ListGroup.Item>
                         })
                     }
                 </ListGroup>
