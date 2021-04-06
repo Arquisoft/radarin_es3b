@@ -1,6 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-clasesModificadas/
 
 # dependencies
 webapp/node_modules
@@ -19,5 +18,9 @@ yarn-error.log*
 
 restapi/node_modules
 restapi/data
+
+webapp/src/components/oldExamples
+
+clasesModificadas
 
 .eslintcache
