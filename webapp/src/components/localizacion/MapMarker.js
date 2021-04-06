@@ -1,6 +1,6 @@
 import * as React from "react";
 import { MapContext } from "react-map-gl";
-import FriendMarker from "../../hooks/markers/FriendMarker"
+import FriendMarker from "../../hooks/markers/FriendMarker";
 
 
 
@@ -13,7 +13,7 @@ function MapMarker(props) {
   const [x, y] = context.viewport.project([longitude, latitude]);
 
   const markerStyle = {
-    position: 'absolute',
+    position: "absolute",
 	
 	
 	

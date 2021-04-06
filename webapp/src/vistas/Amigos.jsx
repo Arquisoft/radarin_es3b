@@ -1,9 +1,7 @@
-import React from 'react';
-import Contenedor from '../components/Contenedor';
+import React from "react";
+import Contenedor from "../components/Contenedor";
 
 import CleanDatabase from "../components/database/CleanDatabase";
-
-import {List} from "@solid/react";
 
 import FriendListHook from "../hooks/FriendListHook";
 
