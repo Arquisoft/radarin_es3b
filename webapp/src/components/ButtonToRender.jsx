@@ -32,7 +32,7 @@ class ButtonToRender extends React.Component {
       <div>
 	 
         <Button variant="contained" color="primary" onClick={this._onButtonClick}>{this.props.buttonName}</Button>
-		 <Button variant="contained" color="secondary" onClick={this._offButtonClick}>{this.props.deleteName}</Button>
+		    <Button variant="contained" color="secondary" onClick={this._offButtonClick}>{this.props.deleteName}</Button>
         {this.state.showComponent ?
            this.props.component:
 		   

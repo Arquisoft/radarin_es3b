@@ -34,7 +34,7 @@ class Map extends Component {
 
 
   renderMarkers = () => {
-    return (Array.from(this.props.responses.values())).map(item => {
+    return (Array.from(this.props.responses.values())).map((item) => {
 	
 
       if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) < 10) {
@@ -52,8 +52,8 @@ class Map extends Component {
     return (
       <MapGL
         {...this.state.viewport}
-        width="50vw"
-        height="50vh"
+        width="100vw"
+        height="100vh"
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={(viewport) => this.setState({ viewport })}
         mapboxApiAccessToken={MAPBOX_TOKEN}

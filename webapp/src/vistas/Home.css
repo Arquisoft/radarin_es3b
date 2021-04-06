@@ -1,0 +1,30 @@
+.Home-text {
+    min-height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+  }
+
+  .Home-table {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 400px;
+    padding-left: 400px;
+  }
+
+  .Home-col{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-top-left-radius:     5px 5px;
+    border-top-right-radius:    5px 5px;
+    border-bottom-right-radius: 5px 5px;
+    border-bottom-left-radius:  5px 5px;
+    border: 2px solid #3F51B5;
+  }
+
+  
+  
