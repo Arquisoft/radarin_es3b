@@ -1,5 +1,5 @@
 import React from "react";
-import { render, cleanup} from "react-dom";
+import { render} from "'react-testing-library";
 import { act } from "react-dom/test-utils";
 import CleanDatabase from "./CleanDatabase";
 
