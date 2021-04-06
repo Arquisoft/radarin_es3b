@@ -3,8 +3,6 @@ import { render, cleanup} from "react-dom";
 import { act } from "react-dom/test-utils";
 import CleanDatabase from "./CleanDatabase";
 
-  afterAll(cleanup);
-
   it("elimina todos los datos de la base de datos", () =>{
       act(() => {
         render(<CleanDatabase />);
