@@ -10,12 +10,13 @@ function MapMarker(props) {
   const { longitude, latitude } = props;
 
   const nombre = props.nombre;
+ 
   const [x, y] = context.viewport.project([longitude, latitude]);
 
   const markerStyle = {
     position: "absolute",
 	
-	
+
 	
    
 	

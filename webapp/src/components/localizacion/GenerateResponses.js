@@ -4,6 +4,7 @@ import React from "react";
 import FriendsMap from "./Map";
 
 import { getUserLocalization } from "../../api/api";
+import addNotification from 'react-push-notification';
 //import { store } from 'react-notifications-component';
 
 class GenerateResponses extends React.Component {
@@ -12,7 +13,8 @@ class GenerateResponses extends React.Component {
 		super(props);
 
 		this.state = {
-			responses: new Map()
+			responses: new Map(),
+			friends: new Map()
 			
 			
 
@@ -21,11 +23,41 @@ class GenerateResponses extends React.Component {
 		
 		
 	}
+	
+	async showNotification(){
+		
+		var friendstext = "";
 
+		for (var [clave, valor] of this.state.friends) {
+			
+			if( valor) {
+					
+				this.state.friends.set(clave,false)
+				friendstext += clave;
+                 friendstext += ", ";
+			}
+		}
+			
+		
+        
+        //quitar la ultima coma
+        
+        if (friendstext !== ''){
+            addNotification({
+                title: 'Los amigos ya conectados',
+                subtitle: 'subtitle',
+                message: friendstext,
+                theme: 'darkblue',
+                native: true // when using native, your OS will handle theming.
+            });
+        }
+		
+		
+		
+		
+	}
 
-
-
-	async componentWillMount() {
+	async componentDidMount() {
 
 		for (var element of this.props.amigos) {
 
@@ -35,20 +67,18 @@ class GenerateResponses extends React.Component {
 			if (response.user !== "error") {
 
 				this.state.responses.set(response.user,response)
+				this.state.friends.set(response.user,true)
+				
 			}
 		}
 		
-		
-
+		this.showNotification();
 	}
 	
 	async componentDidUpdate() {
 		
 
 		for (var element of this.props.amigos) {
-			
-			 
-			 
 
 			var response = await getUserLocalization(element);
 			
@@ -60,9 +90,17 @@ class GenerateResponses extends React.Component {
 					if( this.state.responses.has(element)){
 						this.state.responses.delete(element)
 					}
+					
 					this.state.responses.set(response.user,response);
 					
 				}
+				
+				if( !this.state.friends.has(element)){
+					this.state.friends.set(response.user,true)
+				}
+				
+					
+				
 			}
 			
 			else{
@@ -72,7 +110,18 @@ class GenerateResponses extends React.Component {
 					
 				}
 				
+				if(this.state.friends.has(element)){
+					this.state.friends.delete(element)
+					
+				}
+				
 			}
+			
+			this.showNotification();
+			
+			
+			
+			
 		}
 
 
@@ -86,6 +135,7 @@ class GenerateResponses extends React.Component {
 		return (
 			<div>
 				<FriendsMap responses={this.state.responses} lat={this.props.lat} lon={this.props.lon} />
+				
 			</div>
 
 		);

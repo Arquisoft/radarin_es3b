@@ -6,7 +6,7 @@ import EncenderAplicacion from "../components/localizacion/EncenderAplicacion";
 
 import addNotification from 'react-push-notification'; //pushnotifs
 
-import FriendNotification from "../components/notifications/FriendNotifications";
+
 
 
 export default function processOn(){
@@ -21,13 +21,14 @@ export default function processOn(){
 	
 	const webID=WebId();
 	const solidFriends=SolidFriends();
+	
 
 	//friendNotification(solidFriends);
 	 
 	return (
 		<div>
 		<EncenderAplicacion amigos={solidFriends} userWebID={webID}/>
-			<FriendNotification amigos={solidFriends}/>
+			
 		</div>
 	);
 	
