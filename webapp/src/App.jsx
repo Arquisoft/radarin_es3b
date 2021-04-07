@@ -28,6 +28,7 @@ class App extends React.Component{
           render={() => <Mapa />}/>
         </Switch>
       </BrowserRouter>
+
       </div>
       
     )
