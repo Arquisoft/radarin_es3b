@@ -56,22 +56,6 @@ class GenerateResponses extends React.Component {
 		
 		
 	}
-	
-	async tryAdd(item){
-		if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) < 0.000450) {
-		
-			this.state.friends.set(item.user,true)
-		
-		}
-	}
-	
-	async tryDelete(item){
-		if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) > 0.000450) {
-		
-			this.state.friends.delete(item.user,true)
-		
-		}
-	}
 
 	async componentDidMount() {
 
@@ -83,7 +67,7 @@ class GenerateResponses extends React.Component {
 			if (response.user !== "error") {
 
 				this.state.responses.set(response.user,response)
-				this.tryAdd(response)
+				this.state.friends.set(response.user,true)
 				
 			}
 		}
@@ -112,11 +96,7 @@ class GenerateResponses extends React.Component {
 				}
 				
 				if( !this.state.friends.has(element)){
-					this.tryAdd(response)
-				}
-				
-				else{
-					this.tryDelete(response)
+					this.state.friends.set(response.user,true)
 				}
 				
 					
