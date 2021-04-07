@@ -5,8 +5,8 @@ import MapGL from "react-map-gl";
 import MapMarker from "./MapMarker";
 //import {StaticMap} from 'react-map-gl';
 
-import * as mapboxgl from 'mapbox-gl';
-//import mapboxgl from "mapbox-gl";
+//import * as mapboxgl from 'mapbox-gl';
+import mapboxgl from "mapbox-gl";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 mapboxgl.workerClass = MapboxWorker;
