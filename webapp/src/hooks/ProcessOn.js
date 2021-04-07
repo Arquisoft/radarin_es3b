@@ -5,7 +5,7 @@ import SolidFriends from "../components/solid/SolidFriends";
 import EncenderAplicacion from "../components/localizacion/EncenderAplicacion";
 
 import addNotification from 'react-push-notification'; //pushnotifs
-import friendNotification from "./FriendAppearedNotification";
+
 import FriendNotification from "../components/notifications/FriendNotifications";
 
 
