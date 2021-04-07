@@ -5,11 +5,12 @@ import MapGL from "react-map-gl";
 import MapMarker from "./MapMarker";
 //import {StaticMap} from 'react-map-gl';
 
-import mapboxgl from "mapbox-gl";
+import * as mapboxgl from 'mapbox-gl';
+//import mapboxgl from "mapbox-gl";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
 mapboxgl.workerClass = MapboxWorker;
-//import * as mapboxgl from 'mapbox-gl';
+
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoia2lrZWthaWsiLCJhIjoiY2tsenMzYXF0MTVkcDJxbHlvZGhhM2N6MyJ9.hg3CQqQ380aEm4XcjWLXJg"; // Set your mapbox token here
 
