@@ -4,7 +4,7 @@ import WebId from "../components/solid/SolidId";
 import SolidFriends from "../components/solid/SolidFriends";
 import EncenderAplicacion from "../components/localizacion/EncenderAplicacion";
 
-import addNotification from 'react-push-notification'; //pushnotifs
+
 
 
 
