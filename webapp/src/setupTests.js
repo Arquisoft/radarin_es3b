@@ -15,3 +15,5 @@ const mockGeolocation = {
       })))
   };
   global.navigator.geolocation = mockGeolocation;
+
+  window.URL.createObjectURL = function() {};
