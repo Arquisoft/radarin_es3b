@@ -66,7 +66,7 @@ class GenerateResponses extends React.Component {
 	}
 	
 	async tryDelete(item){
-		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < 0.000450) {
+		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) > 0.000450) {
 		
 			this.state.friends.delete(item.user,true)
 		
