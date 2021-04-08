@@ -20,7 +20,7 @@ function MapMarker(props) {
 	
    
 	
-    left: x-18,
+    left: x-45,
     top: y-52
   };
   
