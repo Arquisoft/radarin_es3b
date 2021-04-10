@@ -21,14 +21,13 @@ export default function processOn(){
 	
 	const webID=WebId();
 	const solidFriends=SolidFriends();
-	
 
 	//friendNotification(solidFriends);
 	 
 	return (
 		<div>
 		<EncenderAplicacion amigos={solidFriends} userWebID={webID}/>
-			
+		
 		</div>
 	);
 	

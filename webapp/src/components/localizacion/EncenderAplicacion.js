@@ -1,8 +1,7 @@
 import React from "react";
 import { geolocated } from "react-geolocated";
+import FormRango from "./FormRango";
 
-
-import GuardarLocalizacion from "./GuardarLocalizacion";
 
 class EncenderAplicacion extends React.Component{
 	
@@ -23,7 +22,8 @@ class EncenderAplicacion extends React.Component{
 			
 				
 				
-				<div id="mapa"><GuardarLocalizacion amigos={this.props.amigos} userWebID={this.props.userWebID} lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
+				<div><FormRango amigos={this.props.amigos} userWebID={this.props.userWebID} lat={this.props.coords.latitude} lon={this.props.coords.longitude}/></div>      
+                
                 
 				
  
