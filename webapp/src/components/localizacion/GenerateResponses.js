@@ -42,12 +42,12 @@ class GenerateResponses extends React.Component {
         
         //quitar la ultima coma
         
-        if (friendstext !== ''){
+        if (friendstext !== ""){
             addNotification({
-                title: 'Los amigos ya conectados',
-                subtitle: 'subtitle',
+                title: "Los amigos ya conectados",
+                subtitle: "subtitle",
                 message: friendstext,
-                theme: 'darkblue',
+                theme: "darkblue",
                 native: true // when using native, your OS will handle theming.
             });
         }
@@ -60,7 +60,7 @@ class GenerateResponses extends React.Component {
 	async tryAdd(item){
 		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < this.props.rango) {
 		
-			this.state.friends.set(item.user,true)
+			this.state.friends.set(item.user,true);
 		
 		}
 	}
@@ -68,7 +68,7 @@ class GenerateResponses extends React.Component {
 	async tryDelete(item){
 		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) > this.props.rango) {
 		
-			this.state.friends.delete(item.user,true)
+			this.state.friends.delete(item.user,true);
 		
 		}
 	}
@@ -82,8 +82,8 @@ class GenerateResponses extends React.Component {
 
 			if (response.user !== "error") {
 
-				this.state.responses.set(response.user,response)
-				this.tryAdd(response)
+				this.state.responses.set(response.user,response);
+				this.tryAdd(response);
 				
 			}
 		}
@@ -104,7 +104,7 @@ class GenerateResponses extends React.Component {
 				if( !this.state.responses.has(element) || this.state.responses.get(element).longitude!== response.longitude|| this.state.responses.get(element).latitude!== response.latitude){
 					
 					if( this.state.responses.has(element)){
-						this.state.responses.delete(element)
+						this.state.responses.delete(element);
 					}
 					
 					this.state.responses.set(response.user,response);
@@ -112,11 +112,11 @@ class GenerateResponses extends React.Component {
 				}
 				
 				if( !this.state.friends.has(element)){
-					this.tryAdd(response)
+					this.tryAdd(response);
 				}
 				
 				else{
-					this.tryDelete(response)
+					this.tryDelete(response);
 				}
 				
 					
@@ -126,12 +126,12 @@ class GenerateResponses extends React.Component {
 			else{
 				
 				if(this.state.responses.has(element)){
-					this.state.responses.delete(element)
+					this.state.responses.delete(element);
 					
 				}
 				
 				if(this.state.friends.has(element)){
-					this.state.friends.delete(element)
+					this.state.friends.delete(element);
 					
 				}
 				

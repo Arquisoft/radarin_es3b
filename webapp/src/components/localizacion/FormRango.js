@@ -10,12 +10,12 @@ class FormRango extends React.Component{
     super(props);
     this.state = {
       rango : 0.500
-    }
+    };
   }
 
   async changeRango(e){
       const rango = e.target.value;
-      this.setState({rango: rango})
+      this.setState({rango: rango});
   }
 
   render(){
