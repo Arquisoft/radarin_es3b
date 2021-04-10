@@ -58,7 +58,7 @@ class GenerateResponses extends React.Component {
 	}
 	
 	async tryAdd(item){
-		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < 0.000450) {
+		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < this.props.rango) {
 		
 			this.state.friends.set(item.user,true)
 		
@@ -66,7 +66,7 @@ class GenerateResponses extends React.Component {
 	}
 	
 	async tryDelete(item){
-		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) > 0.000450) {
+		if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) > this.props.rango) {
 		
 			this.state.friends.delete(item.user,true)
 		
@@ -92,7 +92,7 @@ class GenerateResponses extends React.Component {
 	}
 	
 	async componentDidUpdate() {
-		
+		console.log(this.props.rango);
 
 		for (var element of this.props.amigos) {
 
@@ -154,7 +154,7 @@ class GenerateResponses extends React.Component {
 	render() {
 		return (
 			<div>
-				<FriendsMap responses={this.state.responses} lat={this.props.lat} lon={this.props.lon} />
+				<FriendsMap responses={this.state.responses} lat={this.props.lat} lon={this.props.lon} rango={this.props.rango}/>
 				
 			</div>
 

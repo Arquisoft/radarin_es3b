@@ -43,7 +43,7 @@ class Map extends Component {
     return (Array.from(this.props.responses.values())).map((item) => {
 	
 		
-      if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < 0.000450) {
+      if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < this.props.rango) {
         return (
           <MapMarker nombre={item.user} longitude={item.longitude} latitude={item.latitude}>
           </MapMarker>
@@ -58,7 +58,7 @@ class Map extends Component {
     return (
       <MapGL
         {...this.state.viewport}
-        width="100vw"
+        width="96vw"
         height="100vh"
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={(viewport) => this.setState({ viewport })}
