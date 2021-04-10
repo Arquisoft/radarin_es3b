@@ -38,4 +38,5 @@ Potentially more columns in case you need translations.
 | WebApp      | Term to address the web application part of Radarin  | Término para referirnos a la parte de la aplicación web de nuestro proyecto. 
 | System      | Term to refer to the whole application to be developed  | Término para referirnos al conjunto total de la aplicación a desarrollar en este proyecto. 
 | Friend      | We'll use this term to refer exclusively to a Solid friend  | Término que utilizaremos para referirnos a un usuario Amigo en Solid.
+| Admin     | A rol which a user can get to handle the database and the app.
 |===
