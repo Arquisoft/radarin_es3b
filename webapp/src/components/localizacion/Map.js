@@ -40,6 +40,7 @@ class Map extends Component {
 
 
   renderMarkers = () => {
+    console.log(this.props.rango);
     return (Array.from(this.props.responses.values())).map((item) => {
 	
 		
