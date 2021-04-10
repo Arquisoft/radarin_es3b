@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from "react-bootstrap/Form";
-import Button from '@material-ui/core/Button';
+
 import GuardarLocalizacion from './GuardarLocalizacion';
 
 class FormRango extends React.Component{
