@@ -85,6 +85,12 @@ const Lista = () =>{
             to= "../vistas/Mapa">
             </ListItemLink>
 
+            <ListItemLink 
+            icon = {<AssignmentIndIcon/>}
+            primary = "Administrador"
+            to= "../vistas/Admin">
+            </ListItemLink>
+
             </LoggedIn>
 
             <Divider/>
