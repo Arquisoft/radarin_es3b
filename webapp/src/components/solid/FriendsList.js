@@ -20,7 +20,6 @@ class FriendsList extends React.Component {
     render() {
         return (
             <div className="FriendsList">
-                <h2>Todos los amigos (cerca o no):</h2>
                 <ListGroup>
                     {
                         this.state.friends.map(function (user, i) {

@@ -69,64 +69,19 @@ actor User #red
 participant App
 database UserPOD #red
 database MongoDB #blue
+App <[#blue]--  User: Switch on app
+App -[#blue]>  User: User location (req)
+App <[#blue]--  User: User location (res)
+App -[#blue]> MongoDB: Save user location
 User -[#green]> App: Find Friends (req)
 App -> UserPOD: Friends list (req)
 App <-- UserPOD: Friends list (res)
 App -[#blue]> MongoDB: Friends location (req)
 App <[#blue]-- MongoDB: Friends location (res)
-App -[#blue]>  User: User location (req)
-App <[#blue]--  User: User location (res)
 App -> App: Calculate distance
 App --[#green]> User: Notify close friends
-App -[#blue]> MongoDB: Save user location
-@enduml
-----
-=== User Registration Scenario
 
-A user must be registered in order to use the application  
-
-The registration process will create a Solid ID for the user to be identified in future interactions with the application  
-
-This feature will be provided entirely by SOLID authentication client, connected to our application thanks to the @solid/react library.
-
-[plantuml,"registration diagram",png]
-----
-@startuml
-actor User #red
-participant App
-database SOLIDprovider #blue
-User -[#green]> App: Register user
-App -[#blue]> SOLIDprovider: Register new user (req)
-App <[#blue]-- SOLIDprovider: Registration response
-User <[#green]- App: Register notification 
 @enduml
 ----
 
-****
-Old scenario, candidate to be removed
-----
-=== Add New Friend Scenario
 
-The application will allow the user to add friends to his friend list
-
-When the user requests the application to add a new friend, the application will ask the user for his friend's ID.
-
-The application will then try to add this friend to the user's POD (in case that friend is not already in the user's friend list)
-
-The user will receive feedback once the process is done (either success or failure) by showing the friend's list.
-----
-[plantuml,"friend diagram",png]
-----
-@startuml
-actor User #red
-participant App
-database UserPOD #red
-User -[#green]> App: Add friend
-App --[#green]> User: Friend data (req)
-User -[#green]> App: Friend data (res)
-App -> UserPOD: add (friend)
-App <-- UserPOD: Friends list
-App --[#green]> User: Show friends
-@enduml
-----
-****

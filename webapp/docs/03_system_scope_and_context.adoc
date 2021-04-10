@@ -20,7 +20,7 @@ Various options:
 * Lists of communication partners and their interfaces.
 ****
 
-The proyect idea is create a application using solid which allow us to get the localization of our friends
+The project idea is create a application using solid which allow us to get the localization of our friends
 that are using the app.
 All the information will be saved in pods, excepting the essential to the application funcionality
 
