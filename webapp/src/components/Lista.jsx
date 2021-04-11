@@ -4,6 +4,7 @@ import {List, ListItem, ListItemIcon,ListItemText, Divider, makeStyles} from '@m
 import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import MapIcon from '@material-ui/icons/Map';
 import HelpIcon from '@material-ui/icons/Help';
+import SettingsApplicationsIcon from '@material-ui/icons/SettingsApplications';
 import HomeIcon from '@material-ui/icons/Home';
 import EmojiPeopleSharpIcon from '@material-ui/icons/EmojiPeopleSharp';
 import { Link } from 'react-router-dom';
@@ -63,6 +64,11 @@ const Lista = () =>{
                         </AuthButton>
                     
                 </ListItem>
+                <ListItemLink 
+                    icon = {<SettingsApplicationsIcon/>}
+                    primary = "Administrador"
+                    to= "../vistas/Admin">
+                </ListItemLink>
 			</LoggedOut>
 
             <LoggedIn>
@@ -85,24 +91,16 @@ const Lista = () =>{
             to= "../vistas/Mapa">
             </ListItemLink>
 
-            <ListItemLink 
-            icon = {<AssignmentIndIcon/>}
-            primary = "Administrador"
-            to= "../vistas/Admin">
-            </ListItemLink>
-
             </LoggedIn>
 
             <Divider/>
 
-            <ListItem button>
-                <ListItemIcon>
-                    <HelpIcon/>
-                </ListItemIcon>
-                <ListItemText>
-                     Ayuda.
-                </ListItemText>
-            </ListItem>
+            <ListItemLink 
+            icon = {<HelpIcon/>}
+            primary = "Ayuda"
+            to= "../vistas/Ayuda">
+            </ListItemLink>
+
             <Divider/>
             
         </List>

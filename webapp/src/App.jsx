@@ -9,6 +9,7 @@ import Home from './vistas/Home';
 import Amigos from './vistas/Amigos';
 import Mapa from './vistas/Mapa';
 import Admin from './vistas/Admin';
+import Ayuda from './vistas/Ayuda';
 
 
 class App extends React.Component {
@@ -30,6 +31,8 @@ class App extends React.Component {
               render={() => <Mapa />} />
             <Route path='/vistas/Admin' exact
               render={() => <Admin />} />
+            <Route path='/vistas/Ayuda' exact
+              render={() => <Ayuda />} />
           </Switch>
         </BrowserRouter>
 
