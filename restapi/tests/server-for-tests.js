@@ -6,8 +6,8 @@ This will be handy for testing
 const { MongoMemoryServer } = require("mongodb-memory-server");
 const express = require("express")
 const cors = require("cors");
-const mongoose = require("mongoose")
-const api = require("../api") 
+const mongoose = require("mongoose");
+const api = require("../api") ;
 
 
 
