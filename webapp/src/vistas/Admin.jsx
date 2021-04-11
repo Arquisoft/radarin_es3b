@@ -8,7 +8,7 @@ import "../components/solid/FriendsList";
 
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
-import CleanDatabase from "../components/database/CleanDatabase";
+
 import AdminForm from "../components/AdminForm";
 
 
