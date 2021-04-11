@@ -1,9 +1,9 @@
 import React from "react";
-import { render } from '@testing-library/react';
+import { render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
 import DesactivarAplicacion from "./DesactivarAplicacion";
 
-  it("apaga la aplicación", () =>{
+  it("apaga la aplicación", () => {
       // const numUsersBefore = this.getUsers;
       const numUsersBefore = 3;
       act(() => {
@@ -15,8 +15,8 @@ import DesactivarAplicacion from "./DesactivarAplicacion";
   
   const { container } = render(<DesactivarAplicacion />);
   
-  describe('DesactivarAplicacion', () => {
-    it('renders without crashing', () => {
+  describe("DesactivarAplicacion", () => {
+    it("renders without crashing", () => {
       expect(container).toBeTruthy();
     });
   });

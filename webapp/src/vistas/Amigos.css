@@ -1,15 +1,50 @@
-
-
-div.listaAmigos{
-	font-size:1.2em;
-	  margin-right:25%;
-     margin-left:25%;
-	 text-align:center;
-	background-color:#EEEDED ;
-	
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
+.lista-group {
+  counter-reset: gradient-counter;
+  list-style: none;
+  padding-left: 1rem;
+}
 
+.list-group > div {
+    background: rgb(221, 244, 247);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+}
+.list-group > div::before,
+.list-group > div::after {
+    background: linear-gradient(135deg, #a1e2e1 0%,rgb(36, 58, 184) 100%);
+    border-radius: 1rem 1rem 0 1rem;
+    content: "";
+    height: 3rem;
+    left: -1rem;
+    overflow: hidden;
+    position: absolute;
+	top: -1rem;
+    width: 3rem;
+}
 
-  
-  
+.list-group > div::before {
+    align-items: flex-end;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+    content: counter(gradient-counter);
+    color: #1d1f20;
+    display: flex;
+    font: 900 1.5em/1 'Montserrat';
+    justify-content: flex-end;
+    padding: 0.125em 0.25em;
+    z-index: 1;
+}
+
+.list-group + div {
+    margin-top: 2rem;
+}

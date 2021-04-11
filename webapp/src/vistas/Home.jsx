@@ -10,7 +10,7 @@ import  "../components/solid/FriendsList";
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
 
-import Portada from "../svg/portada.jpg"
+import Portada from "../svg/portada.jpg";
 
 
 function Home() {
