@@ -15,7 +15,7 @@ function Mapa() {
       <body className ="Vista-body">
           <h1>Encuentra a tus amigos</h1>
             <div> 
-            <ButtonToRender component={<IntervalRerender component={<ProcessOn />} time={5000} />} component2={<ProcessOff/>} 
+            <ButtonToRender  component={<IntervalRerender component={<ProcessOn />} time={5000} />} component2={<ProcessOff/>} 
              buttonName="Encender Aplicación" deleteName="Apagar Aplicación" /></div>
 
             

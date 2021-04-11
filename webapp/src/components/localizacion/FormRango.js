@@ -22,19 +22,21 @@ class FormRango extends React.Component{
     return(
 
           <div>
-            <div id = "mapa"><GuardarLocalizacion userWebID={this.props.userWebID} amigos={this.props.amigos} lat={this.props.lat} lon={this.props.lon} rango={this.state.rango/113}/> </div>
-            
+           
               
             
             
               <div class="formMap" >
                     <Form.Group >
                 
-                      <Form.Label>Rango: </Form.Label>
+                      <Form.Label>Area de visualización: </Form.Label>
                       <Form.Control name="rango" type="double" placeholder="Introduzca rango " onChange={this.changeRango.bind(this)} value={this.state.rango}/>
-                      
+                      <Form.Label>  km de radio.</Form.Label>
                     </Form.Group>
               </div>
+			  
+			   <div ><GuardarLocalizacion userWebID={this.props.userWebID} amigos={this.props.amigos} lat={this.props.lat} lon={this.props.lon} rango={this.state.rango/113}/> </div>
+            
             
           
           </div>

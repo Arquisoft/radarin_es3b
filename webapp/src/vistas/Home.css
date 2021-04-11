@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(5px + 2vmin);
+ 
 }
 
 .Home-table {
@@ -24,6 +24,10 @@
   border-bottom-right-radius: 5px 5px;
   border-bottom-left-radius:  5px 5px;
   border: 2px solid #3F51B5;
+}
+
+div.Home{
+	font-size:1.5em;
 }
 
   

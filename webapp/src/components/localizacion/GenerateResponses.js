@@ -153,8 +153,8 @@ class GenerateResponses extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<FriendsMap responses={this.state.responses} lat={this.props.lat} lon={this.props.lon} rango={this.props.rango}/>
+			<div >
+				<FriendsMap  responses={this.state.responses} lat={this.props.lat} lon={this.props.lon} rango={this.props.rango}/>
 				
 			</div>
 
