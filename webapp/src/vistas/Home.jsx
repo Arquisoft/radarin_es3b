@@ -9,7 +9,7 @@ import  "../components/solid/FriendsList";
 
 import ReactNotification from "react-notifications-component";
 import "react-notifications-component/dist/theme.css";
-import CleanDatabase from "../components/database/CleanDatabase";
+
 import Portada from "../svg/portada.jpg"
 
 
@@ -26,7 +26,7 @@ function Home() {
         
       </LoggedIn>
       <div className="Home-text">
-        <img src={Portada}/>
+        <img src={Portada} alt="portada"/>
       </div>
     </body>
     </div>
