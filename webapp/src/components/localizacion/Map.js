@@ -14,11 +14,6 @@ mapboxgl.workerClass = MapboxWorker;
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoia2lrZWthaWsiLCJhIjoiY2tsenMzYXF0MTVkcDJxbHlvZGhhM2N6MyJ9.hg3CQqQ380aEm4XcjWLXJg"; // Set your mapbox token here
 
-
-
-
-
-
 class Map extends Component {
   constructor(props) {
     super(props);
@@ -36,8 +31,6 @@ class Map extends Component {
       }
     };
   }
-
-
 
   renderMarkers = () => {
     console.log(this.props.rango);

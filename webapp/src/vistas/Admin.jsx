@@ -20,7 +20,6 @@ function Admin() {
       <body className="App-body">
         <h1>Administrador</h1>
 
-        <CleanDatabase />
         <AdminForm />
 
       </body>

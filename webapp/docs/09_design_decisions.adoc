@@ -22,10 +22,16 @@ Most of us had never developed a cellphone application so we needed to learn a n
 
 We had to choose a format to present our documentation.
 
+We needed a library that allowed us to show a map with the localization of the users.
+
+We needed a library that allowed us to access data stored in SOLID.
+
+We needed a library that allowed us to show notifications to the user.
+
 
 === Consequences
 
-Since no member of the team had experience with SOLID, we had to read a lot of documentation about it, how it works and what technologies were compatible with it.Taking that into account and the fact that it was the first cellphone application we were going to developed, after reading that React Native and Nodejs facilitated working with SOLID, we decided to take the advice of our teacher and resolved it was best to use them as the libraries to work with pods and IGU. That also meant that the programming language we were going to use was JavaScript.
+Since no member of the team had experience with SOLID, we had to read a lot of documentation about it, how it works and what technologies were compatible with it.Taking that into account and the fact that it was the first cellphone application we were going to developed, after reading that React and Nodejs facilitated working with SOLID, we decided to take the advice of our teacher and resolved it was best to use them as the libraries to work with pods and IGU. That also meant that the programming language we were going to use was JavaScript.
 
 
 === Decisions
@@ -34,8 +40,6 @@ We decided to use JavaScript as the programming language since it supports SOLID
 
 We decided to use Nodejs to work with pods since it has a lot of documentation and seemed easiest way.
 
-We decided to use React Native to develop the IGU since it supports SOLID.
-
 We decided to use solid community as the pod provider because it was the most recommended provider amongst the existent ones.
 
 We decided to make our documentation in English since we believe that Software Engineers should be able to speak at least basic English and it allowed us to practice.
@@ -43,6 +47,15 @@ We decided to make our documentation in English since we believe that Software E
 We decided to make our documentation using arc42 format since two members already had experience with it and the rest thought that it was a good way to learn a useful technology.
 
 We decided to use MongoDB as the database to store information we could not save on pods because React is prepared to easily work with it.
+
+We decided to use Mapbox as the library to show a map since it seemed easier to use than Google Maps and it did not require a paid key to use it.
+
+We decided to use solid/query-ldflex to access the information stored in SOLID since it already had implemented most of the methods that we needed.
+
+We decided to use react-push-notification to show notifications to the user since it facilitated the task.
+
+We decided to use material-ui to develop the IGU since it worked in tandem with React and it had already implemented useful components.
+
 
 
 [role="arc42help"]
