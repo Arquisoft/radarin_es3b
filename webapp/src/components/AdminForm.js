@@ -22,7 +22,7 @@ class AdminForm extends React.Component {
     async handleSubmit(e) {
         console.log(this.state.entra);
         e.preventDefault()
-        if (this.state.user == this.state.usuario && this.state.psw == this.state.password){
+        if (this.state.user === this.state.usuario && this.state.psw === this.state.password){
             this.setState({entra: true});
             console.log(this.state.entra);
         }
