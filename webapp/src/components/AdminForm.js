@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Form from "react-bootstrap/Form";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 import CleanDatabase from "../components/database/CleanDatabase";
 
 
@@ -16,27 +16,27 @@ class AdminForm extends React.Component {
             password: "admin",
             userToDelete: ""
 
-        }
+        };
     }
 
     async handleSubmit(e) {
-        console.log(this.state.entra);
-        e.preventDefault()
+        //console.log(this.state.entra);
+        e.preventDefault();
         if (this.state.user === this.state.usuario && this.state.psw === this.state.password){
             this.setState({entra: true});
             console.log(this.state.entra);
         }
-        console.log(this.state.entra);
+        //console.log(this.state.entra);
       }
 
     changeUser(e) {
         const user = e.target.value;
-        this.setState({ user: user })
+        this.setState({ user: user });
     }
 
     changeUserToDelete(e) {
         const userToDelete = e.target.value;
-        this.setState({ userToDelete: userToDelete })
+        this.setState({ userToDelete: userToDelete });
     }
 
     changePsw(e) {
@@ -80,8 +80,8 @@ class AdminForm extends React.Component {
         return (
             <div>{this.renderLogin()}</div>
             
-        )
+        );
     }
 }
 
-export default AdminForm
+export default AdminForm;
