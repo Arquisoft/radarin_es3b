@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import './App.css';
+import './Map.css';
 
 
 import Home from './vistas/Home';

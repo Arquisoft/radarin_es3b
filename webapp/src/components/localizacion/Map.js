@@ -57,10 +57,11 @@ class Map extends Component {
 
   render() {
     return (
-      <MapGL
+	<div id = "mapa">
+      <MapGL 
         {...this.state.viewport}
-        width="96vw"
-        height="100vh"
+        width="94vw"
+        height="90vh"
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={(viewport) => this.setState({ viewport })}
         mapboxApiAccessToken={MAPBOX_TOKEN}
@@ -71,6 +72,7 @@ class Map extends Component {
 
         <MapMarker nombre="Mi posicion" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} />
       </MapGL>
+	  </div>
     );
   }
 }
