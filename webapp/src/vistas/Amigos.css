@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-
-.Vista-body {
-	margin: 5rem;
-}
-
 .lista-group {
   counter-reset: gradient-counter;
   list-style: none;
