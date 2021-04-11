@@ -17,4 +17,4 @@ image:7-Infrastructure-v4-Local.png["Infrastructure diagram."]
 
 Motivation::
 
-For the development of the WebApp the MongoDB database will be deployed on a local Docker virtual machine with the restapi and webapp running with npm. The WebApp will communicate with the PODs from SOLID via HTTP protocol.
+For the development of the WebApp the MongoDB database will be deployed on a remote MongoDB database service and will be accessed by the Restapi. The WebApp will be runned with npm. The WebApp will communicate with the PODs from SOLID via HTTP protocol.
