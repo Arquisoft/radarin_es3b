@@ -19,7 +19,7 @@ App <-down-> Pods
 ----
 
 Motivation::
-El usuario interacciona con nuestra App, la cual a su vez usa una base de datos MongoDB y el POD de SOLID del usuario.
+The user interacts with our application, which uses a MongoDB database and communicates with the user's SOLID POD.
 
 Contained Building Blocks::
 [cols="1,2" options="header"]
@@ -48,17 +48,16 @@ react <--> Restapi
 ----
 
 Motivation::
-La WebApp utiliza la Restapi para conectarse con la base de datos en MongoDB.
-
+WebApp uses the Restapi to connect with the MongoDB database.
 
 Contained Building Blocks::
 [cols="1,2" options="header"]
 |===
 | **Name** | **Responsibility**
-| WebApp | Aplicación en react y nodejs 
-| Restapi | aplicacion que conecta con la base de datos
-| docs | Documentación de la aplicación
-| E2E testing | _<Text>_
+| WebApp | React and Node.JS application. 
+| Restapi | Application/Artifact that connects with the MongoDB database.
+| docs | Documentation of the application.
+| E2E testing | Aceptation step by step tests.
 |===
 
 ==== Level 3
@@ -75,21 +74,24 @@ rectangle "Admin"
 rectangle "Notifications"
 }
 Localization <--> Notifications
+Views <--> Localization
+Views <--> FriendList
+Views <--> Admin
+Views <--> Notifications
 @enduml
 ----
 
 Motivation::
-
-
+The WebApp is divided in 5 functionality blocks that work together.
 
 Contained Building Blocks::
 [cols="1,2" options="header"]
 |===
 | **Name** | **Responsibility**
-| Localization | _<Text>_
-| Views | _<Text>_
-| FriendList | _<Text>_
-| Admin | _<Text>_
-| Notifications | _<Text>_
+| Localization | Manages the localization of the user and displays it in a map together with the localizations of their friends. Uses the Restapi to store the users localization in the MongoDB database.
+| Views | Controls the appaerance of the application. Manages the different views of the application with url routes.
+| FriendList | Lists the names of the user's friends in their SOLID POD.
+| Admin | Has a login form to control the access. If the app user has succesfully logged in as admin, then they'll be able to delete the contents of the database. More functionality will be added in future releases.
+| Notifications | Manages the push notifications of the application. Sends a push notification to the user when a new friend is in range.
 |===
 
