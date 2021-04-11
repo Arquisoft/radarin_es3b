@@ -32,4 +32,4 @@ class FriendsList extends React.Component {
     }
 }
 
-export default FriendsList
+export default FriendsList;

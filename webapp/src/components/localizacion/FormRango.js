@@ -42,7 +42,7 @@ class FormRango extends React.Component{
           </div>
 
           
-    )
+    );
   }
 }
 

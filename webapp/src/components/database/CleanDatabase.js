@@ -27,7 +27,7 @@ class CleanDatabase extends React.Component {
 
 
       </div>
-    )
+    );
   }
 }
 

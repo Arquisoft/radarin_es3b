@@ -22,7 +22,7 @@ function connect(){
 
         app.listen(process.env.PORT || 5000, () => {
             console.log("Server has started! Using db in "+mongo_uri);
-        })
+        });
     })
 }
 
