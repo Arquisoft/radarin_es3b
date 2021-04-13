@@ -3,6 +3,7 @@ import { Component } from "react";
 
 import MapGL from "react-map-gl";
 import MapMarker from "./MapMarker";
+import "../../vistas/mapa.css";
 //import {StaticMap} from 'react-map-gl';
 
 //import * as mapboxgl from 'mapbox-gl';
@@ -50,11 +51,11 @@ class Map extends Component {
 
   render() {
     return (
-	<div id = "mapa">
+	<div class = "mapa">
       <MapGL 
         {...this.state.viewport}
         width="94vw"
-        height="90vh"
+        height="70vh"
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={(viewport) => this.setState({ viewport })}
         mapboxApiAccessToken={MAPBOX_TOKEN}

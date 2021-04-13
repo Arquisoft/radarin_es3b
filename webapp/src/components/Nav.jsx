@@ -47,7 +47,6 @@ const useStyles = makeStyles(theme => ({
 
     appBar: {
 
-        //width:`calc(100% - ${240}px)`,
         marginLeft: 240,
 
     },
@@ -57,7 +56,6 @@ const useStyles = makeStyles(theme => ({
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingRight: 35,
         paddingTop: 10,
         paddingBottom: 10,
         color: "#fff",
@@ -70,7 +68,6 @@ const useStyles = makeStyles(theme => ({
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingRight: 23,
         paddingTop: 10,
         paddingBottom: 10,
         color: "#fff",
@@ -118,7 +115,6 @@ const Navbar = (props) => {
                         logout="Desconectarse"
                         style={{ background: "transparent" }}
                     >
-
                     </AuthButton>
                 </LoggedIn>
 

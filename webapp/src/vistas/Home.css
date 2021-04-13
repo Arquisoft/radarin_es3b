@@ -18,7 +18,7 @@
   width: 300%;
   max-height: 630px;
   align-items: center;
-  animation: cambio 20s infinite;
+  animation: cambio 15s infinite;
 }
 
 .slider li {

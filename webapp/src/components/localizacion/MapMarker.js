@@ -15,11 +15,6 @@ function MapMarker(props) {
 
   const markerStyle = {
     position: "absolute",
-	
-
-	
-   
-	
     left: x-45,
     top: y-52
   };
