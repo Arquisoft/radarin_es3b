@@ -2,7 +2,7 @@ import { useLDflexList } from "@solid/react";
 
 export default function SolidFriends() {
 
-	const friends = useLDflexList('user.friends');
+	const friends = useLDflexList("user.friends");
 	var ids = [];
 	for (var element of friends) {
 

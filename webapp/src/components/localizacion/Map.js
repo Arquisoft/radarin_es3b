@@ -5,13 +5,14 @@ import MapGL from "react-map-gl";
 import MapMarker from "./MapMarker";
 //import {StaticMap} from 'react-map-gl';
 
+//import * as mapboxgl from 'mapbox-gl';
 import mapboxgl from "mapbox-gl";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import MapboxWorker from "worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker";
+mapboxgl.workerClass = MapboxWorker;
+
 
 const MAPBOX_TOKEN = "pk.eyJ1Ijoia2lrZWthaWsiLCJhIjoiY2tsenMzYXF0MTVkcDJxbHlvZGhhM2N6MyJ9.hg3CQqQ380aEm4XcjWLXJg"; // Set your mapbox token here
-
-
-// eslint-disable-next-line import/no-webpack-loader-syntax
-mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 class Map extends Component {
   constructor(props) {
@@ -31,13 +32,12 @@ class Map extends Component {
     };
   }
 
-
-
   renderMarkers = () => {
-    return (Array.from(this.props.responses.values())).map(item => {
+    console.log(this.props.rango);
+    return (Array.from(this.props.responses.values())).map((item) => {
 	
-
-      if ((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat) < 10) {
+		
+      if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < this.props.rango) {
         return (
           <MapMarker nombre={item.user} longitude={item.longitude} latitude={item.latitude}>
           </MapMarker>
@@ -50,10 +50,11 @@ class Map extends Component {
 
   render() {
     return (
-      <MapGL
+	<div id = "mapa">
+      <MapGL 
         {...this.state.viewport}
-        width="50vw"
-        height="50vh"
+        width="94vw"
+        height="90vh"
         mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={(viewport) => this.setState({ viewport })}
         mapboxApiAccessToken={MAPBOX_TOKEN}
@@ -64,6 +65,7 @@ class Map extends Component {
 
         <MapMarker nombre="Mi posicion" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} />
       </MapGL>
+	  </div>
     );
   }
 }

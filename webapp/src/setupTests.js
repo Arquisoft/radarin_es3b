@@ -5,6 +5,8 @@
 import "@testing-library/jest-dom";
 import {jest} from "@jest/globals";
 
+jest.mock("./components/localizacion/Map", () => () => <></>);
+
 const mockGeolocation = {
     getCurrentPosition: jest.fn()
       .mockImplementationOnce((success) => Promise.resolve(success({
@@ -15,3 +17,5 @@ const mockGeolocation = {
       })))
   };
   global.navigator.geolocation = mockGeolocation;
+
+  window.URL.createObjectURL = function() {};

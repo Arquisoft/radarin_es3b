@@ -1,10 +1,10 @@
-import React from 'react'
-import Nav from "./Nav"
-import {makeStyles, Hidden} from '@material-ui/core'
-import { cyan } from '@material-ui/core/colors'
-import MyDrawer from './MyDrawer'
+import React from "react";
+import Nav from "./Nav";
+import {makeStyles, Hidden} from "@material-ui/core";
+import { cyan } from "@material-ui/core/colors";
+import MyDrawer from "./MyDrawer";
 
-const styles = makeStyles(theme => ({
+const styles = makeStyles((theme) => ({
 
     root: {
         display : 'flex'
@@ -16,15 +16,15 @@ const styles = makeStyles(theme => ({
         backgroundColor: cyan,
     },
 
-}))
+}));
 const Contenedor = () => {
-    const classes = styles()
+    const classes = styles();
 
-    const[abrir, setAbrir] = React.useState(false)
+    const[abrir, setAbrir] = React.useState(false);
 
-      const accionAbrir = () =>{
-          setAbrir(!abrir)
-      }
+      const accionAbrir = () => {
+          setAbrir(!abrir);
+      };
 return (
 
    
@@ -54,8 +54,8 @@ return (
         </div>
     </div>
     
-)
+);
 
-}
+};
 
 export default Contenedor;

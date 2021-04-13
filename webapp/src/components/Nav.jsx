@@ -1,16 +1,16 @@
-import React from 'react'
-import {AppBar, Toolbar, makeStyles, IconButton} from '@material-ui/core'
+import React from "react";
+import { AppBar, Toolbar, makeStyles, IconButton } from "@material-ui/core";
 
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
-import EmojiPeopleSharpIcon from '@material-ui/icons/EmojiPeopleSharp';
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
+import EmojiPeopleSharpIcon from "@material-ui/icons/EmojiPeopleSharp";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 
-import {  LoggedIn, LoggedOut} from "@solid/react";
-import MenuIcon from '@material-ui/icons/Menu';
-import { Link } from 'react-router-dom';
+import { LoggedIn, LoggedOut } from "@solid/react";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Link } from "react-router-dom";
 import { AuthButton } from "@solid/react";
 
 
@@ -31,10 +31,10 @@ const useStyles = makeStyles(theme => ({
 
 
     menuButton: {
-        
+
         marginRight: theme.spacing(2),
-        
-      },
+
+    },
 
     title: {
         flexGrow: 1,
@@ -46,94 +46,94 @@ const useStyles = makeStyles(theme => ({
     },
 
     appBar: {
-       
+
         //width:`calc(100% - ${240}px)`,
         marginLeft: 240,
-        
+
     },
 
     iniButton: {
-        
+
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingRight:35,
-        paddingTop:10,
-        paddingBottom:10,
+        paddingRight: 35,
+        paddingTop: 10,
+        paddingBottom: 10,
         color: "#fff",
 
-      },
+    },
 
 
-      logOutButton: {
-        
+    logOutButton: {
+
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingRight:23,
-        paddingTop:10,
-        paddingBottom:10,
+        paddingRight: 23,
+        paddingTop: 10,
+        paddingBottom: 10,
         color: "#fff",
 
-      },
+    },
 
-      name: {
+    name: {
         fontSize: 35,
-        fontStyle:"italic",
-        fontFamily:"Times New Roman"
-      },
-    
+        fontStyle: "italic",
+        fontFamily: "Times New Roman"
+    },
+
 
 }))
 
 const Navbar = (props) => {
 
     const classes = useStyles()
-    return(
+    return (
 
-            <AppBar className={classes.appBar}> 
-                <Toolbar>
-                    <IconButton 
+        <AppBar className={classes.appBar}>
+            <Toolbar>
+                <IconButton
                     edge="start"
-                    className={classes.menuButton} 
-                    color="inherit" 
+                    className={classes.menuButton}
+                    color="inherit"
                     aria-label="menu"
-                    onClick={()=> props.accionAbrir()}
-                    >
-                        <MenuIcon />
-                    </IconButton>   
-                   
-                    <StyledLink to="../vistas/home" className={classes.title}>
-                        
-                        <div className={classes.name}>
-                            <ExploreOutlinedIcon/>
+                    onClick={() => props.accionAbrir()}
+                >
+                    <MenuIcon />
+                </IconButton>
+
+                <StyledLink to="../vistas/home" className={classes.title}>
+
+                    <div className={classes.name}>
+                        <ExploreOutlinedIcon />
                             Radarin
                         </div>
-                        </StyledLink>
-                    
-                    <LoggedIn>
-                    <ExitToAppIcon/>
-                    <AuthButton className={classes.logOutButton} 
-                        logout="Desconectarse"
-                        style="background: transparent"
-                        >
-                            
-                        </AuthButton>
-                    </LoggedIn>
+                </StyledLink>
 
-                    <LoggedOut>
-                    <EmojiPeopleSharpIcon/>
-                    <AuthButton className={classes.iniButton} 
+                <LoggedIn>
+                    <ExitToAppIcon />
+                    <AuthButton className={classes.logOutButton}
+                        logout="Desconectarse"
+                        style={{ background: "transparent" }}
+                    >
+
+                    </AuthButton>
+                </LoggedIn>
+
+                <LoggedOut>
+                    <EmojiPeopleSharpIcon />
+                    <AuthButton className={classes.iniButton}
                         popup="https://solid.github.io/solid-auth-client/dist/popup.html"
                         login="Iniciar Sesión"
-                        style="background: transparent"
-                        >
-                            
-                        </AuthButton>
-                    </LoggedOut>
-                    
-                </Toolbar>
-            </AppBar>    
+                        style={{ background: "transparent" }}
+                    >
+
+                    </AuthButton>
+                </LoggedOut>
+
+            </Toolbar>
+        </AppBar>
     )
 }
 

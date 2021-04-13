@@ -9,16 +9,13 @@ class FriendsList extends React.Component {
     
     constructor(props) {
         super(props);
-        this.state = { friends: ["estado", "inicial"] }
+        this.state = { friends: [] }
     }
 
-    async componentDidMount() {
-        
-    
-        console.log(this.props.webId);
-        const data = await getFriends("https://luislomba.solidcommunity.net/profile/card#me");//this.props.userWebID);
-        console.log(data);
-        
+    async componentDidUpdate() {
+
+        const data = await getFriends(this.props.webId);
+
         this.setState({ friends: data });
     }
 
@@ -32,7 +29,7 @@ class FriendsList extends React.Component {
                 <ListGroup>
                     {
                         this.state.friends.map(function (user, i) {
-                            return <ListGroup.Item id={i} key={i}>{ (i+1) + ' : ' + user}</ListGroup.Item>
+                            return <ListGroup.Item id={i} key={i}>{'' + user}</ListGroup.Item>
                         })
                     }
                 </ListGroup>
@@ -41,4 +38,4 @@ class FriendsList extends React.Component {
     }
 }
 
-export default FriendsList
+export default FriendsList;

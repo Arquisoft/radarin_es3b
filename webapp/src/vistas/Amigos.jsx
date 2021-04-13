@@ -1,11 +1,7 @@
-import React from 'react';
-import Contenedor from '../components/Contenedor';
-
-import CleanDatabase from "../components/database/CleanDatabase";
-
-import {makeStyles} from '@material-ui/core'
-
-import FriendListHook from "../hooks/FriendListHook"; 
+import React from "react";
+import Contenedor from "../components/Contenedor";
+import "./Amigos.css";
+import FriendListHook from "../hooks/FriendListHook";
 
 const useStyles = makeStyles(theme => ({
 
@@ -25,10 +21,8 @@ function Amigos() {
     <div className="Amigos">
       <Contenedor/>
       <body className ="Vista-body">
-          <h1>Amigos</h1>
-          
-		        <CleanDatabase/>
-            <div className={classes.listaAmigos}>
+          <h1>Amigos agregados</h1>
+            <div class="listaAmigos">
                 <FriendListHook/>
             </div>
       </body>

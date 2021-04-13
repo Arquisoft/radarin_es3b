@@ -1,5 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+
 # dependencies
 webapp/node_modules
 /.pnp
@@ -17,5 +18,9 @@ yarn-error.log*
 
 restapi/node_modules
 restapi/data
+
+webapp/src/components/oldExamples
+webapp/src/components/pruebas
+clasesModificadas
 
 .eslintcache

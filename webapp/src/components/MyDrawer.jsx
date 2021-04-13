@@ -1,9 +1,9 @@
 
-import React from 'react'
-import {makeStyles, Drawer, Divider,}from '@material-ui/core'
-import Lista from './Lista'
+import React from "react";
+import {makeStyles, Drawer, Divider,}from "@material-ui/core"
+import Lista from "./Lista"
 
-import ExploreOutlinedIcon from '@material-ui/icons/ExploreOutlined';
+import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 
 
 const styles = makeStyles(theme =>({
@@ -38,7 +38,7 @@ const MyDrawer = (props) => {
             className={classes.drawer} 
            
             classes = {{paper: classes.drawerPaper,}}
-            anchor = 'left'
+            anchor = "left"
             variant={props.variant} 
             open={props.open}
             onClose={props.onClose ? props.onClose : null}

@@ -30,12 +30,22 @@ the use of JavaScript. Also because its relatively easy to learn and exists a lo
 documentation about it, what makes it very adequate for people who don't have experience with
 this type of applications.
 
-
-
 In order to have more security with application changes the team will have a comun branch 
 to work called "develop" to integrate the work, having the main branch only to stable versions.
 
 We are going to use MongoDB to persist the location of users, the rest of information will be saved
-in pods.
+in pods, the localizations will have a expire time of one minit to be secure that a user dont forget
+shut down his app .
 
-We are going to use Mapbox Api to show users Localization in a map, the module @solid/react to work with solid and get information from pods.
+We are going to use Mapbox Api to show users Localization in a map, this map is refreshed every 5 seconds with "react-interval-renderer".
+In each refresh we save user localization, we get friends localizations and we show the notifications to the user, having a "real time map"
+
+react-push-notification is the module choosed to show notifications when your friend start the app or enter in your area, due to its a very
+customizable component and easy to understand the basics.
+
+In order to make the app compatible with solid we use two modules ,first @Solid/react because provide a simple implementation to login 
+in solid and get your  added friends, however we use also @solid/query-ldflex because make easier obtain more complex data, for example
+names and surnames.
+
+Notifications and map markers are managment at the same time, in same methods with the same database reads, this get worse the code desingn
+but improve a lot the efficiency and allows to synchronize much better both operations

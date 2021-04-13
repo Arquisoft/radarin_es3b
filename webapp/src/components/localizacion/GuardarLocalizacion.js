@@ -22,14 +22,14 @@ class GuardarLocalizacion extends React.Component {
         }
 
         async componentDidUpdate() {
-
+                console.log(this.props.rango);
                 this.submitLoc();
         }
 
         render() {
                 return (
                         <div>
-                                <GenerateResponses amigos={this.props.amigos} lat={this.props.lat} lon={this.props.lon} />
+                                <GenerateResponses amigos={this.props.amigos} lat={this.props.lat} lon={this.props.lon} rango={this.props.rango}/>
                         </div>
 
                 );

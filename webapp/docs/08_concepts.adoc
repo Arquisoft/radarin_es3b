@@ -1,23 +1,64 @@
 [[section-concepts]]
 == Cross-cutting Concepts
-image::08-Crosscutting-Concepts-Structure-EN.png[]
-=== User Experience concepts (UX)
-==== User interface:
-We will try to make the interface as easy to use as we can, to simplify the app to the users.
 
-=== Domain concepts
-The users, they need a pod id to save his information and use it.
-We have the location and the information about the user thanks to his POD and MongoDB. We will work with friend request to share locations between users.
-The Pod contains user information and his frinds, and MongoDB save the user location.
+=== Domain Concepts:
+*POD: The repository which make the app compatible with solid, we store all the information of a user, except the localization which is saved in mongoDB due to the efiency
 
-=== Design patterns
-We didn´t decide the design yet. 
+*Friend: Is a person who we have added in SOLID and we can see his localization.
 
-=== Architectural pattern
-We thought to use MVC pattern.
+*Visible area: Is the area where we want see connected friends, we can parameterize it setting the radio under the map.
+
+*Administrator: A rol which a person can get in his session, he has more control in the app configuring and updating the database. All users can get the administrator
+rol if they hace the credentials
+
+
+
+=== User Experience 
+We will try to make the interface as easy to use as we can, to simplify the app to the users, making a side menu to navigate across the app. 
+However we choosed having a administrator section in the App IGU to make easier to acess and continue improving it, it maybe will change in future releases .
+
+
+=== Securiy & Safety
+In order to make safer the private info it will be stored in pods. 
+
+When the user close the app the Localization is deleted from the MongoDb database, as extra security measure the localization is deleted a minit after it stops
+to recieve updates securing that the user doesnt forget close his app.
+
+The credentials of the admin role are encripted in the database.
+
+ 
 
 === Development concepts
-We will develop this application using SOLID. React Native will help us to use the phone app.
+We use  the Node.js packae manager to build the app ussing differents components in order to get the desired funcionality.
 
-=== Security concepts
-Our app use SOLID architecture, where each user is defined with a WebId. To share routes we give permissions to that route, so the friend can see the route. If we copy the route to his pod it would has less security and privacy, because the application would have more permissions than necessary.
+We use Jest to test the correct app peerformance.
+
+We use MongoDB database to store users Localization using a restApi to connect the app.
+
+Its possible configure a little the app  modifying the your visible area and creating meeting places.
+
+=== Under-the-hood
+*Peristency: The app use mongoDB database to store localizations and Pods to store the other information.
+
+*Session handling: Sessions are managed with Solid (logged with Solid account) with the exception of the session administrator.
+
+*Exception and error Handling:The biggest and most common error with the app is when geolocalization dosent work well giving your friends wrong information.
+
+*Parallelization: The app works in notifications and localizations-reads at the same time the map is being refreshed, this can induce to some inconsistencies
+
+between notifications and appearance of a friend markers, but produces a better efficienvy
+
+=== Operation concepts
+*Administration and Management: A user can get the administrator role if he has credentials, allowing him to manage app and database
+
+*Disaster-Reovery: After some minits of doesnt receive updates the database and all stored info is cleaned.
+
+ 
+
+
+
+
+
+
+
+
