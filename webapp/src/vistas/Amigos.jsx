@@ -3,21 +3,9 @@ import Contenedor from "../components/Contenedor";
 import "./Amigos.css";
 import FriendListHook from "../hooks/FriendListHook";
 
-const useStyles = makeStyles(theme => ({
-
-  listaAmigos: {
-    textAlign: "left",
-    marginLeft:theme.spacing(2),
-    marginRight:theme.spacing(2),
-    border: "2px solid #3F51B5",
-  },
-
-}))
 function Amigos() {
-  const classes = useStyles()
-
   return (
-
+    
     <div className="Amigos">
       <Contenedor/>
       <body className ="Vista-body">
