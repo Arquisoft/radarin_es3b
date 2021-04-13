@@ -12,9 +12,12 @@ understand each other and make work easier for others by adapting together.
 and distribute the work. keep a daily and orderly work.
 |===
 
+
+[options="header"]
 |===
 |Technical Debts|Explanation
 | New technologies like solid| Use new technologies, of which there is not much information 
 or projects developed to take as an example
 |Need to use Pods|Having to store certain data from an external database can lead to 
 increased execution time of tasks
+|===
