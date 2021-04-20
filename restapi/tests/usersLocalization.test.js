@@ -25,19 +25,38 @@ afterAll(async () => {
 /**
  * Product test suite.
  */
-describe("userLocalization_add ", () => {
+describe("userLocalization ", () => {
 
     /**
      * Tests that a user can be created through the productService without throwing any errors.
      */
     it("can be created correctly", async () => {
         user = 'NewUser';
-        latitude = 11.1;
-        longitude = 2.2;
+        latitude = 33.3;
+        longitude = 4.4;
         const response = await request(app).post('/api/userLocalization/add').send({user: user,latitude: latitude, longitude: longitude}).set('Accept', 'application/json');
         expect(response.statusCode).toBe(200);
         expect(response.body.user).toBe(user);
         expect(response.body.latitude).toBe(latitude);
         expect(response.body.longitude).toBe(longitude);
+    });
+
+    /**
+     * Test that we can list user's location without any error.
+     */
+     it("can be listed",async () => {
+
+        /*Set up*/
+        user = 'TestUser';
+        latitude = 11.1;
+        longitude = 2.2;
+        const response = await request(app).post('/api/userLocalization/add').send({user: user,latitude: latitude, longitude: longitude}).set('Accept', 'application/json');
+
+        /*Check*/
+        const responseGet = await request(app).get("/api/userLocalization/get/TestUser");
+        expect(responseGet.statusCode).toBe(200);
+        expect(responseGet.body.user).toBe(user);
+        expect(responseGet.body.latitude).toBe(latitude);
+        expect(responseGet.body.longitude).toBe(longitude);
     });
 });
