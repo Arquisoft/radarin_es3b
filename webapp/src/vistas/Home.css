@@ -1,20 +1,20 @@
-.Bienvenida{
+.Bienvenida {
   font-size: 30px;
 }
 
-.enlace{
+.enlace {
   font-size: 35px;
 }
-.slider{
+.slider {
   padding: auto;
   width: 90%;
-  margin:auto;
+  margin: auto;
   overflow: hidden;
 }
 
-.slider ul{
-  display:flex;
-  padding:0;
+.slider ul {
+  display: flex;
+  padding: 0;
   width: 300%;
   max-height: 630px;
   align-items: center;
@@ -22,29 +22,26 @@
 }
 
 .slider li {
-  width:100%;
+  width: 100%;
   max-height: 630px;
   list-style: none;
 }
 
-.slider img{
+.slider img {
   max-height: 630px;
   max-width: 1200px;
-  width:100%;
+  width: 100%;
 }
 
 @keyframes cambio{
-  0% {margin-left:0;}
-  20%{margin-left:0;}
-  25% {margin-left: -100%;}
-  45% {margin-left: -100%;}
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
 
-  50% {margin-left: -200%;}
-  70% {margin-left: -200%;}
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
 
-  75% {margin-left: -200%;}
-  1000% {margin-left: -200%;}
+  75% { margin-left: -200%; }
+  1000% { margin-left: -200%; }
 }
-
-  
-  

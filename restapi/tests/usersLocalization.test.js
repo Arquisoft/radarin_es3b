@@ -25,7 +25,7 @@ afterAll(async () => {
 /**
  * Product test suite.
  */
-describe("userLocalization ", () => {
+describe("userLocalization add", () => {
 
     /**
      * Tests that a user can be created through the productService without throwing any errors.
@@ -58,5 +58,36 @@ describe("userLocalization ", () => {
         expect(responseGet.body.user).toBe(user);
         expect(responseGet.body.latitude).toBe(latitude);
         expect(responseGet.body.longitude).toBe(longitude);
+    });
+});
+
+
+ describe("userLocalization delete", () => {
+
+    /**
+     * Tests that a user can be created through the productService without throwing any errors.
+     */
+    it("can be deleted correctly", async () => {
+        user = 'NewUser';
+        latitude = 33.3;
+        longitude = 4.4;
+        const response = await request(app).post('/api/userLocalization/add').send({user: user,latitude: latitude, longitude: longitude}).set('Accept', 'application/json');
+        
+        /*Check it's there*/
+        const responseGet = await request(app).get("/api/userLocalization/get/NewUser");
+        expect(responseGet.statusCode).toBe(200);
+        expect(responseGet.body.user).toBe(user);
+        expect(responseGet.body.latitude).toBe(latitude);
+        expect(responseGet.body.longitude).toBe(longitude);
+
+        /*Check it's deleted*/
+        const responseDel = await request(app).get('/api/userLocalization/delete/NewUser');
+        expect(responseDel.statusCode).toBe(200);
+        
+        /*Check it's not there*/
+        const responseEmpty = await request(app).get("/api/userLocalization/get/NewUser");
+        expect(responseEmpty.body.user).toBe("error");
+        expect(responseEmpty.body.latitude).toBe(0);
+        expect(responseEmpty.body.longitude).toBe(0);
     });
 });
