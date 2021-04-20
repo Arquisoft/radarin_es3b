@@ -4,7 +4,9 @@ import getFriends from "./LDFlexPODConnection";
 
 
 
-class FriendsList extends React.Component {
+
+class FriendsList extends React.Component { 
+    
     constructor(props) {
         super(props);
         this.state = { friends: [] }
@@ -17,8 +19,12 @@ class FriendsList extends React.Component {
         this.setState({ friends: data });
     }
 
+    
     render() {
+
+        
         return (
+            
             <div className="FriendsList">
                 <ListGroup>
                     {

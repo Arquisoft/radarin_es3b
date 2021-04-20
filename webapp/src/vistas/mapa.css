@@ -1,0 +1,25 @@
+
+.mapa {
+	margin-left: 2%; 
+	margin-top: 1em; 
+}
+
+div.formMap{
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+}
+
+div.friendMarker{
+	width:1em;
+	height:1em;
+	
+}
+
+.logoutMessage{
+	font-size: 20px;
+}
+
+.mapImg{
+	padding-top: 20px;
+}

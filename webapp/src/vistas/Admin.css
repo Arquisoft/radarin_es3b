@@ -1,0 +1,24 @@
+.admin{
+    align-items: inherit;
+}
+
+.labelUser{
+    font-size: 30px
+}
+.labelPass{
+    font-size: 30px
+}
+.login{
+    align-items: right;
+}
+.adminForm{
+    margin-left: 55px;
+    height: 100%;
+    font-size: 25px;
+    
+}
+.passForm{
+    height: 100%;
+    font-size: 25px;
+    margin-bottom: 30px;
+}

@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
     },
 
     title: {
-        flexGrow: 2,
+        flexGrow: 1,
         textTransform: "capitalize",
         textDecoration: "none",
         fontSize: 25,
@@ -47,7 +47,6 @@ const useStyles = makeStyles(theme => ({
 
     appBar: {
 
-        //width:`calc(100% - ${240}px)`,
         marginLeft: 240,
 
     },
@@ -57,7 +56,6 @@ const useStyles = makeStyles(theme => ({
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingRight: 35,
         paddingTop: 10,
         paddingBottom: 10,
         color: "#fff",
@@ -70,7 +68,6 @@ const useStyles = makeStyles(theme => ({
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingRight: 23,
         paddingTop: 10,
         paddingBottom: 10,
         color: "#fff",
@@ -82,6 +79,7 @@ const useStyles = makeStyles(theme => ({
         fontStyle: "italic",
         fontFamily: "Times New Roman"
     },
+
 
 
 }))
@@ -117,7 +115,6 @@ const Navbar = (props) => {
                         logout="Desconectarse"
                         style={{ background: "transparent" }}
                     >
-
                     </AuthButton>
                 </LoggedIn>
 

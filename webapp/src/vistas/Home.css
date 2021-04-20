@@ -1,33 +1,49 @@
-.Home-text {
-  min-height: 20vh;
-  display: flex;
-  flex-direction: row;
+.Bienvenida{
+  font-size: 30px;
+}
+
+.enlace{
+  font-size: 35px;
+}
+.slider{
+  padding: auto;
+  width: 90%;
+  margin:auto;
+  overflow: hidden;
+}
+
+.slider ul{
+  display:flex;
+  padding:0;
+  width: 300%;
+  max-height: 630px;
   align-items: center;
-  justify-content: center;
- 
+  animation: cambio 15s infinite;
 }
 
-.Home-table {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 400px;
-  padding-left: 400px;
+.slider li {
+  width:100%;
+  max-height: 630px;
+  list-style: none;
 }
 
-.Home-col {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 70px;
-  padding-right: 70px;
-  border-top-left-radius:     5px 5px;
-  border-top-right-radius:    5px 5px;
-  border-bottom-right-radius: 5px 5px;
-  border-bottom-left-radius:  5px 5px;
-  border: 2px solid #3F51B5;
+.slider img{
+  max-height: 630px;
+  max-width: 1200px;
+  width:100%;
 }
 
-div.Home {
-  font-size: 1.5em;
+@keyframes cambio{
+  0% {margin-left:0;}
+  20%{margin-left:0;}
+  25% {margin-left: -100%;}
+  45% {margin-left: -100%;}
+
+  50% {margin-left: -200%;}
+  70% {margin-left: -200%;}
+
+  75% {margin-left: -200%;}
+  1000% {margin-left: -200%;}
 }
 
   

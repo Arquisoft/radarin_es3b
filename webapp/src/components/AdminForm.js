@@ -1,7 +1,7 @@
-import React from "react";
-import Form from "react-bootstrap/Form";
+import React from "react"; 
 import Button from "@material-ui/core/Button";
-import CleanDatabase from "../components/database/CleanDatabase";
+import CleanDatabase from "../components/database/CleanDatabase"; 
+import "../vistas/Admin.css";
 
 
 class AdminForm extends React.Component {
@@ -15,7 +15,6 @@ class AdminForm extends React.Component {
             usuario: "admin",
             password: "admin",
             userToDelete: ""
-
         };
     }
 
@@ -46,33 +45,22 @@ class AdminForm extends React.Component {
 
 
     renderLogin = () => {
+        
         if (this.state.entra)
             return <CleanDatabase />;
-        return (<div>
-            <Form name="admin" onSubmit={this.handleSubmit.bind(this)}>
-                <div class="login" >
-                    <Form.Group >
+        return ( 
+                <form class="login"  onSubmit={this.handleSubmit.bind(this)}>
+                    <p class="labelUser">Usuario:<input class="adminForm" type="text" name="nombre" size="40" 
+                    onChange={this.changeUser.bind(this)} value={this.state.user} 
+                    placeholder="Introduzca el usuario administrador" required="true"></input></p>
 
-                        <Form.Label>Usuario: </Form.Label>
-                        <Form.Control name="usuario" type="string" placeholder="Introduzca usuario " onChange={this.changeUser.bind(this)} value={this.state.user} />
-
-                    </Form.Group>
-                </div>
-
-                <div class="login" >
-                    <Form.Group >
-
-                        <Form.Label>Password: </Form.Label>
-                        <Form.Control name="password" type="string" placeholder="Introduzca password " onChange={this.changePsw.bind(this)} value={this.state.psw} />
-
-                    </Form.Group>
-                </div>
-                <Button variant="contained" color="secondary" type="submit" >
-                    Entrar
-            </Button>
-
-            </Form>
-            </div>
+                    <p  class="labelPass">Contraseña: <input class="passForm" type="password" name="pass" size="40" 
+                    onChange={this.changePsw.bind(this)} value={this.state.psw} 
+                    placeholder="Introduzca su contraseña" required="true"></input></p>
+                    <Button id="boton"variant="contained" color="primary" type="submit" >
+                        Entrar
+                    </Button>
+                </form>       
             );
     }
 

@@ -20,11 +20,16 @@ const useStyles = makeStyles(theme => ({
         background: "transparent",
         border: "none",
         fontSize: 17,
-        paddingRight:35,
+        paddingRight:20,
         paddingTop:10,
-        paddingBottom:10,
+        paddingBottom:10, 
 
       },
+
+      iconIni:{
+          color:"grey",
+          marginRight:"26px",
+      }
 
 
 }))
@@ -48,20 +53,24 @@ const Lista = () =>{
     const classes = useStyles()
     return (
         <List component='nav'>
+            
+
+            <ListItemLink 
+            icon = {<HomeIcon/>}
+            primary = "Inicio"
+            to= "../vistas/Home">
+            </ListItemLink>
+            
             <LoggedOut>
-            
-            
                 <ListItem>
-                    <ListItemIcon>
-                        <EmojiPeopleSharpIcon/>
-                    </ListItemIcon>
+                    <EmojiPeopleSharpIcon className={classes.iconIni}></EmojiPeopleSharpIcon>
                     <AuthButton className={classes.iniButton} 
                         popup="https://solid.github.io/solid-auth-client/dist/popup.html"
-                        login="Iniciar Sesión."
+                        login="Iniciar Sesión"
                         style={{background: "transparent"}}
                         >
                             <EmojiPeopleSharpIcon/>
-                        </AuthButton>
+                    </AuthButton>
                     
                 </ListItem>
                 <ListItemLink 
@@ -72,13 +81,6 @@ const Lista = () =>{
 			</LoggedOut>
 
             <LoggedIn>
-
-            <ListItemLink 
-            icon = {<HomeIcon/>}
-            primary = "Inicio"
-            to= "../vistas/Home">
-            </ListItemLink>
-
             <ListItemLink 
             icon = {<AssignmentIndIcon/>}
             primary = "Lista de amigos"
