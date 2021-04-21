@@ -1,27 +1,27 @@
 //<button class="MuiButtonBase-root MuiIconButton-root jss4 MuiIconButton-colorInherit MuiIconButton-edgeStart" tabindex="0" type="button" aria-label="menu"><span class="MuiIconButton-label"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></span><span class="MuiTouchRipple-root"></span></button>
-const { defineFeature, loadFeature } = require('jest-cucumber');
-const feature = loadFeature('./features/nav_display.feature');
+//<div role="presentation" class="MuiDrawer-root MuiDrawer-modal jss45" style="position: fixed; z-index: 1300; inset: 0px;"><div class="MuiBackdrop-root" aria-hidden="true" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div><div tabindex="0" data-test="sentinelStart"></div><div class="MuiPaper-root MuiDrawer-paper jss46 MuiDrawer-paperAnchorLeft MuiPaper-elevation16" tabindex="-1" style="transform: none; transition: transform 225ms cubic-bezier(0, 0, 0.2, 1) 0ms;"><div class="jss47"><div class="jss48"><table><tr><td><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"></path></svg></td><td class="jss49">Radarin</td></tr></table></div></div><hr class="MuiDivider-root"><nav class="MuiList-root MuiList-padding"><li><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false" href="/vistas/Home"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Inicio</span></div><span class="MuiTouchRipple-root"></span></a></li><li class="MuiListItem-root MuiListItem-gutters"><svg class="MuiSvgIcon-root jss51" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4" r="2"></circle><path d="M15.89 8.11C15.5 7.72 14.83 7 13.53 7h-2.54C8.24 6.99 6 4.75 6 2H4c0 3.16 2.11 5.84 5 6.71V22h2v-6h2v6h2V10.05L18.95 14l1.41-1.41-4.47-4.48z"></path></svg><button class="jss50">Iniciar Sesión</button></li><li><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false" href="/vistas/Admin"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm7-7H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.11 0 2-.9 2-2V5c0-1.1-.89-2-2-2zm-1.75 9c0 .23-.02.46-.05.68l1.48 1.16c.13.11.17.3.08.45l-1.4 2.42c-.09.15-.27.21-.43.15l-1.74-.7c-.36.28-.76.51-1.18.69l-.26 1.85c-.03.17-.18.3-.35.3h-2.8c-.17 0-.32-.13-.35-.29l-.26-1.85c-.43-.18-.82-.41-1.18-.69l-1.74.7c-.16.06-.34 0-.43-.15l-1.4-2.42c-.09-.15-.05-.34.08-.45l1.48-1.16c-.03-.23-.05-.46-.05-.69 0-.23.02-.46.05-.68l-1.48-1.16c-.13-.11-.17-.3-.08-.45l1.4-2.42c.09-.15.27-.21.43-.15l1.74.7c.36-.28.76-.51 1.18-.69l.26-1.85c.03-.17.18-.3.35-.3h2.8c.17 0 .32.13.35.29l.26 1.85c.43.18.82.41 1.18.69l1.74-.7c.16-.06.34 0 .43.15l1.4 2.42c.09.15.05.34-.08.45l-1.48 1.16c.03.23.05.46.05.69z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Administrador</span></div><span class="MuiTouchRipple-root"></span></a></li><hr class="MuiDivider-root"><li><a class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button" tabindex="0" role="button" aria-disabled="false" href="/vistas/Ayuda"><div class="MuiListItemIcon-root"><svg class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"></path></svg></div><div class="MuiListItemText-root"><span class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock">Ayuda</span></div><span class="MuiTouchRipple-root"></span></a></li><hr class="MuiDivider-root"></nav></div><div tabindex="0" data-test="sentinelEnd"></div></div>
+const { defineFeature, loadFeature } = require("jest-cucumber");
+const feature = loadFeature("./features/nav_display.feature");
 
 defineFeature(feature, test => {
 
     beforeEach(async () => {
-        await global.page.goto('http://localhost:3000')
+        await global.page.goto("https://radarines3bwebapp.herokuapp.com/")
     });
 
-    test('User opens nav', ({ when, then }) => {
+    test("User opens nav", ({ when, then }) => {
 
-        when('I click the button',  async () => {
-            //const button = this.getButtonByClassName("MuiButtonBase-root MuiIconButton-root jss4 MuiIconButton-colorInherit MuiIconButton-edgeStart");
-            //this.click(button);
-            await expect(page).toClick('button', { class: 'MuiButtonBase-root MuiIconButton-root jss4 MuiIconButton-colorInherit MuiIconButton-edgeStart' })
+        when("I click the button",  async () => {
+            await expect(page).toClick("button", { class: "MuiButtonBase-root MuiIconButton-root jss4 MuiIconButton-colorInherit MuiIconButton-edgeStart" })
         });
 
-        then('I expect to see the nav menu', async () => {
+        then("I expect to see the nav menu", async () => {
             //await expect(this.getByText("Administrador")).toBeInTheDocument();
-            await expect(page).toMatch('Administrador');
-            await expect(page).toMatch('Ayuda');
-            await expect(page).toMatch('Inicio');
-            await expect(page).toMatch('Iniciar Sesión');
+            //await page.waitForSelector("#MuiDrawer-root MuiDrawer-modal jss45");
+            await expect(page).toMatch("Administrador");
+            await expect(page).toMatch("Ayuda");
+            await expect(page).toMatch("Inicio");
+            await expect(page).toMatch("Iniciar Sesión");
         });
     });
 });
