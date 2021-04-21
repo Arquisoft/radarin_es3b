@@ -1,6 +1,8 @@
 const express = require("express");
 const User = require("./models/users");
 const UserLocalization = require("./models/usersLocalization");
+const UserRegister = require("./models/usersRegister");
+const Admin = require("./models/admin");
 const router = express.Router();
 
 // Get all users
@@ -92,6 +94,26 @@ router.post("/userLocalization/add", async (req, res) => {
         });
         await userLocalization.save();
         res.send(userLocalization);
+    }
+});
+
+router.post("/admin/login", async (req, res) => {
+	
+    let user = req.body.user;
+	let password = req.body.password;
+	
+   
+
+    //Check if the device is already in the db
+    let admin = await Admin.findOne({ user: user, password:password });
+    if (admin) {
+		
+        res.send({ message: "success" })
+		
+    }   
+    else {
+       res.send({ message: "error" })
+	   
     }
 });
 
