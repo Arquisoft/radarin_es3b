@@ -1,14 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import FormRango from "./FormRango";
+import ButtonToRender from "../components/ButtonToRender";
 
   
-  const { container } = render(<FormRango />);
+  const { container } = render(<ButtonToRender />);
   
-  describe("FormRango", () => {
+  describe("ButtonToRender", () => {
     it("renders without crashing", () => {
       expect(container).toBeTruthy();
     });
   });
-
-  

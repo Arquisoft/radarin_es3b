@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
-import CleanDatabase from "./CleanDatabase";
+import CleanDatabase from "../components/database/CleanDatabase";
 
 
 it("elimina todos los datos de la base de datos", () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import AdminForm from "./AdminForm";
+import AdminForm from "../components/AdminForm";
 
   
   const { container } = render(<AdminForm />);

@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import ButtonToRender from "./ButtonToRender";
+import FriendsList from "../components/solid/FriendsList";
 
   
-  const { container } = render(<ButtonToRender />);
+  const { container } = render(<FriendsList />);
   
-  describe("ButtonToRender", () => {
+  describe("FriendsList", () => {
     it("renders without crashing", () => {
       expect(container).toBeTruthy();
     });

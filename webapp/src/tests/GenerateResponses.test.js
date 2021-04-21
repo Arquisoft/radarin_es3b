@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import GenerateResponses from "./GenerateResponses";
+import GenerateResponses from "../components/localizacion/GenerateResponses";
 
   
   const { container } = render(<GenerateResponses />);

@@ -1,11 +1,11 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import FriendsList from "./FriendsList";
+import IntervalRerender from "../components/IntervalRerender";
 
   
-  const { container } = render(<FriendsList />);
+  const { container } = render(<IntervalRerender />);
   
-  describe("FriendsList", () => {
+  describe("IntervalRerender", () => {
     it("renders without crashing", () => {
       expect(container).toBeTruthy();
     });
