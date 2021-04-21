@@ -18,7 +18,6 @@ yarn-error.log*
 
 restapi/node_modules
 restapi/data
-restapi/tests/usersLocalization.test.js
 
 webapp/src/components/oldExamples
 webapp/src/components/pruebas
