@@ -31,10 +31,10 @@ describe("userLocalization add", () => {
      * Tests that a user can be created through the productService without throwing any errors.
      */
     it("can be created correctly", async () => {
-        user = 'NewUser';
-        latitude = 33.3;
-        longitude = 4.4;
-        const response = await request(app).post('/api/userLocalization/add').send({user: user,latitude: latitude, longitude: longitude}).set('Accept', 'application/json');
+        var user = "NewUser";
+        var latitude = 33.3;
+        var longitude = 4.4;
+        const response = await request(app).post("/api/userLocalization/add").send({user: user,latitude: latitude, longitude: longitude}).set("Accept", "application/json");
         expect(response.statusCode).toBe(200);
         expect(response.body.user).toBe(user);
         expect(response.body.latitude).toBe(latitude);
@@ -42,15 +42,15 @@ describe("userLocalization add", () => {
     });
 
     /**
-     * Test that we can list user's location without any error.
+     * Test that we can list user"s location without any error.
      */
      it("can be listed",async () => {
 
         /*Set up*/
-        user = 'TestUser';
-        latitude = 11.1;
-        longitude = 2.2;
-        const response = await request(app).post('/api/userLocalization/add').send({user: user,latitude: latitude, longitude: longitude}).set('Accept', 'application/json');
+        var user = "TestUser";
+        var latitude = 11.1;
+        var longitude = 2.2;
+        const response = await request(app).post("/api/userLocalization/add").send({user: user,latitude: latitude, longitude: longitude}).set("Accept", "application/json");
 
         /*Check*/
         const responseGet = await request(app).get("/api/userLocalization/get/TestUser");
@@ -68,23 +68,23 @@ describe("userLocalization add", () => {
      * Tests that a user can be created through the productService without throwing any errors.
      */
     it("can be deleted correctly", async () => {
-        user = 'NewUser';
-        latitude = 33.3;
-        longitude = 4.4;
-        const response = await request(app).post('/api/userLocalization/add').send({user: user,latitude: latitude, longitude: longitude}).set('Accept', 'application/json');
+        var user = "NewUser";
+        var latitude = 33.3;
+        var longitude = 4.4;
+        const response = await request(app).post("/api/userLocalization/add").send({user: user,latitude: latitude, longitude: longitude}).set("Accept", "application/json");
         
-        /*Check it's there*/
+        /*Check it"s there*/
         const responseGet = await request(app).get("/api/userLocalization/get/NewUser");
         expect(responseGet.statusCode).toBe(200);
         expect(responseGet.body.user).toBe(user);
         expect(responseGet.body.latitude).toBe(latitude);
         expect(responseGet.body.longitude).toBe(longitude);
 
-        /*Check it's deleted*/
-        const responseDel = await request(app).get('/api/userLocalization/delete/NewUser');
+        /*Check it"s deleted*/
+        const responseDel = await request(app).get("/api/userLocalization/delete/NewUser");
         expect(responseDel.statusCode).toBe(200);
         
-        /*Check it's not there*/
+        /*Check it"s not there*/
         const responseEmpty = await request(app).get("/api/userLocalization/get/NewUser");
         expect(responseEmpty.body.user).toBe("error");
         expect(responseEmpty.body.latitude).toBe(0);
