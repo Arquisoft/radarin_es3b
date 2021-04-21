@@ -13,12 +13,12 @@ If you want to execute the project you will need [git](https://git-scm.com/downl
 docker-compose up --build
 ```
 This will create two docker images as they don't exist in your system (the webapp and the restapi) and launch a mongo container database. It will also launch Prometheus and Grafana containers to monitor the webservice. You should be able to access everything from here:
- - [Webapp - http://localhost:3000](http://localhost:3000)
- - [Docs - http://localhost:3000/docs](http://localhost:3000/docs)
- - [RestApi example call - http://localhost:5000/api/users/list](http://localhost:5000/api/users/list)
- - [RestApi raw metrics - http://localhost:5000/metrics](http://localhost:5000/metrics)
- - [Prometheus server - http://localhost:9090](http://localhost:9090)
- - [Grafana server http://localhost:9091](http://localhost:9091)
+- [Webapp - http://localhost:3000](http://localhost:3000)
+- [Docs - http://localhost:3000/docs](http://localhost:3000/docs)
+- [RestApi example call - http://localhost:5000/api/users/list](http://localhost:5000/api/users/list)
+- [RestApi raw metrics - http://localhost:5000/metrics](http://localhost:5000/metrics)
+- [Prometheus server - http://localhost:9090](http://localhost:9090)
+- [Grafana server http://localhost:9091](http://localhost:9091)
  
 If you want to run it without docker (even though you still need docker to run the mongo db database):
 ```
@@ -41,10 +41,10 @@ npm start
 You should be able to access the application in [http://localhost:3000](http://localhost:3000) and the documentation in [http://localhost:3000/docs](http://localhost:3000/docs)
 
 ## Participantes 
- - Enrique Vera Cueto, UO246711
- - Antonio Suárez Crespo, UO270543
- - María Suárez Hevia, UO270437
- - Lucía Gutiérrez Búa, UO250755
- - Luis Lomba Martínez, UO258352
- - Diego Tomás Nosti, UO270497
- - Rocío Cenador Martínez, UO226650
+- Enrique Vera Cueto, UO246711
+- Antonio Suárez Crespo, UO270543
+- María Suárez Hevia, UO270437
+- Lucía Gutiérrez Búa, UO250755
+- Luis Lomba Martínez, UO258352
+- Diego Tomás Nosti, UO270497
+- Rocío Cenador Martínez, UO226650
