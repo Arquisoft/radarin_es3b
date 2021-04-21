@@ -5,7 +5,7 @@ const router = express.Router();
 
 // Get all users
 router.get("/users/list", async (req, res) => {
-    const users = await User.find({}).sort('-_id'); //Inverse order
+    const users = await User.find({}).sort("-_id"); //Inverse order
     res.send(users);
 });
 
@@ -65,7 +65,7 @@ router.get("/userLocalization/get/:user", async (req, res) => {
             user: "error",
             latitude: 0,
             longitude: 0,
-        })
+        });
         res.send(userLocalization);
     }
 });
