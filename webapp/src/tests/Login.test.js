@@ -1,6 +1,6 @@
 import React from "react";
 import { render } from '@testing-library/react';
-import Login from "./Login";
+import Login from "../components/Login";
 
   
   const { container } = render(<Login />);

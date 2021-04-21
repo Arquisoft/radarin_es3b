@@ -1,11 +1,14 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import GuardarLocalizacion from "./GuardarLocalizacion";
+import FormRango from "../components/localizacion/FormRango";
+
   
-  const { container } = render(<GuardarLocalizacion />);
+  const { container } = render(<FormRango />);
   
-  describe("GuardarLocalizacion", () => {
+  describe("FormRango", () => {
     it("renders without crashing", () => {
       expect(container).toBeTruthy();
     });
   });
+
+  

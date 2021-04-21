@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 import { act } from "react-dom/test-utils";
-import DesactivarAplicacion from "./DesactivarAplicacion";
+import DesactivarAplicacion from "../components/localizacion/DesactivarAplicacion";
 
   it("apaga la aplicación", () => {
       // const numUsersBefore = this.getUsers;
