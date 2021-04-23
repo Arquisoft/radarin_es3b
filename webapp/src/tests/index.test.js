@@ -1,13 +1,15 @@
 import ReactDOM from "react-dom";
-import App from "../App";
+import "../index.css";
+import "@testing-library/jest-dom/extend-expect";
 
-jest.mock("react-dom", () => ({render: jest.fn()}));
+jest.mock("react-dom", () => ({ render: jest.fn() }));
 
-
-it("renders without crashing", () => {
-
-  const div = document.createElement("div");
-  ReactDOM.render(<App/>, div);
-  global.document.getElementById = (id) => id ==="root" && div;
-  expect(ReactDOM.render).toHaveReturned();
+describe("Application root", () => {
+    it("should render without crashing", () => {
+        const div = document.createElement("div");
+        div.id = "root";
+        document.body.appendChild(div);
+        require("../index.js");
+        expect(ReactDOM.render).toHaveReturned();
+    });
 });
