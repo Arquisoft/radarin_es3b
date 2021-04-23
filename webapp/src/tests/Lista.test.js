@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
 import { BrowserRouter } from "react-router-dom";
-import { configure } from "enzyme"
+import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import Lista from "../components/Lista";
 

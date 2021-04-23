@@ -44,3 +44,14 @@ export async function cleanDatabase() {
     let response = await fetch(apiEndPoint + "/userLocalization/deleteAll");
     return await response.json();
 }
+
+
+export async function login(user, password) {
+    const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
+    let response = await fetch(apiEndPoint + "/admin/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ "user": user, "password": password})
+    });
+    return await response.json();
+}

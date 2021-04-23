@@ -1,6 +1,8 @@
 import React from "react"; 
 import Button from "@material-ui/core/Button";
 import CleanDatabase from "../components/database/CleanDatabase"; 
+import { login } from "../api/api";
+import  { encrypt} from 'react-crypt-gsm';
 import "../vistas/Admin.css";
 
 
@@ -12,20 +14,24 @@ class AdminForm extends React.Component {
 
         this.state = {
             entra: false,
-            usuario: "admin",
-            password: "admin",
-            userToDelete: ""
+            user: "",
+            psw: ""
         };
     }
 
     async handleSubmit(e) {
         //console.log(this.state.entra);
+		
         e.preventDefault();
-        if (this.state.user === this.state.usuario && this.state.psw === this.state.password){
+		console.log(encrypt(this.state.psw).content);
+		let response = await login(this.state.user,encrypt(this.state.psw).content);
+		
+		console.log(response.message);
+        if (response.message === "success"){
             this.setState({entra: true});
             console.log(this.state.entra);
         }
-        //console.log(this.state.entra);
+       
       }
 
     changeUser(e) {
