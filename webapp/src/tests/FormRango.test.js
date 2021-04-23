@@ -3,6 +3,7 @@ import { shallow } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import { configure } from "enzyme";
 import { render } from "@testing-library/react";
+import { fireEvent } from "@testing-library/react";
 import FormRango from "../components/localizacion/FormRango";
 
   
@@ -33,3 +34,15 @@ import FormRango from "../components/localizacion/FormRango";
     const { getByText } = render(<FormRango/>);
     expect(getByText("Area de visualización:")).toBeInTheDocument();
   });
+
+  test("input text and trigger changeRango", async () => {
+
+    const { getAllByRole } = render(<FormRango />);
+
+    const rangoTextField = getAllByRole("textbox", { placeholder: "Introduzca rango " }).find(element => element.className.includes("form-control"));
+
+    expect(rangoTextField).toBeInTheDocument();
+
+    fireEvent.change(rangoTextField, {target: { value: "ejemploRango" }});
+
+});
