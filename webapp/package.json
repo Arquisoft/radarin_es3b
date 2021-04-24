@@ -6,6 +6,7 @@
     "@inrupt/solid-react-components": "^0.5.5",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
     "@solid/query-ldflex": "^2.11.3",
     "@solid/react": "^1.10.0",
     "@testing-library/jest-dom": "^5.11.9",
@@ -16,6 +17,7 @@
     "enzyme-adapter-react-16": "^1.15.6",
     "express": "^4.17.1",
     "react": "^17.0.1",
+    "react-alert": "^7.0.2",
     "react-bootstrap": "^1.4.3",
     "react-crypt-gsm": "^1.0.4",
     "react-dom": "^17.0.1",
@@ -27,6 +29,7 @@
     "react-push-notification": "^1.3.0",
     "react-scripts": "4.0.1",
     "react-testing-library": "^8.0.1",
+    "solid-auth-client": "^2.5.5",
     "styled-components": "^5.2.3",
     "web-vitals": "^0.2.4",
     "worker-loader": "^3.0.8"

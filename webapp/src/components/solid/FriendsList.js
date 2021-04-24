@@ -1,6 +1,6 @@
 import React from 'react';
 import ListGroup from "react-bootstrap/ListGroup";
-import getFriends from "./LDFlexPODConnection";
+import getFriends from "../../hooks/solid/LDFlexPODConnection";
 
 
 

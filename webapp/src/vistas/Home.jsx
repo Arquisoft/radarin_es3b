@@ -14,16 +14,20 @@ import "react-notifications-component/dist/theme.css";
 import GitHubImg from "./img/github.png";
 import SolidImg from "./img/solid.PNG";
 import MapImg from "./img/mapa.jpg";
+import ProcessSession from "../hooks/ProcessSession"
 
 
 function Home() {
   return (
     <div className="Home">
+	  
       <ReactNotification />
       <Contenedor/>
-      <body className ="App-body">
-
+     <body className ="App-body">
+	<ProcessSession/>
+	
     <LoggedOut>
+	
     <div class="slider">
       <ul>
         <li><img src={MapImg} alt="mapImg"></img></li>
@@ -41,6 +45,7 @@ function Home() {
     </LoggedOut>
 
 		<LoggedIn>
+		
 		<b class="Bienvenida">Bienvenido a Radarin <Value src="user.name"/></b>
     <p class="Bienvenida">¿Qué te apetece hacer?</p>
         

@@ -1,6 +1,6 @@
 import React from "react";
 
-import WebId from "../components/solid/SolidId";
+import WebId from "./solid/SolidId";
 
 import DesactivarAplicacion from "../components/localizacion/DesactivarAplicacion";
 

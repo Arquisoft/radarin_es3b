@@ -31,30 +31,23 @@ class GenerateResponses extends React.Component {
 		for (var [clave, valor] of this.state.friends) {
 			
 			if( valor) {
-					
 				this.state.friends.set(clave,false)
 				friendstext += clave;
-                 friendstext += ", ";
+                friendstext += ", ";
 			}
 		}
-			
-		
-        
-        //quitar la ultima coma
+		friendstext = friendstext.substring(0, friendstext.length -2);
         
         if (friendstext !== ""){
             addNotification({
                 title: "Los amigos ya conectados",
                 subtitle: "subtitle",
                 message: friendstext,
+				duration: 5000,
                 theme: "darkblue",
                 native: true // when using native, your OS will handle theming.
             });
         }
-		
-		
-		
-		
 	}
 	
 	async tryAdd(item){

@@ -1,9 +1,9 @@
 import React from "react"; 
 import Button from "@material-ui/core/Button";
-import CleanDatabase from "../components/database/CleanDatabase"; 
-import { login } from "../api/api";
+import AdminOperations from "./AdminOperations"; 
+import { login } from "../../api/api";
 import  { encrypt} from 'react-crypt-gsm';
-import "../vistas/Admin.css";
+import "../../vistas/Admin.css";
 
 
 class AdminForm extends React.Component {
@@ -23,7 +23,7 @@ class AdminForm extends React.Component {
         //console.log(this.state.entra);
 		
         e.preventDefault();
-		console.log(encrypt(this.state.psw).content);
+		
 		let response = await login(this.state.user,encrypt(this.state.psw).content);
 		
 		console.log(response.message);
@@ -53,7 +53,8 @@ class AdminForm extends React.Component {
     renderLogin = () => {
         
         if (this.state.entra)
-            return <CleanDatabase />;
+            return <AdminOperations/>;
+		else{
         return ( 
                 <form class="login"  onSubmit={this.handleSubmit.bind(this)}>
                     <p class="labelUser">Usuario:<input class="adminForm" type="text" name="nombre" size="40" 
@@ -68,6 +69,7 @@ class AdminForm extends React.Component {
                     </Button>
                 </form>       
             );
+		}
     }
 
     render() {
