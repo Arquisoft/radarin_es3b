@@ -12,7 +12,7 @@ const context = React.useContext(MapContext);
 console.log(props)
   const { longitude, latitude } = props;
 
-  const nombre = props.nombre;
+  
  
   const [x, y] = context.viewport.project([longitude, latitude]);
 

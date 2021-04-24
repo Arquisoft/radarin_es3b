@@ -39,7 +39,7 @@ class CheckSession extends React.Component {
 		else if(!response.allowed){
 			this.state.allowed=false;
 		
-			{auth.logout()}
+			auth.logout();
 		}
 		
 	}
