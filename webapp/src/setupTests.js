@@ -6,6 +6,7 @@ import "@testing-library/jest-dom";
 import {jest} from "@jest/globals";
 
 jest.mock("./components/localizacion/Map", () => () => <></>);
+jest.mock("./components/admin/MapAdmin", () => () => <></>);
 
 const mockGeolocation = {
     getCurrentPosition: jest.fn()
