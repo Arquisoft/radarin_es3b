@@ -2,7 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import AdminForm from "../components/AdminForm";
+import AdminForm from "../components/admin/AdminForm";
 
   
   const { container } = render(<AdminForm />);
