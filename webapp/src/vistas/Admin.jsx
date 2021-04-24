@@ -5,9 +5,12 @@ import React from "react";
 import "./Home.css";
 import "./Admin.css";
 
-import "../components/solid/FriendsList";
 
 
+import Contenedor from "../components/Contenedor";
+
+import ReactNotification from "react-notifications-component";
+import "react-notifications-component/dist/theme.css";
 
 import AdminForm from "../components/admin/AdminForm";
 
@@ -15,6 +18,8 @@ import AdminForm from "../components/admin/AdminForm";
 function Admin() {
   return (
     <div className="Admin">
+	<ReactNotification />
+      <Contenedor />
       
       
       <body className="App-body">
