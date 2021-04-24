@@ -50,17 +50,20 @@ class AdminOperations extends React.Component {
 	async borrarUsuario(user){
 		
 		let response=await deleteUserRegister(user);
+		console.log(response);
 		
 		
 	}
 	
 	async bloquearUsuario(user){
 		let response=await addUserRegister(user,false);
+		console.log(response);
 		
 	}
 	
 	async desbloquearUsuario(user){
 		let response=await addUserRegister(user,true);
+		console.log(response);
 		
 	}
 	
