@@ -97,6 +97,74 @@ router.post("/userLocalization/add", async (req, res) => {
     }
 });
 
+router.get("/userLocalization/list", async (req, res) => {
+    const userList = await UserLocalization.find({}).sort("-_id"); //Inverse order
+    res.send(userList);
+});
+
+
+
+router.post("/userRegister/add", async (req, res) => {
+    let user = req.body.user;
+    let allowed = req.body.allowed;
+	
+
+    //Check if the device is already in the db
+    let userRegister = await UserRegister.findOne({ user: user });
+    if (userRegister) {
+        UserRegister.findOneAndUpdate({ user: user }, req.body, function (err, response) {
+            res.send(response);
+        });
+    }   
+    else {
+        userRegister = new UserRegister({
+            user: user,
+            allowed: allowed,
+        });
+        await userRegister.save();
+        res.send(userRegister);
+    }
+});
+
+router.get("/userRegister/delete/:user", async (req, res) => {
+    var user = req.params.user;
+
+	
+    let userRegister = await UserRegister.findOne({ user: user });
+    if (userRegister) {
+        var response = await UserRegister.findOneAndDelete({ user: user });
+        res.send(response);
+    }
+    else {
+
+        res.send({ error: "Error: El usuario no existe" });
+    }
+
+
+
+});
+
+router.get("/userRegister/list", async (req, res) => {
+    const userList = await UserRegister.find({}).sort("-_id"); //Inverse order
+    res.send(userList);
+});
+
+router.get("/userRegister/get/:user", async (req, res) => {
+    var user = req.params.user;
+    let userRegister = await UserRegister.findOne({ user: user });
+    if (userRegister) {
+        res.send(userRegister);
+    }
+
+    else {
+        userRegister = new UserRegister({
+            user: "error",
+           allowed:false
+        });
+        res.send(userRegister);
+    }
+});
+
 router.post("/admin/login", async (req, res) => {
 	
     let user = req.body.user;

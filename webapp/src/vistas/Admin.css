@@ -25,3 +25,18 @@
   font-size: 25px;
   margin-bottom: 30px;
 }
+
+.adminTable{
+	text-align:center;
+}
+
+.marker{
+	transform: translate(-90%, -180%);
+	
+}
+
+.mapa {
+  margin-left: 2%;
+  margin-top: 1em;
+}
+

@@ -1,7 +1,7 @@
 import React from "react";
 
-import WebId from "../components/solid/SolidId";
-import SolidFriends from "../components/solid/SolidFriends";
+import WebId from "./solid/SolidId";
+import SolidFriends from "./solid/SolidFriends";
 import EncenderAplicacion from "../components/localizacion/EncenderAplicacion";
 
 

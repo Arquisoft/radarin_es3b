@@ -1,7 +1,7 @@
 import React from "react";
 import Contenedor from "../components/Contenedor";
 import "./Amigos.css";
-import FriendListHook from "../hooks/FriendListHook";
+import FriendListHook from "../hooks/solid/FriendListHook";
 import { LoggedIn, LoggedOut } from "@solid/react";
 import Desconectar from "../components/Desconectar";
 

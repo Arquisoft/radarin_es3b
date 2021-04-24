@@ -1,13 +1,15 @@
-import * as React from "react";
+import React from "react";
+import { ReactComponent as ReactLogo } from "../../svg/adminMarker.svg";
 import { MapContext } from "react-map-gl";
 
 
+export default function FriendMarker(props) {
 
+ 
+	
+const context = React.useContext(MapContext);
 
-function MapMarker(props) {
-  const context = React.useContext(MapContext);
-
-
+console.log(props)
   const { longitude, latitude } = props;
 
   const nombre = props.nombre;
@@ -22,25 +24,18 @@ function MapMarker(props) {
 	
   };
   
-  const textStyle = {
-	width:props.max*0.6+"em",
-   fontWeight: "bold",
-   background:"white",
   
-   
-  };
 
   return (
     <div class="marker" style={markerStyle} >
-	<div style={textStyle}>
-     {nombre}
+	
+		<div class="friendMarker">
+            <ReactLogo />
+       
+		</div>
 	 </div>
-	 
-	 {props.marker}
-    </div>
 	
 	
   );
-}
 
-export default MapMarker;
+}

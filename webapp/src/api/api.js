@@ -39,6 +39,42 @@ export async function deleteUserLocalization(user) {
     return await response.json();
 }
 
+export async function getUserLocalizationList() {
+    const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
+    //console.log(apiEndPoint);
+    let response = await fetch(apiEndPoint + "/userLocalization/list");
+    return await response.json();
+}
+
+export async function addUserRegister(user, allowed) {
+    const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
+    let response = await fetch(apiEndPoint + "/userRegister/add", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ "user": user, "allowed": allowed})
+    });
+    return await response.json();
+}
+
+export async function deleteUserRegister(user) {
+    const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
+    let response = await fetch(apiEndPoint + "/userRegister/delete/" + user);
+    return await response.json();
+}
+
+export async function getUserRegisterList() {
+    const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
+    //console.log(apiEndPoint);
+    let response = await fetch(apiEndPoint + "/userRegister/list");
+    return await response.json();
+}
+
+export async function getUserRegister(user) {
+    const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
+    let response = await fetch(apiEndPoint + "/userRegister/get/" + user);
+    return await response.json();
+}
+
 export async function cleanDatabase() {
     const apiEndPoint = process.env.REACT_APP_API_URI || "http://localhost:5000/api";
     let response = await fetch(apiEndPoint + "/userLocalization/deleteAll");

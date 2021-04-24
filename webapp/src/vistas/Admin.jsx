@@ -1,21 +1,22 @@
 import React from "react";
 
-import Contenedor from "../components/Contenedor";
+
 
 import "./Home.css";
+import "./Admin.css";
 
 import "../components/solid/FriendsList";
 
-import ReactNotification from "react-notifications-component";
-import "react-notifications-component/dist/theme.css";
-import AdminForm from "../components/AdminForm";
+
+
+import AdminForm from "../components/admin/AdminForm";
 
 
 function Admin() {
   return (
     <div className="Admin">
-      <ReactNotification />
-      <Contenedor />
+      
+      
       <body className="App-body">
         <h1>Administrador</h1>
 

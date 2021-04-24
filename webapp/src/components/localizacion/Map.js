@@ -4,6 +4,7 @@ import { Component } from "react";
 import MapGL from "react-map-gl";
 import MapMarker from "./MapMarker";
 import "../../vistas/mapa.css";
+import FriendMarker from "../../hooks/markers/FriendMarker";
 //import {StaticMap} from 'react-map-gl';
 
 //import * as mapboxgl from 'mapbox-gl';
@@ -19,11 +20,14 @@ class Map extends Component {
   constructor(props) {
     super(props);
 
+	
+	
+	
     this.state = {
 
-
+		max:10,
       viewport: {
-
+		
         latitude: parseFloat(this.props.lat),
         longitude: parseFloat(this.props.lon),
         zoom: 14,
@@ -31,16 +35,25 @@ class Map extends Component {
         pitch: 0
       }
     };
+	
+	for(var element of this.props.responses.values() ){
+		
+		if(element.user.length>this.state.max){
+			console.log(element.user.length)
+			this.state.max=element.user.length;
+		}
+	}
+	
   }
 
   renderMarkers = () => {
-    console.log(this.props.rango);
+  
     return (Array.from(this.props.responses.values())).map((item) => {
 	
 		
       if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < this.props.rango) {
         return (
-          <MapMarker nombre={item.user} longitude={item.longitude} latitude={item.latitude}>
+          <MapMarker  nombre={item.user} longitude={item.longitude} latitude={item.latitude} max={this.state.max} marker=<FriendMarker/> >
           </MapMarker>
         );
       } else { // else block añadido para arreglar error de CI: Array.prototype.map() expects a value to be returned at the end of arrow function  array-callback-return
@@ -64,7 +77,7 @@ class Map extends Component {
         {this.renderMarkers()}
 
 
-        <MapMarker nombre="Mi posicion" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} />
+        <MapMarker  nombre="MiPosición" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} max={this.state.max} marker=<FriendMarker/>  />
       </MapGL>
 	  </div>
     );

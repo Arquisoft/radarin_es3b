@@ -21,3 +21,8 @@ div.friendMarker {
 .mapImg {
   padding-top: 20px;
 }
+
+.marker{
+	transform: translate(-18%, -137%);
+	
+}
