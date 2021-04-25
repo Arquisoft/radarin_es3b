@@ -57,13 +57,16 @@ class AdminForm extends React.Component {
 		else{
         return ( 
                 <form class="login"  onSubmit={this.handleSubmit.bind(this)}>
-                    <p class="labelUser">Usuario:<input class="adminForm" type="text" name="nombre" size="40" 
+                    <label for="adminForm" class="labelUser">Usuario:</label>
+                    <input class="adminForm" type="text" name="nombre" size="40" 
                     onChange={this.changeUser.bind(this)} value={this.state.user} 
-                    placeholder="Introduzca el usuario administrador" required="true"></input></p>
-
-                    <p  class="labelPass">Contraseña: <input class="passForm" type="password" name="pass" size="40" 
+                    placeholder="Introduzca el usuario administrador" required="true"></input>
+                    <br></br>
+                    <label for="passForm" class="labelPass">Contraseña:</label> 
+                    <input class="passForm" type="password" name="pass" size="40" 
                     onChange={this.changePsw.bind(this)} value={this.state.psw} 
-                    placeholder="Introduzca su contraseña" required="true"></input></p>
+                    placeholder="Introduzca su contraseña" required="true"></input>
+                    <br></br>
                     <Button id="boton"variant="contained" color="primary" type="submit" >
                         Entrar
                     </Button>
@@ -75,7 +78,6 @@ class AdminForm extends React.Component {
     render() {
         return (
             <div>{this.renderLogin()}</div>
-            
         );
     }
 }

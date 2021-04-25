@@ -1,0 +1,50 @@
+.App-body{
+    font-size: 20px;
+}
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+.subtitle{
+    text-align: left;
+    margin-left: 20px;
+}
+.parrafo{
+    text-align: left;
+    margin-left: 20px;
+}
+.imgDiv{   
+    text-align: center; 
+
+}
+.imgNav{
+    border: black 3px solid;
+    margin-left: 20px;
+    max-width: 800px;
+    width: 90%;
+    height: auto;
+}
+
+.imgArea{
+    border: black 3px solid;
+    max-width: 550px;
+    width: 90%;
+    height: auto;
+}
+
+.imgHome{
+    border: black 3px solid;
+    margin-left: 20px;
+    max-width: 800px;
+    width: 90%;
+    height: auto;
+}
+
+.tablaValores{
+    text-align: left;
+    margin : auto;
+}
+.table{
+    padding-left: 20PX;
+    margin: auto;
+}
