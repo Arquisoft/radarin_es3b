@@ -1,0 +1,40 @@
+[[section-anex-view]]
+== Annex View
+
+=== Acceptance tests
+
+We've developed three user acceptance tests based in navigation through the page. 
+
+The simplest one is just making sure the user sees the appropiate content when opening the application.
+
+    Feature: Homepage title
+        As a software developer
+        I want our users to see the name of the app
+        in the homepage
+
+    Scenario: User opens the app
+        When I go to the homepage
+        Then I should see the app title
+
+Another test checks the user can open the main navigation menu present in every view of the application.
+
+    Feature: Nav display
+        Any user before being logged in
+        should see the nav menu when 
+        the button is clicked
+
+    Scenario: User opens nav
+        When I click the button
+        Then I expect to see the nav menu
+
+Once opened the navigation menu, the next test makes sure the application renders the appropiate view when its link is clicked in the menu.
+
+    Feature: User navigation
+
+    Scenario: The user can navigate through different pages
+        Given I am on the Home route
+        When I click the nav and click the Administrador
+        Then I expect to be on the Administrador route
+
+
+=== Capacity tests
