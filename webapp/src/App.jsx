@@ -20,18 +20,18 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <Redirect
-            from="/vistas/"
-            to="/vistas/Home" />
+            from="/"
+            to="/Home" />
           <Switch>
-            <Route path='/vistas/Home' exact
+            <Route path='/Home' exact
               render={() => <Home />} />
-            <Route path='/vistas/Amigos' exact
+            <Route path='/Amigos' exact
               render={() => <Amigos />} />
-            <Route path='/vistas/Mapa' exact
+            <Route path='/Mapa' exact
               render={() => <Mapa />} />
-            <Route path='/vistas/Admin' exact
+            <Route path='/Admin' exact
               render={() => <Admin />} />
-            <Route path='/vistas/Ayuda' exact
+            <Route path='/Ayuda' exact
               render={() => <Ayuda />} />
           </Switch>
         </BrowserRouter>

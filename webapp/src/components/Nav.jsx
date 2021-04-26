@@ -1,8 +1,7 @@
 import React from "react";
 import { AppBar, Toolbar, makeStyles, IconButton } from "@material-ui/core";
 
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
-import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp"; 
 import EmojiPeopleSharpIcon from "@material-ui/icons/EmojiPeopleSharp";
 
 import styled from "styled-components";
@@ -13,6 +12,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import { AuthButton } from "@solid/react";
 
+import Title from "../vistas/img/Title.PNG"; 
+
+
 
 const StyledLink = styled(Link)`
       color: #000;
@@ -22,8 +24,8 @@ const StyledLink = styled(Link)`
       margin: 0 10px;
       padding-top: 5px;
       padding-bottom: 5px;
-      padding-right: 15px;
-      padding-left: 109px;
+      padding-right: 5px;
+      padding-left: 90px;
       color: #fff;
     `;
 
@@ -40,15 +42,12 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1,
         textTransform: "capitalize",
         textDecoration: "none",
-        fontSize: 25,
-        paddingLeft: 30,
+        fontSize: 25, 
 
     },
 
     appBar: {
-
         marginLeft: 240,
-
     },
 
     iniButton: {
@@ -69,15 +68,16 @@ const useStyles = makeStyles(theme => ({
         border: "none",
         fontSize: 18,
         paddingTop: 10,
-        paddingBottom: 10,
+        paddingBottom: 10, 
         color: "#fff",
 
     },
 
     name: {
-        fontSize: 35,
-        fontStyle: "italic",
-        fontFamily: "Times New Roman"
+        width:"100%",
+        height:"auto",
+        maxWidth:"160px",
+        minWidth:"140px"
     },
 
 
@@ -91,6 +91,7 @@ const Navbar = (props) => {
 
         <AppBar className={classes.appBar}>
             <Toolbar>
+                
                 <IconButton
                     edge="start"
                     className={classes.menuButton}
@@ -101,12 +102,10 @@ const Navbar = (props) => {
                     <MenuIcon />
                 </IconButton>
 
-                <StyledLink to="../vistas/home" className={classes.title}>
-
-                    <div className={classes.name}>
-                        <ExploreOutlinedIcon />
-                            Radarin
-                        </div>
+                <StyledLink to="/Home" className={classes.title}>
+ 
+                    <img className={classes.name} src={Title} alt="titulo"></img>
+                    
                 </StyledLink>
 
                 <LoggedIn>

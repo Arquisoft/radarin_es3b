@@ -1,7 +1,7 @@
 import React from "react";
 import Button from '@material-ui/core/Button';
-import MapImg from "../vistas/img/mapa.jpg";
-import "../vistas/mapa.css";
+import MapImg from "../../vistas/img/mapa.jpg";
+import "../../vistas/mapa.css";
 
 function Desconectar() {
     return (

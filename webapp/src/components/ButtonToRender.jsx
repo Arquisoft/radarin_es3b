@@ -8,7 +8,7 @@ class ButtonToRender extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      showComponent: false,
+      showComponent: true,
     };
     this._onButtonClick = this._onButtonClick.bind(this);
 	this._offButtonClick = this._offButtonClick.bind(this);

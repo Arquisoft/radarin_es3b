@@ -1,12 +1,11 @@
 .Bienvenida {
-  font-size: 30px;
+  font-size: 35px; 
 }
 
 .enlace {
-  font-size: 35px;
+  font-size: 30px;
 }
 .slider {
-  padding: auto;
   width: 90%;
   margin: auto;
   overflow: hidden;
@@ -16,8 +15,7 @@
   display: flex;
   padding: 0;
   width: 300%;
-  max-height: 630px;
-  align-items: center;
+  max-height: 630px; 
   animation: cambio 15s infinite;
 }
 
@@ -30,7 +28,24 @@
 .slider img {
   max-height: 630px;
   max-width: 1200px;
-  width: 100%;
+  width: 90%;
+}
+
+.mainImage{
+  margin: auto;
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
+}
+
+.link{ 
+  font-size: 35px; 
+  padding: 0px 25px 5px;
+  background: #3f48cc;
+  border: 1px solid #1161B0;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration:none;
 }
 
 @keyframes cambio{

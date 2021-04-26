@@ -58,7 +58,7 @@ const Lista = () =>{
             <ListItemLink 
             icon = {<HomeIcon/>}
             primary = "Inicio"
-            to= "../vistas/Home">
+            to= "/Home">
             </ListItemLink>
             
             <LoggedOut>
@@ -76,7 +76,7 @@ const Lista = () =>{
                 <ListItemLink 
                     icon = {<SettingsApplicationsIcon/>}
                     primary = "Administrador"
-                    to= "../vistas/Admin">
+                    to= "/Admin">
                 </ListItemLink>
 			</LoggedOut>
 
@@ -84,13 +84,13 @@ const Lista = () =>{
             <ListItemLink 
             icon = {<AssignmentIndIcon/>}
             primary = "Lista de amigos"
-            to= "../vistas/Amigos">
+            to= "/Amigos">
             </ListItemLink>
 
             <ListItemLink 
             icon = {<MapIcon/>}
             primary = "Consultar Localización"
-            to= "../vistas/Mapa">
+            to= "/Mapa">
             </ListItemLink>
 
             </LoggedIn>
@@ -100,7 +100,7 @@ const Lista = () =>{
             <ListItemLink 
             icon = {<HelpIcon/>}
             primary = "Ayuda"
-            to= "../vistas/Ayuda">
+            to= "/Ayuda">
             </ListItemLink>
 
             <Divider/>
