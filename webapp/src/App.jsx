@@ -20,7 +20,7 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <Redirect
-            from="/"
+            from="/vistas/"
             to="/vistas/Home" />
           <Switch>
             <Route path='/vistas/Home' exact
