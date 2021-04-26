@@ -6,13 +6,13 @@ const feature = loadFeature("./features/nav_display.feature");
 defineFeature(feature, test => {
 
     beforeEach(async () => {
-        await global.page.goto("https://radarines3bwebapp.herokuapp.com/")
+        await global.page.goto("https://radarines3bwebapp.herokuapp.com/");
     });
 
     test("User opens nav", ({ when, then }) => {
 
         when("I click the button",  async () => {
-            await expect(page).toClick("button", { class: "MuiButtonBase-root MuiIconButton-root jss4 MuiIconButton-colorInherit MuiIconButton-edgeStart" })
+            await expect(page).toClick("button", { class: "MuiButtonBase-root MuiIconButton-root makeStyles-menuButton-4 MuiIconButton-colorInherit MuiIconButton-edgeStart" })
         });
 
         then("I expect to see the nav menu", async () => {
