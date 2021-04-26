@@ -25,7 +25,7 @@ function Admin() {
         <h1>Administrador</h1>
           <AdminForm />
           <div >
-            <img class="imgAdmin" src={MapAdminImg}></img>
+            <img alt="imgAdmin" class="imgAdmin" src={MapAdminImg}></img>
           </div>
          </LoggedOut> 
         <LoggedIn>

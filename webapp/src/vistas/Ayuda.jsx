@@ -32,7 +32,7 @@ function Ayuda() {
           Desde la página principal podemos acceder al menu lateral:
         </p>
         <div class="imgDiv">
-            <img class="imgHome" src={HomeImg}></img>
+            <img alt= "imgHome" class="imgHome" src={HomeImg}></img>
         </div>
         <p class="parrafo">
           El menú lateral en este punto, nos ofrece estás distintas opciones:
@@ -40,7 +40,7 @@ function Ayuda() {
         <div>
           <table class="table">
             <tr>
-              <td><img  src={MenuLOImg}></img></td>
+              <td><img alt="imgMenu" src={MenuLOImg}></img></td>
               <td>
                 <ul class ="tablaValores">
                   <li><b>Inicio: </b>vuelve a la página principal desde cualquier punto.</li>
@@ -56,7 +56,7 @@ function Ayuda() {
           Puedes acceder en cualquier momento y desde cualquier parte de la aplicación al menu principal pulsando encima de Radarin:
         </p>
         <div>
-            <img class="imgHome" src={NavHome}></img>
+            <img alt="imgNavHome" class="imgHome" src={NavHome}></img>
         </div>
 
         <h2 class= "subtitle">Iniciar Sesión</h2>
@@ -66,25 +66,25 @@ function Ayuda() {
           Una vez Tienes tu Pod de Solid ya puedes iniciar sesión en la aplicación, bien desde el menú lateral:
           </p>
           <div class="imgDiv">
-            <img src={MenuImg}></img>
+            <img alt="MenuImgDiv" src={MenuImg}></img>
           </div>
           <p class="parrafo">
           Tambien puedes encontrar el botón de inicio de sesión en la parte derecha de la barra de navegación superior:
           </p>
           <div class="imgDiv">
-            <img class="imgNav" src={NavInicio}></img>
+            <img alt="imgNavInicio" class="imgNav" src={NavInicio}></img>
           </div>
           <p class="parrafo">
           Una vez pulsamos el boton veremos en pantalla la siguiente ventana emergente:
           </p>
           <div class="imgDiv">
-            <img class="imgNav" src={PopUpImg}></img>
+            <img alt="imgPopUpImg" class="imgNav" src={PopUpImg}></img>
           </div>
           <p class="parrafo">
           Clicamos en una de las opciones e introducimos nuestras credenciales:
           </p>
           <div class="imgDiv">
-            <img class="imgNav" src={LogInForm}></img>
+            <img alt="imgLogInForm" class="imgNav" src={LogInForm}></img>
           </div>
 
         <h2 class= "subtitle">Navegar por la aplicación estando identificado</h2>
@@ -95,7 +95,7 @@ function Ayuda() {
         <div>
           <table class="table">
             <tr>
-              <td><img  src={MenuLIImg}></img></td>
+              <td><img alt="imgMenuLIImg" src={MenuLIImg}></img></td>
               <td>
                 <ul class ="tablaValores">
                   <li><b>Inicio: </b>vuelve a la página principal desde cualquier punto.</li>
@@ -113,7 +113,7 @@ function Ayuda() {
         Una vez hemos accedido a la aplicación nos encontraremos en la pantaña de inicio:
         </p>
         <div class="imgDiv">
-            <img class="imgHome" src={HomeImgLI}></img>
+            <img alt="imgHomeImgLI" class="imgHome" src={HomeImgLI}></img>
         </div>
 
         <p class="parrafo">
@@ -123,7 +123,7 @@ function Ayuda() {
         Para empezar debemos introducir el radio de búsqueda del mapa, y este nos mostrará todos nuestros contactos dentro de dicho rádio:
         </p>
         <div class="imgDiv">
-            <img class="imgArea" src={Area}></img>
+            <img alt="imgArea" class="imgArea" src={Area}></img>
           </div>
 
         <h2 class= "subtitle">Documentación</h2>
