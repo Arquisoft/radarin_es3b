@@ -27,11 +27,11 @@ function Admin() {
           <div >
             <img class="imgAdmin" src={MapAdminImg}></img>
           </div>
-        </LoggedOut>
+         </LoggedOut> 
         <LoggedIn>
           <Redirect
-            from="/vistas/Admin"
-            to="/vistas/Home" />
+            from="/Admin"
+            to="/Home" />
         </LoggedIn>
       </body>
     </div>

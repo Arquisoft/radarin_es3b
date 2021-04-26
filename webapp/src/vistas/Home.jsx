@@ -33,7 +33,7 @@ function Home() {
 		
 		<b class="Bienvenida">Bienvenido a Radarin <Value src="user.name"/></b>
     <br></br><br></br>
-    <Link class="link" to="../vistas/Mapa">Comenzar</Link>
+    <Link class="link" to="/Mapa">Comenzar</Link>
     
     </LoggedIn>
 	

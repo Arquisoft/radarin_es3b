@@ -102,9 +102,9 @@ const Navbar = (props) => {
                     <MenuIcon />
                 </IconButton>
 
-                <StyledLink to="../vistas/home" className={classes.title}>
+                <StyledLink to="/Home" className={classes.title}>
  
-                    <img className={classes.name} src={Title} alt="githubImg"></img>
+                    <img className={classes.name} src={Title} alt="titulo"></img>
                     
                 </StyledLink>
 
