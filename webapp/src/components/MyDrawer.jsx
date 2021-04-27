@@ -7,14 +7,12 @@ import ExploreOutlinedIcon from "@material-ui/icons/ExploreOutlined";
 
 
 const styles = makeStyles(theme =>({
-    drawer: {
-        width: 240,
-        flexShrink:0,
-       
-    },
+     
     drawerPaper: {
         width: 240,
+        flexShrink:0,
     },
+
     toolbar: theme.mixins.toolbar, 
 
     titulo: {
@@ -25,7 +23,6 @@ const styles = makeStyles(theme =>({
     name:{
         fontSize: 25,
         fontStyle:"italic",
-        
         fontFamily:"Times New Roman"
     }
 
@@ -34,9 +31,7 @@ const MyDrawer = (props) => {
 
     const classes = styles()
     return(
-        <Drawer 
-            className={classes.drawer} 
-           
+        <Drawer  
             classes = {{paper: classes.drawerPaper,}}
             anchor = "left"
             variant={props.variant} 
@@ -44,7 +39,6 @@ const MyDrawer = (props) => {
             onClose={props.onClose ? props.onClose : null}
         >
             <div className={classes.toolbar}>
-            
                 <div className={classes.titulo}> 
                     <table>
                         <tr>
@@ -55,14 +49,11 @@ const MyDrawer = (props) => {
                                 Radarin
                             </td>
                         </tr>
-                    </table>
-                    
+                    </table>  
                 </div>
-            
             </div>
             <Divider/>
             <Lista/>
-
         </Drawer>
     )
 }

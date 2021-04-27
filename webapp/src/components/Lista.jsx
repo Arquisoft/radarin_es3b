@@ -12,18 +12,15 @@ import {  LoggedIn, LoggedOut} from "@solid/react";
 import { AuthButton } from "@solid/react";
 
 
-const useStyles = makeStyles(theme => ({
-
+const useStyles = makeStyles(() => ({
 
     iniButton: {
-        
         background: "transparent",
         border: "none",
         fontSize: 17,
         paddingRight:20,
         paddingTop:10,
         paddingBottom:10, 
-
       },
 
       iconIni:{
@@ -31,8 +28,9 @@ const useStyles = makeStyles(theme => ({
           marginRight:"26px",
       }
 
-
 }))
+
+
 function ListItemLink(props) {
     const { icon, primary, to } = props;
 
@@ -54,7 +52,6 @@ const Lista = () =>{
     return (
         <List component='nav'>
             
-
             <ListItemLink 
             icon = {<HomeIcon/>}
             primary = "Inicio"
@@ -81,30 +78,29 @@ const Lista = () =>{
 			</LoggedOut>
 
             <LoggedIn>
-            <ListItemLink 
-            icon = {<AssignmentIndIcon/>}
-            primary = "Lista de amigos"
-            to= "/Amigos">
-            </ListItemLink>
+                <ListItemLink 
+                    icon = {<AssignmentIndIcon/>}
+                    primary = "Lista de amigos"
+                    to= "/Amigos">
+                </ListItemLink>
 
-            <ListItemLink 
-            icon = {<MapIcon/>}
-            primary = "Consultar Localización"
-            to= "/Mapa">
-            </ListItemLink>
+                <ListItemLink 
+                    icon = {<MapIcon/>}
+                    primary = "Consultar Localización"
+                    to= "/Mapa">
+                </ListItemLink>
 
             </LoggedIn>
 
             <Divider/>
 
             <ListItemLink 
-            icon = {<HelpIcon/>}
-            primary = "Ayuda"
-            to= "/Ayuda">
+                icon = {<HelpIcon/>}
+                primary = "Ayuda"
+                to= "/Ayuda">
             </ListItemLink>
 
             <Divider/>
-            
         </List>
     )
 }
