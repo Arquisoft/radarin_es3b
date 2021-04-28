@@ -69,16 +69,16 @@ describe("userLocalization add", () => {
      */
     it("can be deleted correctly", async () => {
         var user = "NewUser";
-        var latitude = 33.3;
-        var longitude = 4.4;
+        var latitude = 66.6;
+        var longitude = 5.5;
         const response = await request(app).post("/api/userLocalization/add").send({user: user,latitude: latitude, longitude: longitude}).set("Accept", "application/json");
         
         /*Check it"s there*/
-        const responseGet = await request(app).get("/api/userLocalization/get/NewUser");
-        expect(responseGet.statusCode).toBe(200);
-        expect(responseGet.body.user).toBe(user);
-        expect(responseGet.body.latitude).toBe(latitude);
-        expect(responseGet.body.longitude).toBe(longitude);
+        const responseGetNew = await request(app).get("/api/userLocalization/get/NewUser");
+        expect(responseGetNew.statusCode).toBe(200);
+        expect(responseGetNew.body.user).toBe(user);
+        expect(responseGetNew.body.latitude).toBe(latitude);
+        expect(responseGetNew.body.longitude).toBe(longitude);
 
         /*Check it"s deleted*/
         const responseDel = await request(app).get("/api/userLocalization/delete/NewUser");
