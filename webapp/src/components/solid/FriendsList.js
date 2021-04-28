@@ -1,33 +1,42 @@
 import React from 'react';
 import ListGroup from "react-bootstrap/ListGroup";
-import getFriends from "../../hooks/solid/LDFlexPODConnection";
+import getFriends from "../../hooks/solid/LDFlexSolidFriends";
 
 
 
+/**
+ * Renders the list of friends the user has.
+ * Receives the user webId as props
+ * Holds a list of friends as state
+ */
+class FriendsList extends React.Component {
 
-class FriendsList extends React.Component { 
-    
     constructor(props) {
         super(props);
         this.state = { friends: [] }
     }
 
+    /**
+     * The list is the component state.
+     * Here we control what happens when that state changes.
+     */
     async componentDidUpdate() {
 
-        const data = await getFriends(this.props.webId);
+        //Stores the friends list returned by getFriends(), which needs the user webId as a parameter.
+        const friendsList = await getFriends(this.props.webId);
 
-        this.setState({ friends: data });
+        this.setState({ friends: friendsList });
     }
 
-    
+
     render() {
 
-        
         return (
-            
+
             <div className="FriendsList">
                 <ListGroup>
                     {
+                        //For each friend, it returns a ListGroup.item holding his information
                         this.state.friends.map(function (user, i) {
                             return <ListGroup.Item id={i} key={i}>{'' + user}</ListGroup.Item>
                         })
