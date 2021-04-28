@@ -53,7 +53,7 @@ class Map extends Component {
 		
       if (Math.sqrt((item.longitude - this.props.lon) * (item.longitude - this.props.lon) + (item.latitude - this.props.lat) * (item.latitude - this.props.lat)) < this.props.rango) {
         return (
-          <MapMarker  nombre={item.user} longitude={item.longitude} latitude={item.latitude} max={this.state.max} marker=<FriendMarker/> >
+          <MapMarker  nombre={item.user} longitude={item.longitude} latitude={item.latitude} max={this.state.max} marker={<FriendMarker/>} >
           </MapMarker>
         );
       } else { // else block añadido para arreglar error de CI: Array.prototype.map() expects a value to be returned at the end of arrow function  array-callback-return

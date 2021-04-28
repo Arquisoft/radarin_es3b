@@ -26,51 +26,31 @@ const StyledLink = styled(Link)`
       padding-bottom: 5px;
       padding-right: 5px;
       padding-left: 90px;
-      color: #fff;
     `;
 
 const useStyles = makeStyles(theme => ({
 
-
     menuButton: {
-
         marginRight: theme.spacing(2),
-
     },
 
     title: {
         flexGrow: 1,
         textTransform: "capitalize",
         textDecoration: "none",
-        fontSize: 25, 
-
     },
 
     appBar: {
         marginLeft: 240,
     },
 
-    iniButton: {
-
+    rightButton: {
         background: "transparent",
         border: "none",
         fontSize: 18,
         paddingTop: 10,
         paddingBottom: 10,
         color: "#fff",
-
-    },
-
-
-    logOutButton: {
-
-        background: "transparent",
-        border: "none",
-        fontSize: 18,
-        paddingTop: 10,
-        paddingBottom: 10, 
-        color: "#fff",
-
     },
 
     name: {
@@ -79,8 +59,6 @@ const useStyles = makeStyles(theme => ({
         maxWidth:"160px",
         minWidth:"140px"
     },
-
-
 
 }))
 
@@ -91,7 +69,6 @@ const Navbar = (props) => {
 
         <AppBar className={classes.appBar}>
             <Toolbar>
-                
                 <IconButton
                     edge="start"
                     className={classes.menuButton}
@@ -110,7 +87,7 @@ const Navbar = (props) => {
 
                 <LoggedIn>
                     <ExitToAppIcon />
-                    <AuthButton className={classes.logOutButton}
+                    <AuthButton className={classes.rightButton}
                         logout="Desconectarse"
                         style={{ background: "transparent" }}
                     >
@@ -119,15 +96,13 @@ const Navbar = (props) => {
 
                 <LoggedOut>
                     <EmojiPeopleSharpIcon />
-                    <AuthButton className={classes.iniButton}
+                    <AuthButton className={classes.rightButton}
                         popup="https://solid.github.io/solid-auth-client/dist/popup.html"
                         login="Iniciar Sesión"
                         style={{ background: "transparent" }}
                     >
-
                     </AuthButton>
                 </LoggedOut>
-
             </Toolbar>
         </AppBar>
     )

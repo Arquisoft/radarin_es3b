@@ -1,5 +1,5 @@
 import { useWebId } from "@solid/react";
-import FriendsList from "../../components/solid/FriendsList";
+import FriendsList from "../../components/solid/FriendsList.js";
 
 
 export default function FriendListHook() {

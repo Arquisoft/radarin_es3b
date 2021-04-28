@@ -2,16 +2,16 @@ import { useLDflexList } from "@solid/react";
 
 export default function SolidFriends() {
 
+	//Retrieves the user's friends
 	const friends = useLDflexList("user.friends");
-	var ids = [];
+	var usernames = [];
 	for (var element of friends) {
-
+		//for each friend, takes his username
 		var id = `${element}`.split(".")[0];
-		ids.push(id.substring(8, id.length));
+		usernames.push(id.substring(8, id.length));
 	}
 
-
-	return ids;
+	return usernames;
 
 }
 
