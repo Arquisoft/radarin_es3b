@@ -29,6 +29,6 @@ test("user can type text and click Entrar", async () => {
     fireEvent.change(contraseñaTextField, {target: { value: "ejemploContraseña" }});
 
     const signInButton = getAllByRole("button", { id: "boton" }).find(element => element.className.includes("MuiButton"));
-
+    signInButton.click();
     expect(signInButton).toBeInTheDocument();
 });
