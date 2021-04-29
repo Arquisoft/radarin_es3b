@@ -24,7 +24,7 @@ const StyledLink = styled(Link)`
       padding-top: 5px;
       padding-bottom: 5px;
       padding-right: 5px;
-      padding-left: 70px;
+      padding-left: 1em;
     `;
 
 const useStyles = makeStyles(theme => ({
