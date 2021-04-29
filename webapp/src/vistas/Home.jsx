@@ -16,11 +16,13 @@ import GitHubImg from "./img/github.png";
 import SolidImg from "./img/solid.PNG";
 import MapImg from "./img/mapa.jpg";
 import ProcessSession from "../hooks/ProcessSession"
+import LogIn from "../hooks/solid/LogIn"
 
 
 function Home() {
   return (
     <div className="Home">
+		
 	  
       <ReactNotification />
       <Contenedor/>
@@ -29,6 +31,7 @@ function Home() {
 	<ProcessSession/>
 	
    
+   <LogIn/>
   <LoggedIn>
 		
 		<b class="Bienvenida">Bienvenido a Radarin <Value src="user.name"/></b>
@@ -48,6 +51,8 @@ function Home() {
       <ul>
         <li>
           <LoggedOut>
+		  
+		  
           <h2>Inicia Sesión en Radarin. ¡Encuentra a tus amigos cercanos y queda con ellos! </h2>
           </LoggedOut>
           <LoggedIn>
