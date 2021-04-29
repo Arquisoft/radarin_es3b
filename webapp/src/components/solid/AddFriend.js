@@ -3,19 +3,24 @@ import React from 'react';
 import Form from "react-bootstrap/Form";
 import getName from "../../hooks/solid/SolidName";
 import ldflex from "@solid/query-ldflex";
+import { Alert } from '@material-ui/lab';
 
 
 
 
 class AddFriend extends React.Component {
+	
+	
+
 
 
     constructor(props) {
         super(props);
-        this.state = { friendWebId: '', error:false }
+        this.state = { friendWebId: '',errorBorrar:false,permisosBorrar:true,errorAñadir:false,permisosAñadir:true, estado:' ' }
+		
+		
     }
-
-
+	
     changeUrl(e) {
         const url = e.target.value ;
         this.setState({friendWebId: url});
@@ -25,42 +30,167 @@ class AddFriend extends React.Component {
 		console.log(friendWebId);
 		console.log(userWebId);
 		
+		var errorAñadir=false;
+		var permisosAñadir=true;
+		
+		
+		
 		try {  
 			var name = await getName(friendWebId.trim());
+			
+
 			console.log(name)
 			if(name!==undefined){
-				let response=await ldflex[userWebId].knows.add(ldflex[friendWebId.trim()]);	
-				console.log(response);
+				
+				try{
+					
+					let response=await ldflex[userWebId].knows.add(ldflex[friendWebId.trim()]);
+					
+					
+					console.log(response);
+				}
+				
+				catch{
+					console.log("gg");
+					permisosAñadir=false;
+				}
+			}
+			else{
+				errorAñadir=true;
+				
 			}
 		} catch (error){
-			this.state.error=true;
+			errorAñadir=true;
+			
 			
 		}	
 
 		
+		
+		this.state.errorAñadir=errorAñadir
+		this.state.permisosAñadir=permisosAñadir;
+		this.state.estado="añadir";
 		
 	}
 	
 	async deleteFriend (friendWebId, userWebId){
 		console.log(friendWebId);
 		console.log(userWebId);
-		
-	
-		
-
-
-		let response=await ldflex[userWebId].knows.delete(ldflex[friendWebId.trim()]);	
-		console.log(response);
-
-
+		this.state.estado="borrar";
+		var errorBorrar=false;
+		var permisosBorrar=true;
 		
 		
+		try{
+			
+			let response=await ldflex[userWebId].knows.delete(ldflex[friendWebId.trim()]);	
+			
+			
+			
+			if(response!==undefined){
+				errorBorrar=false;
+				
+			}
+			else{
+				errorBorrar=true;
+				
+			}
+			console.log(response);
+		}
+		
+		catch{
+			
+			permisosBorrar=false;
+		}
+
+		this.state.errorBorrar=errorBorrar
+		this.state.permisosBorrar=permisosBorrar;
+		this.state.estado="borrar";
 		
 	}
+	
+	renderAlert = () => {
+		
+	    if(this.state.estado==='añadir'){
+			
+			if (this.state.errorAñadir) {
+		  
+				return (
+					<Alert variant="filled" severity="warning">El usuario que se intenta añadir no es válido</Alert>
+		  
+				);
+			}  
+		
+			else if (!this.state.permisosAñadir) {
+				return (
+					
+					<Alert variant="filled" severity="error">Su pod no tiene los permisos habilitados para esta aplicación</Alert>
+		  
+				);
+			} 
+			
+			else{
+				return(
+					<Alert variant="filled" severity="success">Amigo añadido  con exito</Alert>
+				);
+			}
+			
+			
+			
+			
+		}
+		
+		if(this.state.estado==='borrar'){
+			
+			if (this.state.errorBorrar) {
+		  
+				return (
+					<Alert variant="filled" severity="warning">El usuario que se intenta borrar  no es válido</Alert>
+		  
+				);
+			}  
+		
+			else if (!this.state.permisosBorrar) {
+				return (
+					
+					<Alert variant="filled" severity="error">Su pod no tiene los permisos habilitados para esta aplicación</Alert>
+		  
+				);
+			} 
+			
+			else{
+				return(
+					<Alert variant="filled" severity="success">Amigo borrado con exito</Alert>
+				);
+			}
+			
+			
+			
+			
+		}
+		
+	   
+		
+      
+	  else { 
+		
+			return(
+				<Alert variant="filled" severity="info">Escribe el enlace de pod de un amigo para borrarlo o añadirlo</Alert>
+		
+			);
+			
+		
+	  
+	  }
+   
+  }
 
     render() {
+		
+		 	 
         return (
             <div className="AddFriend">
+				{this.renderAlert()}
                 <h3> Añadir amigo </h3>
                 <Form name="friend">
                     <Form.Group>
@@ -76,11 +206,11 @@ class AddFriend extends React.Component {
                 </Form>
                 
             </div>
-        )
-    }
+        );
+    
 
 
-
+	}
 
 
 
