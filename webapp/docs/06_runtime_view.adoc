@@ -52,6 +52,24 @@ App --> App: Load Welcome View
 @enduml
 ----
 
+=== Log Out Scenario
+
+
+From every view of the application the user is able to log out.
+
+Once the user clicks the 'LogOut' button, the application will inform the user with a message stating the he's been successfully disconnected. 
+
+
+[plantuml,"logout diagram",png]
+----
+@startuml
+actor User #red
+participant App
+User -[#green]> App: Log Out
+App --> App: Logged Out message
+@enduml
+----
+
 === Friends Location Scenario
 
 
@@ -84,4 +102,30 @@ App --[#green]> User: Notify close friends
 @enduml
 ----
 
+=== Admin Scenario
+
+
+The application's administrator will be able to manage data and permission through its own component.
+
+First, he'll need to be logged in providing his credentials (username and password). 
+
+Once logged in, several features available only for administrators will be display for him to interact with, together with a map showing the current users connected.
+
+
+[plantuml,"login diagram",png]
+----
+@startuml
+actor Admin #red
+participant App
+database MongoDB #blue
+App <[#blue]--  Admin: Log in
+App -[#blue]> MongoDB: Check credentials
+App <[#blue]-- MongoDB: Authenticate
+App -> App: Render Admin View
+App -[#blue]> MongoDB: getUsersPositions
+App <[#blue]-- MongoDB: usersPositions
+App -> App: Render Map with users
+App --[#green]> Admin: Display Map
+@enduml
+----
 
