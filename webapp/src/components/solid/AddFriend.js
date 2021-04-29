@@ -182,7 +182,7 @@ class AddFriend extends React.Component {
                     <label for="adminForm" class="labelUser">URL:</label>
                     <input class="adminForm" type="text" name="nombre" size="40" 
                     onChange={this.changeUrl.bind(this)} value={this.state.friendWebId}
-                    placeholder="Introduzca el usuario administrador" required="true"></input>
+                    placeholder="WebID/URL" required="true"></input>
 
 					<br></br> 
 					<Button  variant="contained" color="primary" onClick={() => this.addFriend(this.state.friendWebId,this.props.userWebId)}>
