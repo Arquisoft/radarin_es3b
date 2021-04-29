@@ -18,8 +18,6 @@ import MapImg from "./img/mapa.jpg";
 import ProcessSession from "../hooks/ProcessSession"
 
 
-
-
 function Home() {
   return (
     <div className="Home">
@@ -31,7 +29,6 @@ function Home() {
      <body className ="App-body">
 	<ProcessSession/>
 	
-  
    
   <LoggedIn>
 		
