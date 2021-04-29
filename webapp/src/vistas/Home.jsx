@@ -16,7 +16,8 @@ import GitHubImg from "./img/github.png";
 import SolidImg from "./img/solid.PNG";
 import MapImg from "./img/mapa.jpg";
 import ProcessSession from "../hooks/ProcessSession"
-import LogIn from "../hooks/solid/LogIn"
+
+
 
 
 function Home() {
@@ -30,8 +31,8 @@ function Home() {
      <body className ="App-body">
 	<ProcessSession/>
 	
+  
    
-   <LogIn/>
   <LoggedIn>
 		
 		<b class="Bienvenida">Bienvenido a Radarin <Value src="user.name"/></b>
