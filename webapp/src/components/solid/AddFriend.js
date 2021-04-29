@@ -1,10 +1,8 @@
 import Button from '@material-ui/core/Button';
 import React from 'react';
-import Form from "react-bootstrap/Form";
 import getName from "../../hooks/solid/SolidName";
 import ldflex from "@solid/query-ldflex";
-import { Alert } from '@material-ui/lab';
-import { SpaceBar } from '@material-ui/icons';
+import { Alert } from '@material-ui/lab'; 
 
 
 

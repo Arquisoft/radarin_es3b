@@ -21,16 +21,16 @@ const StyledLink = styled(Link)`
       font-weight: bold;
       text-transform: capitalize;
       text-decoration: none;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-right: 5px;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      padding-right: 1em;
       padding-left: 1em;
     `;
 
 const useStyles = makeStyles(theme => ({
 
     menuButton: {
-        marginRight: theme.spacing(2),
+        marginRight: "3em",
     },
 
     title: {
@@ -39,24 +39,21 @@ const useStyles = makeStyles(theme => ({
         textDecoration: "none",
     },
 
-    appBar: {
-        marginLeft: 240,
-    },
 
     rightButton: {
         background: "transparent",
         border: "none",
         fontSize: 18,
-        paddingTop: 10,
-        paddingBottom: 10,
+        paddingTop: "0.2em",
+        paddingBottom: "0.2em",
         color: "#fff",
     },
 
     name: {
         width:"100%",
         height:"auto",
-        maxWidth:"160px",
-        minWidth:"140px"
+        maxWidth:"12em",
+        minWidth:"8em"
     },
 
 }))
@@ -66,7 +63,7 @@ const Navbar = (props) => {
     const classes = useStyles()
     return (
 
-        <AppBar className={classes.appBar}>
+        <AppBar>
             <Toolbar>
                 <IconButton
                     edge="start"
