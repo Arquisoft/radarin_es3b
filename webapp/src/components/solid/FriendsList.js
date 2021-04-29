@@ -1,6 +1,8 @@
 import React from 'react';
 import ListGroup from "react-bootstrap/ListGroup";
 import getFriends from "../../hooks/solid/LDFlexSolidFriends";
+import ProcessAddFriend from "../../hooks/solid/ProcessAddFriend"
+
 
 
 
@@ -34,6 +36,7 @@ class FriendsList extends React.Component {
         return (
 
             <div className="FriendsList">
+				<ProcessAddFriend/>
                 <ListGroup>
                     {
                         //For each friend, it returns a ListGroup.item holding his information
