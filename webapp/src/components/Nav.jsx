@@ -21,11 +21,10 @@ const StyledLink = styled(Link)`
       font-weight: bold;
       text-transform: capitalize;
       text-decoration: none;
-      margin: 0 10px;
       padding-top: 5px;
       padding-bottom: 5px;
       padding-right: 5px;
-      padding-left: 90px;
+      padding-left: 1em;
     `;
 
 const useStyles = makeStyles(theme => ({
