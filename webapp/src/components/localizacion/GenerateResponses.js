@@ -43,7 +43,7 @@ class GenerateResponses extends React.Component {
                 title: "Los amigos ya conectados",
                 subtitle: "subtitle",
                 message: friendstext,
-				duration: 5000,
+				duration: 15000,
                 theme: "darkblue",
                 native: true // when using native, your OS will handle theming.
             });
