@@ -29,7 +29,6 @@ function Home() {
      <body className ="App-body">
 	<ProcessSession/>
 	
-   
   <LoggedIn>
 		
 		<b class="Bienvenida">Bienvenido a Radarin <Value src="user.name"/></b>
