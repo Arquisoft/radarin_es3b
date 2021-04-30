@@ -38,3 +38,16 @@ Once opened the navigation menu, the next test makes sure the application render
 
 
 === Capacity tests
+
+To simulate petitions to the webapp we've used Gatling.
+
+Cases:
+
+- A user logs in and logs out.
+- Admin user opens the application.
+- A user logs in and checks his friends list.
+- A user opens the help section of the application.
+- A user logs in, turns on the geolocation, receives the map showing his connected friends location. Then he turns off the geolocation and turns it on again. The user logs out.
+- A user logs in and navigates through every single component of the application.
+
+All these cases have been tested with a load of 1, 50 and 120 users.
