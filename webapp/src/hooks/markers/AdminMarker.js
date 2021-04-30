@@ -27,7 +27,7 @@ console.log(props)
   
 
   return (
-    <div class="marker" style={markerStyle} >
+    <div class="markerAdmin" style={markerStyle} >
 	
 		<div class="friendMarker">
             <ReactLogo />
