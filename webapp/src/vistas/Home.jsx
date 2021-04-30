@@ -21,6 +21,7 @@ import ProcessSession from "../hooks/ProcessSession"
 function Home() {
   return (
     <div className="Home">
+		
 	  
       <ReactNotification />
       <Contenedor/>
@@ -28,7 +29,6 @@ function Home() {
      <body className ="App-body">
 	<ProcessSession/>
 	
-   
   <LoggedIn>
 		
 		<b class="Bienvenida">Bienvenido a Radarin <Value src="user.name"/></b>
@@ -48,6 +48,8 @@ function Home() {
       <ul>
         <li>
           <LoggedOut>
+		  
+		  
           <h2>Inicia Sesión en Radarin. ¡Encuentra a tus amigos cercanos y queda con ellos! </h2>
           </LoggedOut>
           <LoggedIn>

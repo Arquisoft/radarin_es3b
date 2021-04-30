@@ -13,7 +13,7 @@ import Ayuda from './vistas/Ayuda';
 
 
 class App extends React.Component {
-
+	
   render() {
 
     return (
