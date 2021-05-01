@@ -7,11 +7,11 @@
 }
 .subtitle{
     text-align: left;
-    margin-left: 20px;
+    margin-left: 0.8em;
 }
 .parrafo{
     text-align: left;
-    margin-left: 20px;
+    margin-left: 1.2em;
 }
 .imgDiv{   
     text-align: center; 
@@ -19,7 +19,7 @@
 }
 .imgNav{
     border: black 3px solid;
-    margin-left: 20px;
+    margin-left: 1.2em;
     max-width: 800px;
     width: 90%;
     height: auto;
@@ -34,7 +34,7 @@
 
 .imgHome{
     border: black 3px solid;
-    margin-left: 20px;
+    margin-left: 1.1em;
     max-width: 800px;
     width: 90%;
     height: auto;
@@ -45,6 +45,6 @@
     margin : auto;
 }
 .table{
-    padding-left: 20PX;
+    padding-left: 0.1em;
     margin: auto;
 }

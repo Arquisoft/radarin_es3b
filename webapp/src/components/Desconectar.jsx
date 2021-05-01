@@ -11,8 +11,8 @@ function Desconectar() {
             <h1>¡Te has desconectado con éxito!</h1>
             <p class="logoutMessage">Esperamos que pronto estés de vuelta con nosotros.</p>
             <Link class="link" to="/Home">Página de Inicio</Link>
-            <div class= "mapImg">
-              <img src={MapImg} alt="mapImg"/>
+            <div >
+              <img class= "mapImg"src={MapImg} alt="mapImg"/>
             </div>
         </body>
       </div>

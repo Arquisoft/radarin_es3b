@@ -19,7 +19,11 @@ div.friendMarker {
 }
 
 .mapImg {
-  padding-top: 20px;
+  padding-top: 2em;
+  margin: auto;
+  max-width: 1200px;
+  width: 90%;
+  height: auto;
 }
 
 .marker{
