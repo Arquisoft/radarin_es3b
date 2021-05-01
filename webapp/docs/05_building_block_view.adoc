@@ -20,6 +20,7 @@ App <-down-> Pods
 
 Motivation::
 The user interacts with our application, which uses a MongoDB database and communicates with the user's SOLID POD.
+// ¿Debería añadir la API de geolocalización?
 
 Contained Building Blocks::
 [cols="1,2" options="header"]
@@ -47,6 +48,10 @@ react <--> Restapi
 @enduml
 ----
 
+////
+¿Se añadirían las pruebas de carga y monitorización aquí?
+////
+
 Motivation::
 WebApp uses the Restapi to connect with the MongoDB database.
 
@@ -60,24 +65,32 @@ Contained Building Blocks::
 | E2E testing | Aceptation step by step tests.
 |===
 
+////
+¿La Restapi se usa para algo más? Como para conectar con la api de geolocalización o algo?
+////
+
 ==== Level 3
 ==== White Box _WebApp_
 
-[plantuml, "block level 2", png]
+[plantuml, "block level 3", png]
 ----
 @startuml
 Node "Level 3: WebApp" as WebApp3 {
 rectangle "Localization"
 rectangle "Views"
 rectangle "FriendList"
+rectangle "ManageFriends"
 rectangle "Admin"
 rectangle "Notifications"
 }
 Localization <--> Notifications
 Views <--> Localization
 Views <--> FriendList
+Views <--> ManageFriends
+Views <--> FriendList
+ManageFriends <--> FriendList
 Views <--> Admin
-Views <--> Notifications
+Admin <--> Localization
 @enduml
 ----
 
@@ -88,10 +101,11 @@ Contained Building Blocks::
 [cols="1,2" options="header"]
 |===
 | **Name** | **Responsibility**
-| Localization | Manages the localization of the user and displays it in a map together with the localizations of their friends. Uses the Restapi to store the users localization in the MongoDB database.
-| Views | Controls the appaerance of the application. Manages the different views of the application with url routes.
+| Views | Controls the appearance of the application. Manages the different views of the application with routes defined in App.
 | FriendList | Lists the names of the user's friends in their SOLID POD.
-| Admin | Has a login form to control the access. If the app user has succesfully logged in as admin, then they'll be able to delete the contents of the database. More functionality will be added in future releases.
-| Notifications | Manages the push notifications of the application. Sends a push notification to the user when a new friend is in range.
+| ManageFriends | Allows the user to add or delete a friend using their WebID.
+| Localization | Manages the localization of the user and displays it in a map together with the localizations of their friends. Uses the Restapi to store the users localization in the MongoDB database.
+| Notifications | Manages the push notifications of the application. Sends a push notification to the user's browser when a new friend is in range.
+| Admin | Has a login form to control the access. If the app user has succesfully logged in as admin, then they'll be able to delete or block a user of the application and see the unlabeled locations of the current users of the application.
 |===
 

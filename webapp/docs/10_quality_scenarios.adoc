@@ -23,9 +23,9 @@ image:Quality Tree.png["Quality Tree"]
 |===
 |Quality Goals| How to achieve it
 | _Usability_ | The aplication must be able to be used without problem by the largest number of users possible.
-| _Privacy and Security_ | The main goal of the application is to provide a safe service for our users. The database will only save the necessary data for each user. The rest of them will be consulted on the user's devide when it be necessary.
+| _Privacy and Security_ | The main goal of the application is to provide a safe service for our users. The database will only save the necessary data for each user. The rest of them will be consulted on the user's POD when it's necessary.
 | _Testability_ | In the desing phase the application can be easily tested.
-| _Portability_ | Our software will be portable, mainly will be used in Windows and Android.
+| _Portability_ | Our software will be portable, it will be used by different browsers, mainly Google Chrome, Mozilla Firefox, Opera and Safari.
 | _Efficiency_ | Users deserve that our application works perfectly all time, providing the information that they need and showing their friends quickly.
 |===
 
