@@ -20,9 +20,6 @@ class Map extends Component {
   constructor(props) {
     super(props);
 
-	
-	
-	
     this.state = {
 
 		max:10,
@@ -77,7 +74,7 @@ class Map extends Component {
         {this.renderMarkers()}
 
 
-        <MapMarker  nombre="MiPosición" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} max={this.state.max} marker=<FriendMarker/>  />
+        <MapMarker  nombre="MiPosición" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} max={this.state.max} marker={<FriendMarker/>}  />
       </MapGL>
 	  </div>
     );
