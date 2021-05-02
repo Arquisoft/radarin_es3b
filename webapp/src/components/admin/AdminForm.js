@@ -39,10 +39,6 @@ class AdminForm extends React.Component {
         this.setState({ user: user });
     }
 
-    changeUserToDelete(e) {
-        const userToDelete = e.target.value;
-        this.setState({ userToDelete: userToDelete });
-    }
 
     changePsw(e) {
         const psw = e.target.value;
