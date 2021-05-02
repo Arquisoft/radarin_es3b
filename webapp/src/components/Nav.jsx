@@ -29,10 +29,7 @@ const StyledLink = styled(Link)`
 
 const useStyles = makeStyles(theme => ({
 
-    menuButton: {
-        marginRight: "3em",
-    },
-
+    
     title: {
         flexGrow: 1,
         textTransform: "capitalize",
