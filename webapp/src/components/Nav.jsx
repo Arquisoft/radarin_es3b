@@ -90,7 +90,7 @@ const Navbar = (props) => {
                 <LoggedOut>
                     <EmojiPeopleSharpIcon />
                     <AuthButton className={classes.rightButton}
-                        popup="https://solid.github.io/solid-auth-client/dist/popup.html"
+                        popup="https://solidcommunity.net/common/popup.html"
                         login="Iniciar Sesión"
                         style={{ background: "transparent" }}
                     >
