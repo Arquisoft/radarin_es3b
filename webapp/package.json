@@ -30,6 +30,7 @@
     "react-scripts": "4.0.1",
     "react-testing-library": "^8.0.1",
     "solid-auth-client": "^2.5.5",
+    "solid-auth-fetcher": "^1.5.2",
     "styled-components": "^5.2.3",
     "web-vitals": "^0.2.4",
     "worker-loader": "^3.0.8"
