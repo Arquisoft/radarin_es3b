@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import './App.css';
 import './Map.css';
@@ -18,7 +18,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Redirect
             from="/"
             to="/Home" />
@@ -34,7 +34,7 @@ class App extends React.Component {
             <Route path='/Ayuda' exact
               render={() => <Ayuda />} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
 
       </div>
 
