@@ -28,14 +28,17 @@ class CheckSession extends React.Component {
 	async session(){
 		
 		console.log(this.props.userWebID);
+		//Obtenemos el registro del usuario
 		var response = await getUserRegister(this.props.userWebID);
 		console.log(response);
 		
+		//Si el usuario se ha logeado por primera vez creamos el registro del usuario
 		if(response.user==="error"){
 			await addUserRegister(this.props.userWebID,true);
 			
 		}
 		
+		//Si ya existia y esta baneado se le deslogea
 		else if(!response.allowed){
 			this.state.allowed=false;
 		
@@ -47,6 +50,7 @@ class CheckSession extends React.Component {
 	
 	async componentDidUpdate() {
 		
+		//Este componente tambien se usa cuando el usuario no esta logeado, con esto comprobamos que lo está
 		if(this.props.userWebID.length>=2){this.session();}
 	
 	}
@@ -69,6 +73,7 @@ class CheckSession extends React.Component {
 
 	render() {
 		
+		//Si esta baneado se le manda una notificacion
 		 if (!this.state.allowed){
 			 return (
 			<Alert variant="filled" severity="error">Has sido bloqueado de la aplicación</Alert>

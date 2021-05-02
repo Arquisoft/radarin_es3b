@@ -5,9 +5,9 @@ class DesactivarAplicacion extends React.Component {
 
 
     async deleteLoc() {
+		//Borramos la localización del usuario
         await deleteUserLocalization(this.props.userWebID);
-        //let response = await deleteUserLocalization(this.props.userWebID);
-        //console.log(response);
+        
 
     }
 

@@ -20,14 +20,18 @@ class AddFriend extends React.Component {
         this.setState({friendWebId: url});
     }
 	
+	//Añadir amigo
 	async addFriend (friendWebId, userWebId){
 		console.log(friendWebId);
 		console.log(userWebId);
 		
+		//Por defecto no habrá errores en la operación
 		var errorAñadir=false;
 		var permisosAñadir=true;
-
+		
+		
 		try {  
+			//Comprobamos si podemos obtener el nombre del usuario y si es válido 
 			var name = await getName(friendWebId.trim());
 			
 
@@ -35,7 +39,7 @@ class AddFriend extends React.Component {
 			if(name!==undefined){
 				
 				try{
-					
+					//Intentamos realizar la query para añadir al usuario
 					let response=await ldflex[userWebId].knows.add(ldflex[friendWebId.trim()]);
 					
 					
@@ -43,40 +47,46 @@ class AddFriend extends React.Component {
 				}
 				
 				catch{
-					console.log("gg");
+					//Si no hemos podido añadirlo siendo usuario válido es por problemas de permisos
 					permisosAñadir=false;
 				}
 			}
+			//Si no es válido tenemos un error
 			else{
 				errorAñadir=true;
 				
 			}
+		//Si da fallo al obtenerlo tenemos un error
 		} catch (error){
 			errorAñadir=true;
 			
 			
 		}	
 	
+		//Pasamos al estado los errores y cual ha sido la operación
 		this.state.errorAñadir=errorAñadir
 		this.state.permisosAñadir=permisosAñadir;
 		this.state.estado="añadir";
 		
 	}
 	
+	//Borrar amigo
 	async deleteFriend (friendWebId, userWebId){
 		console.log(friendWebId);
 		console.log(userWebId);
+		
+		//Por defecto no habrá errores en la operación
 		this.state.estado="borrar";
 		var errorBorrar=false;
 		var permisosBorrar=true;
 		
 		
 		try{
-			
+			//Intentamos realizar la query para borrar al usuario
 			let response=await ldflex[userWebId].knows.delete(ldflex[friendWebId.trim()]);	
 			
 			
-			
+			//Si el usuario no lo tenemos agregado tenemos un error
 			if(response!==undefined){
 				errorBorrar=false;
 				
@@ -90,19 +100,25 @@ class AddFriend extends React.Component {
 		
 		catch{
 			
+			//Si no podemos relizar la consulta siendo el usuario válido es por problemas de permisos
 			permisosBorrar=false;
 		}
 
+		//Pasamos al estado los errores y cual ha sido la operación
 		this.state.errorBorrar=errorBorrar
 		this.state.permisosBorrar=permisosBorrar;
 		this.state.estado="borrar";
 		
 	}
 	
+	//Función que retorna la alerta que toque
 	renderAlert = () => {
+		
+		//Si la última operación es de añadir
 		
 	    if(this.state.estado==='añadir'){
 			
+			//Si hay un error con el usuario mostramos la alerta de ese error
 			if (this.state.errorAñadir) {
 		  
 				return (
@@ -111,6 +127,7 @@ class AddFriend extends React.Component {
 				);
 			}  
 		
+			//Si hay un error con los permisos mostramos la alerta de ese error
 			else if (!this.state.permisosAñadir) {
 				return (
 					
@@ -119,6 +136,7 @@ class AddFriend extends React.Component {
 				);
 			} 
 			
+			//Si no hay problemas avisamos de que todo ha ido bien
 			else{
 				return(
 					<Alert variant="filled" severity="success">Amigo añadido  con exito</Alert>
@@ -130,8 +148,10 @@ class AddFriend extends React.Component {
 			
 		}
 		
+		//Si la última operación es de borrar
 		if(this.state.estado==='borrar'){
 			
+			//Si hay un error con el usuario mostramos la alerta de ese error
 			if (this.state.errorBorrar) {
 		  
 				return (
@@ -139,7 +159,7 @@ class AddFriend extends React.Component {
 		  
 				);
 			}  
-		
+			//Si hay un error con los permisos mostramos la alerta de ese error
 			else if (!this.state.permisosBorrar) {
 				return (
 					
@@ -148,6 +168,7 @@ class AddFriend extends React.Component {
 				);
 			} 
 			
+			//Si no hay problemas avisamos de que todo ha ido bien
 			else{
 				return(
 					<Alert variant="filled" severity="success">Amigo borrado con exito</Alert>
@@ -158,7 +179,7 @@ class AddFriend extends React.Component {
 		}
 
 	  else { 
-		
+			//Si no ha ocurrido nada mostramos un mensaje informativo
 			return(
 				<Alert color="info" variant="outlined" severity="info">Escribe el enlace de pod de un amigo para borrarlo o añadirlo</Alert>
 			);
@@ -176,9 +197,11 @@ class AddFriend extends React.Component {
             <div className="AddFriend">
 				
                 <h1> Gestionar lista de amigos </h1>
+				//Cada render del componente mostramos el mensaje que toque
 				{this.renderAlert()}
 
-				
+
+				//Formulario donde escribimos el WebId del usuario a añadir o borrar
 				<form class="friend">
                     <label for="adminForm" class="labelUser">URL:</label>
                     <input class="adminForm" type="text" name="nombre" size="40" 

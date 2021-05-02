@@ -14,7 +14,9 @@ class AdminOperations extends React.Component {
 		super(props);
 		
 		this.state = {
+			//Variable con los usuarios obtenidos
 			users:[],
+			//Variable que controla si se han cargado los usuarios ya
 			isLoading: true
 			
 			
@@ -28,17 +30,17 @@ class AdminOperations extends React.Component {
 	async componentDidMount() {
 		
 
-		
+		//Obtenemos la lista de todos los usuarios
 		var response = await getUserRegisterList();
 		this.state.users=response;
+		
+		//Marcamos que ya se han cargado los usuarios
 		this.setState({ isLoading: false });
 	
 	}
 	
 	async componentDidUpdate() {
 		
-
-		
 		var response = await getUserRegisterList();
 		this.state.users=response;
 		this.setState({ isLoading: false });
@@ -46,7 +48,7 @@ class AdminOperations extends React.Component {
 	}
 	
 	
-	
+	//Borrar usuario del registro usuarios
 	async borrarUsuario(user){
 		
 		let response=await deleteUserRegister(user);
@@ -55,6 +57,7 @@ class AdminOperations extends React.Component {
 		
 	}
 	
+	//Banear usuario poniendo su atributo allowed a false
 	async bloquearUsuario(user){
 		let response=await addUserRegister(user,false);
 		console.log(response);

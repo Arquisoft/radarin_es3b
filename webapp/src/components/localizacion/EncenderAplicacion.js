@@ -12,7 +12,7 @@ class EncenderAplicacion extends React.Component{
    
         render() {
 
-            //console.log(this.props.amigos);
+          //Si la geolocalizacion esta activada la obtenemos, sino mostramos un error
             return !this.props.isGeolocationAvailable ? (
                 <div>Your browser does not support Geolocation</div>
             ) : !this.props.isGeolocationEnabled ? (
