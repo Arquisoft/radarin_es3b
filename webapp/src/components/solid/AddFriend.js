@@ -197,11 +197,11 @@ class AddFriend extends React.Component {
             <div className="AddFriend">
 				
                 <h1> Gestionar lista de amigos </h1>
-				//Cada render del componente mostramos el mensaje que toque
+				
 				{this.renderAlert()}
 
 
-				//Formulario donde escribimos el WebId del usuario a añadir o borrar
+				
 				<form class="friend">
                     <label for="adminForm" class="labelUser">URL:</label>
                     <input class="adminForm" type="text" name="nombre" size="40" 
