@@ -62,7 +62,7 @@ const Lista = () =>{
                 <ListItem>
                     <EmojiPeopleSharpIcon className={classes.iconIni}></EmojiPeopleSharpIcon>
                     <AuthButton className={classes.iniButton} 
-                        popup="https://solid.github.io/solid-auth-client/dist/popup.html"
+                        popup="https://solidcommunity.net/common/popup.html"
                         login="Iniciar Sesión"
                         style={{background: "transparent"}}
                         >

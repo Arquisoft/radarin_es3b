@@ -186,7 +186,9 @@ class AddFriend extends React.Component {
                     placeholder="WebID/URL" required="true"></input>
 
 					<br></br> 
-					<p>Ejemplo: <i>https://usuario.solidcommunity.net<b>/</b></i></p>
+					<p>Ejemplo solidcommunity: <i>https://usuario.solidcommunity.net<b>/</b></i></p>
+					<p>Ejemplo inrupt: <i>https://usuario.inrupt.net<b>/</b></i></p>
+					
 					<Button  variant="contained" color="primary" onClick={() => this.addFriend(this.state.friendWebId,this.props.userWebId)}>
                        agregar </Button>
 					<Button  variant="contained" color="secondary" onClick={() => this.deleteFriend(this.state.friendWebId,this.props.userWebId)}>
