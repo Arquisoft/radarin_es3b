@@ -101,6 +101,47 @@ App --[#green]> User: Notify close friends
 @enduml
 ----
 
+=== Friend List
+
+Our application allows the user to check the friends they have added in their SOLID POD.
+
+[plantuml, "friend list", png]
+----
+@startuml
+actor User #red
+participant App
+database SOLIDprovider #blue
+User -[#green]> App: Friend list (req)
+App -[#blue]> SOLIDprovider: Friend list (req)
+App <[#blue]-- SOLIDprovider: Friend list response
+User <[#green]-- App: Friend list response
+@enduml
+----
+
+=== Add and Remove Friends
+
+The user will be able to add and remove friends from their SOILD POD. Our application can communicate with the user's POD SOLID provider, which will manage the friends from the user's POD.
+
+To request the addition or removal of a friend, the user must provide the webID from said friend.
+
+[plantuml, "add and remove friends",png]
+----
+@startuml
+actor User #red
+participant App
+database SOLIDprovider #blue
+User -[#green]> App: Remove friend (webID)
+App -[#blue]> SOLIDprovider: Remove friend (webID)
+App <[#blue]-- SOLIDprovider: Updated friends list
+User <[#green]-- App: Updated friends list
+User -[#green]> App: Add friend (webID)
+App -[#blue]> SOLIDprovider: Add friend (webID)
+App <[#blue]-- SOLIDprovider: Updated friends list
+User <[#green]-- App: Updated friends list
+@enduml
+----
+
+
 === Admin Scenario
 
 
