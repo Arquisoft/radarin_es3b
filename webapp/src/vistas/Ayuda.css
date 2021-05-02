@@ -1,5 +1,5 @@
 .App-body{
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .title{
@@ -39,6 +39,16 @@
 
 .imgFormAmigos{
   border: black 0.1em solid;
+  max-width: 20em;
+  width: 90%;
+  height: auto;
+}
+
+.imgRoutes{
+  border: black 0.1em solid;
+  max-width: 28em;
+  width: 90%;
+  height: auto;
 }
 
 .imgHome{
@@ -55,7 +65,11 @@
 }
 
 .table{
-  padding-left: 0.1em;
   margin: auto;
 }
- 
+
+.MenuTabla{ 
+  min-width: 8em;
+  width: 90%;
+  height: auto;
+}

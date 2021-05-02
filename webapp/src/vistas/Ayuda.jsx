@@ -44,12 +44,12 @@ function Ayuda() {
         <div>
           <table class="table">
             <tr>
-              <td><img alt="imgMenu" src={MenuLOImg}></img></td>
+              <td><img class="MenuTabla" alt="imgMenu" src={MenuLOImg}></img></td>
               <td>
                 <ul class ="tablaValores">
-                  <li><b>Inicio: </b>vuelve a la página principal desde cualquier punto.</li>
-                  <li><b>Iniciar Sesión: </b>inicia sesión en la aplicación.</li>
-                  <li><b>Administrador: </b>inicia sesión como administrador en la aplicación.</li>
+                  <li><b>Inicio: </b>vuelve a la página principal.</li>
+                  <li><b>Iniciar Sesión: </b>inicia sesión como usuario.</li>
+                  <li><b>Administrador: </b>inicia sesión como administrador.</li>
                   <li><b>Ayuda: </b>accede a la ayuda en linea.</li>
                 </ul>
               </td>
@@ -99,12 +99,12 @@ function Ayuda() {
         <div>
           <table class="table">
             <tr>
-              <td><img alt="imgMenuLIImg" src={MenuLIImg}></img></td>
+              <td><img class="MenuTabla" alt="imgMenuLIImg" src={MenuLIImg}></img></td>
               <td>
                 <ul class ="tablaValores">
-                  <li><b>Inicio: </b>vuelve a la página principal desde cualquier punto.</li>
+                  <li><b>Inicio: </b>vuelve a la página principal.</li>
                   <li><b>Lista de Amigos: </b>consulta tu lista de amigos.</li>
-                  <li><b>Consultar Localización: </b>accede a la funcionalidad principal de la aplicación.</li>
+                  <li><b>Consultar Localización: </b>accede a la aplicación.</li>
                   <li><b>Ayuda: </b>accede a la ayuda en linea.</li>
                 </ul>
               </td>
@@ -143,13 +143,13 @@ function Ayuda() {
             <li>
               Accede a tu SolidPod al menú de preferencias:<br></br>
               <div class="imgDiv">
-                <img alt="imgPrefPod" src={PrefPODImg}></img>
+                <img class="imgFormAmigos" alt="imgPrefPod" src={PrefPODImg}></img>
               </div>
             </li>
             <li>
               Intruduce la URL de la aplicación, dale permisos de "Read", "Write" y "Append", y presiona "Add".
               <div class="imgDiv">
-                <img alt="imgRoutesPod" src={RoutesPOD}></img>
+                <img class="imgRoutes" alt="imgRoutesPod" src={RoutesPOD}></img>
               </div>
             </li>
             <li>
