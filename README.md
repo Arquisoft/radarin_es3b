@@ -6,7 +6,6 @@
 Link to the deployed sample application: [radarinES3B](https://radarines3bwebapp.herokuapp.com/).  
 Link to the application documentation: [radarinES3B docs](https://radarines3bwebapp.herokuapp.com/docs/).  
 If you want to download our Android app, you can do it in the following link:	https://unioviedo-my.sharepoint.com/:f:/g/personal/uo258352_uniovi_es/EiXt6zZg-alIjG9QMmpvsTABI8fdCT6CaCBhgJQYdoqoqA?e=u0GaJX
-
 Note that sometimes **it can take a while to load** because Heroku in the free plan, takes the containers to sleep when they are not used for some time and taking them up takes time.
 
 ## Quick start guide
