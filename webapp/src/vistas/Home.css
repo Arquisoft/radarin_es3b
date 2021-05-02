@@ -1,9 +1,9 @@
 .Bienvenida {
-  font-size: 35px; 
+  font-size: 2em; 
 }
 
 .enlace {
-  font-size: 30px;
+  font-size: 1.5em;
 }
 .slider {
   width: 90%;
@@ -15,34 +15,34 @@
   display: flex;
   padding: 0;
   width: 300%;
-  max-height: 630px; 
+  max-height: 30em; 
   animation: cambio 15s infinite;
 }
 
 .slider li {
   width: 100%;
-  max-height: 630px;
+  max-height: 30em;
   list-style: none;
 }
 
 .slider img {
-  max-height: 630px;
-  max-width: 1200px;
+  max-height: 30em;
+  max-width: 60em;
   width: 90%;
 }
 
 .mainImage{
   margin: auto;
-  max-width: 1200px;
+  max-width: 60em;
   width: 90%;
   height: auto;
 }
 
 .link{ 
-  font-size: 35px; 
-  padding: 0px 25px 5px;
+  font-size: 1.5em; 
+  padding: 0em 1em 0.2em;
   background: #3f48cc;
-  border: 1px solid #1161B0;
+  border: 0.01em solid #1161B0;
   color: #fff;
   border-radius: 6px;
   text-decoration:none;

@@ -178,6 +178,7 @@ class AddFriend extends React.Component {
                 <h1> Gestionar lista de amigos </h1>
 				{this.renderAlert()}
 
+				
 				<form class="friend">
                     <label for="adminForm" class="labelUser">URL:</label>
                     <input class="adminForm" type="text" name="nombre" size="40" 
@@ -185,6 +186,7 @@ class AddFriend extends React.Component {
                     placeholder="WebID/URL" required="true"></input>
 
 					<br></br> 
+					<p>Ejemplo: <i>https://usuario.solidcommunity.net<b>/</b></i></p>
 					<Button  variant="contained" color="primary" onClick={() => this.addFriend(this.state.friendWebId,this.props.userWebId)}>
                        agregar </Button>
 					<Button  variant="contained" color="secondary" onClick={() => this.deleteFriend(this.state.friendWebId,this.props.userWebId)}>
