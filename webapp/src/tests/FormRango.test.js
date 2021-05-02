@@ -39,7 +39,7 @@ import FormRango from "../components/localizacion/FormRango";
 
     const { getAllByRole } = render(<FormRango />);
 
-    const rangoTextField = getAllByRole("textbox", { placeholder: "Introduzca rango " }).find(element => element.className.includes("form-control"));
+    const rangoTextField = getAllByRole("spinbutton", { placeholder: "Introduzca rango " }).find(element => element.className.includes("form-control"));
 
     expect(rangoTextField).toBeInTheDocument();
 
