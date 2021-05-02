@@ -31,7 +31,7 @@ We needed a library that allowed us to show notifications to the user.
 
 === Consequences
 
-Since no member of the team had experience with SOLID, we had to read a lot of documentation about it, how it works and what technologies were compatible with it.Taking that into account and the fact that it was the first cellphone application we were going to developed, after reading that React and Nodejs facilitated working with SOLID, we decided to take the advice of our teacher and resolved it was best to use them as the libraries to work with pods and IGU. That also meant that the programming language we were going to use was JavaScript.
+Since no member of the team had experience with SOLID, we had to read a lot of documentation about it, how it works and what technologies were compatible with it. Taking that into account and the fact that it was the first cellphone application we were going to developed, after reading that React and Nodejs facilitated working with SOLID, we decided to take the advice of our teacher and resolved it was best to use them as the libraries to work with pods and IGU. That also meant that the programming language we were going to use was JavaScript.
 
 
 === Decisions
@@ -46,9 +46,9 @@ We decided to make our documentation in English since we believe that Software E
 
 We decided to make our documentation using arc42 format since two members already had experience with it and the rest thought that it was a good way to learn a useful technology.
 
-We decided to use MongoDB as the database to store information we could not save on pods because React is prepared to easily work with it.
+We decided to use MongoDB as the database to store information we decided not to save on pods because React is prepared to easily work with it.
 
-We decided to use Mapbox as the library to show a map since it seemed easier to use than Google Maps and it did not require a paid key to use it.
+We decided to use Mapbox as the library to show a map since it seemed easier to use than Google Maps and it did not require a paid key to use it. In addition, many React modules use Mapbox wich means that there is a lot of documentation and it is easy to use.
 
 We decided to use solid/query-ldflex to access the information stored in SOLID since it already had implemented most of the methods that we needed.
 

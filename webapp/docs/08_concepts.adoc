@@ -8,7 +8,7 @@
 
 *Visible area: Is the area where we want see connected friends, we can parameterize it setting the radio under the map.
 
-*Administrator: A rol which a person can get in his session, he has more control in the app configuring and updating the database. All users can get the administrator
+*Administrator: A profile where a person can access, he has more control in the app configuring and updating the database. All users can get the administrator
 rol if they hace the credentials
 
 
@@ -49,7 +49,7 @@ Its possible configure a little the app  modifying the your visible area and cre
 between notifications and appearance of a friend markers, but produces a better efficienvy
 
 === Operation concepts
-*Administration and Management: A user can get the administrator role if he has credentials, allowing him to manage app and database
+*Administration and Management: A person can access to admin view if he has credentials, allowing him to manage the app
 
 *Disaster-Reovery: After some minits of doesnt receive updates the database and all stored info is cleaned.
 

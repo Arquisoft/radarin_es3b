@@ -36,7 +36,7 @@ The first interaction the user has with the application is the log in process.
 
 Once the user clicks the 'LogIn' button, the application will redirect the user to a SOLID login webpage, which will manage the process from here. 
 
-Only when the login it's been a success, the SOLID webpage popup will redirect the user back to the app. The app will detect that the user is properly logged in and it will load the new content to display.
+Only when the login has been a success, the SOLID webpage popup will redirect the user back to the app. The app will detect that the user is properly logged in and it will load the new content to display.
 
 
 [plantuml,"login diagram",png]
@@ -75,9 +75,9 @@ App --> App: Logged Out message
 
 The most relevant scenario of the application is the feature that allows to locate friends.
 
-Once the user is logged in, he will be able to ask the application for his friends location. 
+Once the user is logged in, they will be able to ask the application for their friends location. 
 
-The app will show the list of friends with their latest known location.
+The app will show the locations of the user's friends on a map with their latest known location.
 
 
 [plantuml,"location diagram",png]
@@ -91,16 +91,56 @@ App <[#blue]--  User: Switch on app
 App -[#blue]>  User: User location (req)
 App <[#blue]--  User: User location (res)
 App -[#blue]> MongoDB: Save user location
-User -[#green]> App: Find Friends (req)
 App -> UserPOD: Friends list (req)
 App <-- UserPOD: Friends list (res)
 App -[#blue]> MongoDB: Friends location (req)
 App <[#blue]-- MongoDB: Friends location (res)
 App -> App: Calculate distance
+App -> App: Show friend's notifications on map
 App --[#green]> User: Notify close friends
-
 @enduml
 ----
+
+=== Friend List
+
+Our application allows the user to check the friends they have added in their SOLID POD.
+
+[plantuml, "friend list", png]
+----
+@startuml
+actor User #red
+participant App
+database SOLIDprovider #blue
+User -[#green]> App: Friend list (req)
+App -[#blue]> SOLIDprovider: Friend list (req)
+App <[#blue]-- SOLIDprovider: Friend list response
+User <[#green]-- App: Friend list response
+@enduml
+----
+
+=== Add and Remove Friends
+
+The user will be able to add and remove friends from their SOILD POD. Our application can communicate with the user's POD SOLID provider, which will manage the friends from the user's POD.
+
+To request the addition or removal of a friend, the user must provide the webID from said friend.
+
+[plantuml, "add and remove friends",png]
+----
+@startuml
+actor User #red
+participant App
+database SOLIDprovider #blue
+User -[#green]> App: Remove friend (webID)
+App -[#blue]> SOLIDprovider: Remove friend (webID)
+App <[#blue]-- SOLIDprovider: Updated friends list
+User <[#green]-- App: Updated friends list
+User -[#green]> App: Add friend (webID)
+App -[#blue]> SOLIDprovider: Add friend (webID)
+App <[#blue]-- SOLIDprovider: Updated friends list
+User <[#green]-- App: Updated friends list
+@enduml
+----
+
 
 === Admin Scenario
 
@@ -112,7 +152,7 @@ First, he'll need to be logged in providing his credentials (username and passwo
 Once logged in, several features available only for administrators will be display for him to interact with, together with a map showing the current users connected.
 
 
-[plantuml,"login diagram",png]
+[plantuml,"admin",png]
 ----
 @startuml
 actor Admin #red

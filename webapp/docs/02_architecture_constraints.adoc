@@ -13,12 +13,12 @@
 [options="header",cols="1,2"]
 |===
 |Constraint|Explanation 
-| Time | Project should be done by the end of the semester
-| Budget | Project developed in an University context where no budget is available for the team
-| Experience | None student has any previous experience building mobile applications
-| Working time | Partial-time, every member has many projects opened at the same time from several subjects
-| Team | 7 developers work together in this project 
-| Version control | A GitHub repository is being used due to its features for collaborative projects
+| Time | Project should be done by the end of the semester.
+| Budget | Project developed in an University context where no budget is available for the team.
+| Experience | None student has any previous experience building mobile applications.
+| Working time | Partial-time, every member has many projects opened at the same time from several subjects.
+| Team | 6 developers work together in this project.
+| Version control | A GitHub repository is being used due to its features for collaborative projects.
 | Heroku | We will use Heroku to deploy the application in the cloud. This is more of an economical constraint.
 |===
 
@@ -26,10 +26,6 @@
 [options="header",cols="1,2"]
 |===
 |Constraint|Explanation
-| RGPD | The Spanish Reglamento General de Protección de Datos ensures the protection of personal data and the free circulation of these one.
+| RGPD | The Spanish _Reglamento General de Protección de Datos_ ensures the protection of personal data from the user.
 | Use conditions | It establishes what the application is and how it should be used, what constitutes improper use and what will be the consequences of this one.
 |===
-
-[role="arc42help"]
-****
-****

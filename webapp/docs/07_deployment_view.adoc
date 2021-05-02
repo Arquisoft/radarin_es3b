@@ -13,8 +13,8 @@ The application will be deployed on the cloud application plataform Heroku, that
 
 === Infrastructure Level 1: Local Execution
 
-image:7-Infrastructure-v4-Local.png["Infrastructure diagram."]
+image:7-Infrastructure-v4.1-Local.png["Infrastructure diagram."]
 
 Motivation::
 
-For the development of the WebApp the MongoDB database will be deployed on a remote MongoDB database service and will be accessed by the Restapi. The WebApp will be runned with npm. The WebApp will communicate with the PODs from SOLID via HTTP protocol.
+For the development of the WebApp the MongoDB database will be deployed on a remote MongoDB database service and will be accessed by the Restapi. The WebApp will be runned with npm. The WebApp will communicate with the PODs from SOLID via HTTP protocol. There will be two Docker containers, Grafana and Prometheus, that will monitorize the application. Due to configuration difficulties with Heroku this components only appear on the Local release.

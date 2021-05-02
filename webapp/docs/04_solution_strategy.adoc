@@ -45,7 +45,13 @@ customizable component and easy to understand the basics.
 
 In order to make the app compatible with solid we use two modules ,first @Solid/react because provide a simple implementation to login 
 in solid and get your  added friends, however we use also @solid/query-ldflex because make easier obtain more complex data, for example
-names and surnames.
+names, surnames and for add and delete friends in solid.
 
 Notifications and map markers are managment at the same time, in same methods with the same database reads, this get worse the code desingn
-but improve a lot the efficiency and allows to synchronize much better both operations
+but improve a lot the efficiency and allows to synchronize much better both operations.
+
+The admin profiles are managed by mongoDB with a user and a encrypted password, the users who use a app have a register in mongoDB, the admin
+can use it to blocked someone from the app.
+
+Ww are going to use Jest to make the tests
+

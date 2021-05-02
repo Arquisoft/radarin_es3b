@@ -5,48 +5,36 @@ Radarin is an application that aims to facilitate meetings between people who ar
 The application has a series of data access requeriments like the localization of the user (which may activate and deactivate voluntarily),
 which will allow the users to know the ubication of their contacts when they are around.
 
-
 === Requirements Overview
 
 * Know the user ubication in every moment.
-* Consult the contacts of every user to be able to relate them.
+* Consult the friends of the user to be able to show their location.
+* Add or delete friends from the user POD.
 
-
-
-Optional requirements in a future:
+Optional requirements in a future (outside of the course):
 
 * Offer the user the option of add comments and multimedia content in the locations.
 * Users will be able to mark certain locations.
 * Users will be able to get in touch through the app.
 
-
-
-
-
 === Quality Goals
-
 
 [options="header",cols="1,2"]
 |===
 |Quality Goals|Concrete Scenaries
 | _Usability_ | The application must be able to be used by all possible users without problems.
-| _Privacy and security_ | Only the necessary data of each user will be saved, the rest will be taken when needed from the user's device.
-			Besides, he could activate and deactivate the ubication when he wish and the application won't be able to see this data.
+| _Privacy and security_ | Only the necessary data of each user will be saved, the rest will be taken when needed from the user's POD.
+			Besides, they could activate and deactivate the ubication when they wish and the application won't be able to access this data.
 | _Testability_ | The application running can be easily tested.
 |===
 
-
-
 === Stakeholders
-
-
 
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| Client |  | Expects the system to fulfill de requirements. Expects reports from the development team about the progress in the project
-| _SOLID Community_ | SOLID Team | Expect SOLID specifications to be followed
+| Client |  | Expects the system to fulfill de requirements. Expects reports from the development team about the progress in the project.
+| _SOLID Community_ | SOLID Team | Expect SOLID specifications to be followed.
 | _Team_ | Develop team | Hope to develop the application correctly and work as a team to achieve the goal.
 | _Users_ | Potential users of the application | Expect the app to work properly and to deliver on its commitment to maintain their privacity.
 |===
-

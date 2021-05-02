@@ -22,7 +22,7 @@ Various options:
 
 The project idea is create a application using solid which allow us to get the localization of our friends
 that are using the app.
-All the information will be saved in pods, excepting the essential to the application funcionality
+All the private information will be saved in pods, the information which need many operations like user coordinates wll be stored in mongoDB
 
 
 === Business Context
@@ -76,5 +76,12 @@ together with a mapping table showing the relationships between channels and inp
 
 ****
 
-To develop this application, we are going to use SOLID to allow us to use private information of the users, without us needing to store it, which helps achieve our goal of user-friendly application that respects privacy.
-Other technologies that we are going to use are React Native and Nodejs. These two libraries for JavaScript, will help us develop the communication with SOLID pods and the IGU.
+To develop this application, we are going to use SOLID to allow us to use private information of the users, without us needing to store it, to accomplish this
+the user wll need a solid POD, which is the place where he can store his private data.
+
+The application will be work in mobile and desktop, in both the user need to allow the app get his coordinates.
+
+The application will be develeoped in javascript using React which made easier build the interface.
+
+
+ 

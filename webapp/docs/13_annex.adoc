@@ -51,3 +51,14 @@ Cases:
 - A user logs in and navigates through every single component of the application.
 
 All these cases have been tested with a load of 1, 50 and 120 users.
+
+
+=== Map and Notifications Management Flux Diagram
+
+In the next diagram we show the rough internal structure of the code that manages the locations of the user's friend's and the notifications to the user.
+
+Whenever a new update of the map arrives, that happens either every 5~ seconds or when the user first oppens the map, our application will loop through all the user's friends, check their location if they are connected to the map and send to the user a notification if a new friend connects to the map. After the loop, our application will show the updated map with the new markers to the user.
+
+image:DiagramaDeFlujo.png["Flux diagram."]
+
+
