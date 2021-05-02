@@ -52,8 +52,8 @@ const useStyles = makeStyles(theme => ({
     name: {
         width:"100%",
         height:"auto",
-        maxWidth:"12em"
-     
+        maxWidth:"12em",
+        minWidth:"8em"
     },
 
 }))
