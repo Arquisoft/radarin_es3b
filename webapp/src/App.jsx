@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter,BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Switch, Route, Redirect } from 'react-router-dom';
 
 import './App.css';
 import './Map.css';
