@@ -1,50 +1,56 @@
-.App-body{
-    font-size: 20px;
-}
-.title{
-    font-size: 50px;
-    text-align: center;
-}
-.subtitle{
-    text-align: left;
-    margin-left: 0.8em;
-}
-.parrafo{
-    text-align: left;
-    margin-left: 1.2em;
-}
-.imgDiv{   
-    text-align: center; 
-
-}
-.imgNav{
-    border: black 3px solid;
-    margin-left: 1.2em;
-    max-width: 800px;
-    width: 90%;
-    height: auto;
+.App-body {
+  font-size: 20px;
 }
 
-.imgArea{
-    border: black 3px solid;
-    max-width: 550px;
-    width: 90%;
-    height: auto;
+.title {
+  font-size: 50px;
+  text-align: center;
 }
 
-.imgHome{
-    border: black 3px solid;
-    margin-left: 1.1em;
-    max-width: 800px;
-    width: 90%;
-    height: auto;
+.subtitle {
+  text-align: left;
+  margin-left: 0.8em;
 }
 
-.tablaValores{
-    text-align: left;
-    margin : auto;
+.parrafo {
+  text-align: left;
+  margin-left: 1.2em;
 }
-.table{
-    padding-left: 0.1em;
-    margin: auto;
+
+.imgDiv {   
+  text-align: center; 
+
+}
+
+.imgNav {
+  border: black 3px solid;
+  margin-left: 1.2em;
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+}
+
+.imgArea {
+  border: black 3px solid;
+  max-width: 550px;
+  width: 90%;
+  height: auto;
+}
+
+.imgHome {
+  border: black 3px solid;
+  margin-left: 1.1em;
+  max-width: 800px;
+  width: 90%;
+  height: auto;
+}
+
+.tablaValores {
+  text-align: left;
+  margin: auto;
+}
+
+.table {
+  padding-left: 0.1em;
+  margin: auto;
 }
