@@ -36,7 +36,6 @@ class FriendsList extends React.Component {
         return (
 
             <div className="FriendsList">
-				<ProcessAddFriend/>
                 <ListGroup>
                     {
                         //For each friend, it returns a ListGroup.item holding his information
@@ -45,6 +44,7 @@ class FriendsList extends React.Component {
                         })
                     }
                 </ListGroup>
+                <ProcessAddFriend/>
             </div>
         )
     }
