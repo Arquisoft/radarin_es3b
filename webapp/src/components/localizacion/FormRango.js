@@ -22,10 +22,6 @@ class FormRango extends React.Component{
     return(
 
           <div>
-           
-              
-            
-            
               <div class="formMap" >
                     <Form.Group >
                 
