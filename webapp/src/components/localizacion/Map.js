@@ -20,9 +20,6 @@ class Map extends Component {
   constructor(props) {
     super(props);
 
-	
-	
-	
     this.state = {
 
 		max:10,
@@ -46,6 +43,11 @@ class Map extends Component {
 	
   }
 
+  /**
+   * Este método es el responsable de generar los marcadores de los amigos en el mapa según el rango establecido en el formulario de entrada. 
+   * Tanto el rango como la lista de amigos son recibidos como props de su componente padre.
+   * @returns MapMarker correspondiente
+   */
   renderMarkers = () => {
   
     return (Array.from(this.props.responses.values())).map((item) => {
@@ -62,6 +64,10 @@ class Map extends Component {
     });
   }
 
+  /**
+   * Se encarga del renderizado del mapa, desde este método se llama a renderMarkers para que pinte los marcadores.
+   * @returns mapa renderizado
+   */
   render() {
     return (
 	<div class = "mapa">
@@ -77,7 +83,7 @@ class Map extends Component {
         {this.renderMarkers()}
 
 
-        <MapMarker  nombre="MiPosición" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} max={this.state.max} marker=<FriendMarker/>  />
+        <MapMarker  nombre="MiPosición" longitude={parseFloat(this.props.lon)} latitude={parseFloat(this.props.lat)} max={this.state.max} marker={<FriendMarker/>}  />
       </MapGL>
 	  </div>
     );

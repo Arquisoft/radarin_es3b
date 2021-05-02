@@ -10,17 +10,16 @@ Node "Level 1" {
 actor User
 rectangle App
 database MongoDB
-database Pods
+database PODs
 }
 App <-up->  User
 App <-down-> MongoDB
-App <-down-> Pods
+App <-down-> PODs
 @enduml
 ----
 
 Motivation::
 The user interacts with our application, which uses a MongoDB database and communicates with the user's SOLID POD.
-// ¿Debería añadir la API de geolocalización?
 
 Contained Building Blocks::
 [cols="1,2" options="header"]
@@ -48,10 +47,6 @@ react <--> Restapi
 @enduml
 ----
 
-////
-¿Se añadirían las pruebas de carga y monitorización aquí?
-////
-
 Motivation::
 WebApp uses the Restapi to connect with the MongoDB database.
 
@@ -64,10 +59,6 @@ Contained Building Blocks::
 | docs | Documentation of the application.
 | E2E testing | Aceptation step by step tests.
 |===
-
-////
-¿La Restapi se usa para algo más? Como para conectar con la api de geolocalización o algo?
-////
 
 ==== Level 3
 ==== White Box _WebApp_

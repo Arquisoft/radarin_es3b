@@ -30,16 +30,17 @@ class GenerateResponsesAdmin extends React.Component {
 	
 
 	async componentDidMount() {
-		console.log("hola")
+		//Obtenemos la localización de todos los usuarios
 		var users = await getUserLocalizationList();
 		this.state.responses=users;
-		console.log("hola")
+		
 		
 		
 	}
 	
 	async componentDidUpdate() {
 		
+		//Obtenemos la localización de todos los usuarios
 		var users = await getUserLocalizationList();
 		this.state.responses=users;
 
