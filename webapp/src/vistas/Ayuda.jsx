@@ -16,11 +16,15 @@ import NavHome from "./img/navHome.png";
 import PopUpImg from "./img/IniciarSesionPopUp.PNG";
 import LogInForm from "./img/FormIniciarSesión.PNG";
 import Area from "./img/AreaVis.PNG";
+import FormAmigos from "./img/AgregarAmigosForm.PNG";
+import PrefPODImg from "./img/PODSolidPreferences.png";
+import RoutesPOD from "./img/RutasSolidPod.PNG";
+import AddFriend from "./img/AñadirAmigo.PNG";
 
 
 function Ayuda() {
   return (
-    <div className="Admin">
+    <div>
       <Contenedor/>
       <h1 class="title">Ayuda</h1>
 
@@ -125,6 +129,43 @@ function Ayuda() {
         <div class="imgDiv">
             <img alt="imgArea" class="imgArea" src={Area}></img>
           </div>
+
+        <h2 class= "subtitle">Añadir o Borrar amigos</h2>
+        <p class="parrafo">
+          Se puede ampliar o reducir tu número de amigos desde la página "Lista de Amigos" a traves del formulario de la parte superior de esta:
+          <div class="imgDiv">
+                <img alt="imgFormAmigos" class="imgFormAmigos"src={FormAmigos}></img>
+            </div>
+        </p>
+        <p class="parrafo">
+          Antes de poder añadir amigos debes configurar tu Solid POD para que acepte las solicitudes de cambios de la aplicación:
+          <ul>
+            <li>
+              Accede a tu SolidPod al menú de preferencias:<br></br>
+              <div class="imgDiv">
+                <img alt="imgPrefPod" src={PrefPODImg}></img>
+              </div>
+            </li>
+            <li>
+              Intruduce la URL de la aplicación, dale permisos de "Read", "Write" y "Append", y presiona "Add".
+              <div class="imgDiv">
+                <img alt="imgRoutesPod" src={RoutesPOD}></img>
+              </div>
+            </li>
+            <li>
+              <p>
+              Dirigete de nuevo a la ventana de "Lista de Amigos" y copia la URL del POD de tu amigo.
+              </p>
+              <b>Importante añadir / al final.</b>
+              <p>
+                Presiona agregar para añadir a tu amigo a la lista, o borrar, para eliminarlo:
+              </p>
+            <div class="imgDiv">
+                <img class="imgFormAmigos" alt="addFriendImg" src={AddFriend}></img>
+              </div>
+            </li>
+          </ul>
+        </p>
 
         <h2 class= "subtitle">Documentación</h2>
         <p class="parrafo">
