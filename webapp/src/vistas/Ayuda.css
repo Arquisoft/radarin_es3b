@@ -1,56 +1,61 @@
-.App-body {
-  font-size: 20px;
+.App-body{
+  font-size: 1.5em;
 }
 
-.title {
-  font-size: 50px;
+.title{
+  font-size: 3em;
   text-align: center;
 }
 
-.subtitle {
+.subtitle{
   text-align: left;
   margin-left: 0.8em;
 }
 
-.parrafo {
+.parrafo{
   text-align: left;
   margin-left: 1.2em;
 }
 
-.imgDiv {   
-  text-align: center; 
-
+.imgDiv{
+    margin-top: 0.5em;
+  text-align: center;
 }
 
-.imgNav {
-  border: black 3px solid;
+.imgNav{
+  border: black 0.1em solid;
   margin-left: 1.2em;
-  max-width: 800px;
+  max-width: 28em;
   width: 90%;
   height: auto;
 }
 
-.imgArea {
-  border: black 3px solid;
-  max-width: 550px;
+.imgArea{
+  border: black 0.1em solid;
+  max-width: 20em;
   width: 90%;
   height: auto;
 }
 
-.imgHome {
-  border: black 3px solid;
+.imgFormAmigos{
+  border: black 0.1em solid;
+}
+
+.imgHome{
+  border: black 0.1em solid;
   margin-left: 1.1em;
-  max-width: 800px;
+  max-width: 28em;
   width: 90%;
   height: auto;
 }
 
-.tablaValores {
+.tablaValores{
   text-align: left;
-  margin: auto;
+  margin : auto;
 }
 
-.table {
+.table{
   padding-left: 0.1em;
   margin: auto;
 }
+ 
